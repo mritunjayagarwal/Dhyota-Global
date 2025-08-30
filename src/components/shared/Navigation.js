@@ -7,7 +7,7 @@ const Navigation = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-transparent p-0">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="/assets/img/shared/logo.png" className='img-fluid' style={{width: '150px', height: 'auto'}} alt="Dhyota Logo" />
+          <img src = "/android-chrome-192x192.png" style={{ width: "40px", height: "40px" }} alt="Dhyota Logo" /> Dhyota <span style={{ color: "#FF6F00", "marginLeft": "-2px"}}>Global</span>
         </a>
         <button 
           className="navbar-toggler" 

@@ -12,6 +12,17 @@
   width: auto;
 }
 
+.navbar-brand {
+  color: #000 !important;
+  font-weight: bold;
+  font-size: 1.2rem !important;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  letter-spacing: 1px;
+  align-items: center;
+  gap: 10px;
+}
+
 .navbar .container {
   position: relative;
   padding: 0 1rem;
