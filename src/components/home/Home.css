@@ -1,10 +1,10 @@
-/* ===== HERO SECTION ===== */
-.hero {
+/* ===== HOME PAGE SPECIFIC STYLES ===== */
+.home-page .hero {
   position: relative;
   margin: 30px 50px;
 }
 
-.hero-bg {
+.home-page .hero-bg {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -17,19 +17,19 @@
 }
 
 /* ===== CAROUSEL STYLES ===== */
-.carousel {
+.home-page .carousel {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
 }
 
-.carousel-inner {
+.home-page .carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.carousel-item {
+.home-page .carousel-item {
   position: relative;
   display: none;
   float: left;
@@ -37,33 +37,33 @@
   margin-right: -100%;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
-  height: 80vh;
+  height: 50vh;
 }
 
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
+.home-page .carousel-item.active,
+.home-page .carousel-item-next,
+.home-page .carousel-item-prev {
   display: block;
 }
 
-.carousel-item-next:not(.carousel-item-start),
-.active.carousel-item-end {
+.home-page .carousel-item-next:not(.carousel-item-start),
+.home-page .active.carousel-item-end {
   transform: translateX(100%);
 }
 
-.carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start {
+.home-page .carousel-item-prev:not(.carousel-item-end),
+.home-page .active.carousel-item-start {
   transform: translateX(-100%);
 }
 
-.carousel-item img {
+.home-page .carousel-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 /* ===== CAROUSEL TEXT CONTENT ===== */
-.carousel-item h1 {
+.home-page .carousel-item h1 {
   position: relative;
   z-index: 10;
   color: white;
@@ -75,7 +75,7 @@
   width: 100%;
 }
 
-.carousel-item h6 {
+.home-page .carousel-item h6 {
   position: relative;
   z-index: 10;
   color: white;
@@ -87,7 +87,7 @@
   width: 100%;
 }
 
-.carousel-item p {
+.home-page .carousel-item p {
   position: relative;
   z-index: 10;
   color: #F2F2F2;
@@ -99,7 +99,7 @@
   margin-top: 30px;
 }
 
-.carousel-item .text-container {
+.home-page .carousel-item .text-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -109,84 +109,82 @@
 }
 
 /* ===== IMPACT SECTION ===== */
-.impact-card {
+.home-page .impact-card {
   border-radius: 10px;
   border-top: 3.89px solid #FFD93B;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.impact-card h3 {
+.home-page .impact-card h3 {
   font-weight: 900;
   color: #FF6F00;
   font-size: 2rem;
-
 }
 
 /* ===== MISSION SECTION ===== */
-.mission {
+.home-page .mission {
   background: #F9FAFB;
 }
 
-.mission-card {
+.home-page .mission-card {
   border: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
   background: #fff;
 }
 
-.mission-card-body h3 {
+.home-page .mission-card-body h3 {
   font-weight: 900;
 }
 
 /* ===== AWARENESS SECTION ===== */
-.awareness {
+.home-page .awareness {
   padding: 80px 0;
 }
 
-.awareness-main {
+.home-page .awareness-main {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
               linear-gradient(90deg, #FF6F00 0%, #FFB347 100%);
 }
 
-.awareness-carousel-item {
+.home-page .awareness-carousel-item {
   height: 300px;
 }
 
 /* ===== CAMPAIGN SECTION ===== */
-.campaign {
+.home-page .campaign {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
               linear-gradient(90deg, #FFD93B 0%, #FFB347 100%);
   padding: 80px 0;
 }
 
-.campaign-main {
+.home-page .campaign-main {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 /* ===== TESTIMONIALS SECTION ===== */
 
-.testimonial-card {
+.home-page .testimonial-card {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 20px;
   height: 100%;
 }
 
-
-.testimonial-card-body p {
+.home-page .testimonial-card-body p {
   font-size: 1rem;
 }
 
-.testimonial-card-footer h3{
+.home-page .testimonial-card-footer h3{
   font-size: 1rem;
   font-weight: 600;
   color: #5A5A5A;
 }
 
-.testimonial-card-footer p{
+.home-page .testimonial-card-footer p{
   font-size: 0.8rem;
 }
 

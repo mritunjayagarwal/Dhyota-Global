@@ -28,7 +28,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact-page">
+      <div className="contact">
       <h1 className="contact-title">{contactData.page.title}</h1>
       <p className="contact-description">{contactData.page.description}</p>
       <div className="contact-form">
@@ -44,6 +45,7 @@ const Contact = () => {
             {contactData.form.submitButton}
           </button>
         </form>
+      </div>
       </div>
     </div>
   );

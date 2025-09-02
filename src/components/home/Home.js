@@ -41,7 +41,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
+    <main className="home-page">
       <section className='hero'>
         <div 
           ref={carouselRef}

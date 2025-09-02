@@ -1,17 +1,18 @@
-.about {
+/* ===== ABOUT PAGE SPECIFIC STYLES ===== */
+.about-page .about {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.about-title {
+.about-page .about-title {
   font-size: 3rem;
   color: #2c3e50;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.about-description {
+.about-page .about-description {
   font-size: 1.2rem;
   color: #7f8c8d;
   text-align: center;

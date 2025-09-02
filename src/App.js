@@ -4,6 +4,7 @@ import { Navigation, Footer } from './components/shared';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
+import Campaign from './components/campaign/Campaign';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/campaign" element={<Campaign />} />
         </Routes>
       </main>
       <Footer />

@@ -21,7 +21,6 @@ p {
 /* ===== BUTTON STYLES ===== */
 .main-btn {
   font-family: 'Lato', sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
   padding: 12px 30px;
   border-radius: 8px;
@@ -33,11 +32,18 @@ p {
   background: linear-gradient(0deg, #FF6F00, #FF6F00),
               linear-gradient(98.94deg, #FF6F00 100%, #FFB347 100%);
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .white {
   color: #FF6F00 !important;
   background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.yellow {
+  color: #000 !important;
+  background: #FFD93B;
 }
 
 /* ===== CARD STYLES ===== */
