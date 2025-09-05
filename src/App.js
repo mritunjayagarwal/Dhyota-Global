@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Campaign from './components/campaign/Campaign';
+import Partners from './components/partners';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/campaign" element={<Campaign />} />
+          <Route path="/partners" element={<Partners />} />
         </Routes>
       </main>
       <Footer />

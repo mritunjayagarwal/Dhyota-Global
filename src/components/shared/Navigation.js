@@ -35,7 +35,7 @@ const Navigation = () => {
               <a className="nav-link" href="#">Brands</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Associated Partners</a>
+              <Link className="nav-link" to="/partners">Partners</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/campaign">Campaign</Link>
