@@ -294,64 +294,92 @@
   
   /* Awareness Section Mobile */
   .home-page .awareness {
-    padding: 40px 0;
+    padding: 60px 0;
   }
   
   .home-page .awareness-main {
-    margin: 10px;
-    padding: 0 10px;
-    max-width: calc(100% - 20px);
-    overflow-x: hidden;
-  }
-  
-  .home-page .awareness-main .container {
-    padding: 0;
-    margin: 0;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
   
   .home-page .awareness-carousel-item {
-    height: 250px;
+    height: 350px;
+    /* background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFA500); */
+    position: relative;
+    overflow: hidden;
   }
   
   .home-page .awareness-carousel-item .text-center {
-    padding: 15px !important;
+    position: relative;
+    z-index: 2;
+    padding: 40px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .home-page .awareness-carousel-item h6 {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
   }
   
   .home-page .awareness-carousel-item p {
-    font-size: 0.9rem;
-    margin-bottom: 15px !important;
-    line-height: 1.4;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
   }
   
   .home-page .awareness-carousel-item .main-btn {
-    padding: 8px 16px !important;
-    font-size: 0.85rem;
-    min-height: 36px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    background: white;
+    color: #FF6F00;
+    border: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   
-  .home-page .carousel-indicators button {
-    width: 8px;
-    height: 8px;
+  .home-page .awareness-carousel-item .main-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background: #f8f9fa;
+  }
+  
+  .home-page .awareness .carousel-indicators {
+    margin-bottom: 1rem;
+  }
+  
+  .home-page .awareness .carousel-indicators button {
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    margin: 0 4px;
+    margin: 0 6px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    opacity: 0.8;
+    transition: all 0.3s ease;
   }
   
-  /* Override Bootstrap utility classes for awareness carousel */
-  .home-page .awareness-carousel-item .p-5 {
-    padding: 15px !important;
-  }
-  
-  .home-page .awareness-carousel-item .mb-4 {
-    margin-bottom: 15px !important;
-  }
-  
-  .home-page .awareness-carousel-item .w-75 {
-    width: 90% !important;
+  .home-page .awareness .carousel-indicators button.active {
+    background-color: white;
+    border-color: white;
+    opacity: 1;
+    transform: scale(1.2);
   }
   
   /* Mission Section Mobile */
@@ -521,6 +549,7 @@
     margin-bottom: 0.8rem;
   }
   
+  
   .home-page .carousel-indicators button {
     width: 10px;
     height: 10px;
@@ -544,31 +573,48 @@
   
   /* Awareness Section Small Mobile */
   .home-page .awareness {
-    padding: 30px 0;
+    padding: 50px 0;
+  }
+  
+  .home-page .awareness-main {
+    margin: 15px;
+    border-radius: 15px;
   }
   
   .home-page .awareness-carousel-item {
-    height: 220px;
+    height: 300px;
   }
   
   .home-page .awareness-carousel-item .text-center {
-    padding: 12px !important;
+    padding: 30px 20px;
   }
   
   .home-page .awareness-carousel-item h6 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
   }
   
   .home-page .awareness-carousel-item p {
-    font-size: 0.85rem;
-    margin-bottom: 12px !important;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 95%;
   }
   
   .home-page .awareness-carousel-item .main-btn {
-    padding: 6px 12px !important;
-    font-size: 0.8rem;
-    min-height: 32px;
+    padding: 12px 25px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+  }
+  
+  .home-page .awareness .carousel-indicators {
+    margin-bottom: 0.8rem;
+  }
+  
+  .home-page .awareness .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
   }
   
   .home-page .carousel-indicators button {
@@ -718,44 +764,12 @@
     margin-bottom: 0.6rem;
   }
   
+  
   .home-page .carousel-indicators button {
     width: 8px;
     height: 8px;
     margin: 0 2px;
   }
   
-  /* Awareness Section Extra Small Mobile */
-  .home-page .awareness-carousel-item .text-center {
-    padding: 10px !important;
-  }
-  
-  .home-page .awareness-carousel-item h6 {
-    font-size: 1rem;
-    margin-bottom: 8px;
-  }
-  
-  .home-page .awareness-carousel-item p {
-    font-size: 0.8rem;
-    margin-bottom: 10px !important;
-  }
-  
-  .home-page .awareness-carousel-item .main-btn {
-    padding: 6px 10px !important;
-    font-size: 0.75rem;
-    min-height: 30px;
-  }
-  
-  /* Override Bootstrap utility classes for awareness carousel - Extra Small Mobile */
-  .home-page .awareness-carousel-item .p-5 {
-    padding: 10px !important;
-  }
-  
-  .home-page .awareness-carousel-item .mb-4 {
-    margin-bottom: 10px !important;
-  }
-  
-  .home-page .awareness-carousel-item .w-75 {
-    width: 98% !important;
-  }
 }
 

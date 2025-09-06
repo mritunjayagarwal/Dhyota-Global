@@ -288,8 +288,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
-
           </div>
         </div>
       </section>
@@ -344,7 +342,7 @@ const Home = () => {
         <div className='container'>
           <h1 className='section-title text-center'>Testimonials & Trust</h1>
           <div className='row mt-5'>
-            <div className='col-lg-4 col-md-6'>
+            <div className='col-lg-4 col-md-6 mb-3'>
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
                   <p>"The educational resources and support provided have been invaluable in my health journey. Professional, comprehensive, and trustworthy."</p>
@@ -358,7 +356,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6'>
+            <div className='col-lg-4 col-md-6 mb-3'>
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
                   <p>"The educational resources and support provided have been invaluable in my health journey. Professional, comprehensive, and trustworthy."</p>
@@ -372,7 +370,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6'>
+            <div className='col-lg-4 col-md-6 mb-3'>
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
                   <h5 style={{ fontWeight: "900" }}>Trust & Compliance</h5>

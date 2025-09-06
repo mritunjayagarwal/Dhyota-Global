@@ -95,56 +95,56 @@ const Partners = () => {
           <div className="row">
             <div className='col-lg-3 mb-4'>
                 <div className='partner-card text-center'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
             <div className='col-lg-3 mb-4'>
                 <div className='partner-card text-center'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
             <div className='col-lg-3 mb-4'>
                 <div className='partner-card text-center'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
             <div className='col-lg-3 mb-4'>
                 <div className='partner-card text-center'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
             <div className='col-lg-3'>
                 <div className='partner-card text-center'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
             <div className='col-lg-3'>
                 <div className='partner-card text-center'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
             <div className='col-lg-3'>
                 <div className='partner-card text-center'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
                 </div>
             </div>
             <div className='col-lg-3'>
                 <div className='partner-card text-center'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
                 </div>
@@ -160,21 +160,21 @@ const Partners = () => {
           <div className="row"  >
             <div className='col-lg-4'>
                 <div className='partner-card'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
             <div className='col-lg-4'>
                 <div className='partner-card'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
             <div className='col-lg-4'>
                 <div className='partner-card'>
-                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <img src="/assets/img/partners/partners.png" alt="Partner 1" className="img-fluid" />
                     <h3 className='partner-card-title'>Partner 1</h3>
                     <p className='partner-card-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
