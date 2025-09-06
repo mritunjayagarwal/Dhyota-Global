@@ -60,7 +60,7 @@ const Contact = () => {
             <div className="col-lg-8">
               <div className="contact-form-container">
                 <h6 className="section-title text-start">Send us a Message</h6>
-                <p className="text-start" style={{ marginTop: "-20px" }}>Fill out the form below and we'll get back to you within 24 hours.</p>
+                <p className="text-start">Fill out the form below and we'll get back to you within 24 hours.</p>
                 <form onSubmit={handleSubmit} className="contact-form">
                   <div className="row">
                     <div className="col-md-6">
