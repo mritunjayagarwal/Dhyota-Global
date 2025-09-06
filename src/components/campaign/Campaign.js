@@ -68,7 +68,7 @@ const Campaign = () => {
                               linear-gradient(135deg, #FFD93B 0%, #FFB347 50%, #FF6F00 100%)`,
                 }}
               ></div>
-              <div className="text-container">
+              <div className="text-container main-carousel-text">
                 <h1>Guided by Light, Driven by Care</h1>
                 <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
               </div>
@@ -83,7 +83,7 @@ const Campaign = () => {
                   minHeight: "600px"
                 }}
               ></div>
-              <div className="text-container">
+              <div className="text-container main-carousel-text">
                 <h1>Guided by Light, Driven by Care</h1>
                 <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
               </div>
@@ -98,7 +98,7 @@ const Campaign = () => {
                   minHeight: "600px"
                 }}
               ></div>
-              <div className="text-container">
+              <div className="text-container main-carousel-text">
                 <h1>Guided by Light, Driven by Care</h1>
                 <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
               </div>

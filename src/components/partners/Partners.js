@@ -56,7 +56,7 @@ const Partners = () => {
                   minHeight: "600px"
                 }}
               ></div>
-              <div className="text-container">
+              <div className="text-container main-carousel-text">
                 <h1>Guided by Light, Driven by Care</h1>
                 <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
               </div>
@@ -71,7 +71,7 @@ const Partners = () => {
                   minHeight: "600px"
                 }}
               ></div>
-              <div className="text-container">
+              <div className="text-container main-carousel-text">
                 <h1>Guided by Light, Driven by Care</h1>
                 <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
               </div>

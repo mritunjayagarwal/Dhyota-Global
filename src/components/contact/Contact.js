@@ -59,7 +59,8 @@ const Contact = () => {
           <div className="row">
             <div className="col-lg-8">
               <div className="contact-form-container">
-                <h2 className="section-title">Send us a Message</h2>
+                <h6 className="section-title text-start">Send us a Message</h6>
+                <p className="text-start" style={{ marginTop: "-20px" }}>Fill out the form below and we'll get back to you within 24 hours.</p>
                 <form onSubmit={handleSubmit} className="contact-form">
                   <div className="row">
                     <div className="col-md-6">
@@ -157,17 +158,17 @@ const Contact = () => {
                   <div className="form-actions">
                     <button
                       type="submit"
-                      className="btn btn-primary btn-lg"
+                      className="btn btn-primary btn-lg w-100 text-center"
                       disabled={isSubmitting}
+                      style={{ background: "linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)),linear-gradient(90deg, #FF6F00 0%, #FFD93B 100%)", color: "#fff", border: "none", borderRadius: "none", textAlign: "center" }}
                     >
                       {isSubmitting ? (
                         <>
-                          <i className="fas fa-spinner fa-spin"></i>
+                          {/* <i className="fas fa-spinner fa-spin"></i> */}
                           Sending...
                         </>
                       ) : (
                         <>
-                          <i className="fas fa-paper-plane"></i>
                           Send Message
                         </>
                       )}
@@ -238,9 +239,10 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="map-section">
+      <section className="map-section" style={{ background: "#fff" }}>
         <div className="container">
-          <h2 className="section-title text-center">Find Us</h2>
+          <h2 className="section-title text-center">General Enquiries</h2>
+          <p className="text-center">For general enquiries, please contact us using the form above.</p>
           <div className="map-container">
             <div className="map-placeholder">
               <img src="/assets/img/contact/enquiries-bg.png" alt="Interactive Map" className='img-fluid' />
