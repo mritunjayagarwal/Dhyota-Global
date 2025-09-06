@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Products.css';
 import { productsData } from './data';
 import Isotope from 'isotope-layout';
+import { SupportSection } from '../shared';
 
 const Products = () => {
   const carouselRef = useRef(null);
@@ -192,7 +193,6 @@ const Products = () => {
 
       {/* Awareness Section */}
       <section className='awareness'>
-        <h1 className='section-title text-center'>Health Awareness Initiatives</h1>
         <div className='container awareness-main mt-5'>
           <div 
             ref={campaignCarouselRef}
@@ -210,31 +210,47 @@ const Products = () => {
             
             <div className="carousel-inner awareness-carousel-inner">
               <div className="carousel-item awareness-carousel-item active">
-                <div className='text-center p-5'>
-                  <h6>Men's Health Awareness Campaign</h6>
-                  <p className='w-75 mx-auto mb-4'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+                <div className='row bg-white h-100'>
+                  <div className='col-lg-6 p-5'>
+                    <p></p>
+                    <h6 className='awareness-title mb-0'>Men's Health Awareness Campaign</h6>
+                    <p className='mb-4 awareness-description text-start'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
+                    <button className="main-btn btn-lg orange px-5 py-2">View All</button>
+                  </div>
+                  <div className='col-lg-6'>
+                    <img src="/assets/img/products/wellness/w-1.png" alt="Awareness 1" className='img-fluid' style={{ marginBottom: "50px" }} />
+                  </div>
                 </div>
               </div>
               
-              <div className="carousel-item awareness-carousel-item">
-                <div className='text-center p-5'>
-                <h6>Men's Health Awareness Campaign</h6>
-                  <p className='w-75 mx-auto mb-4'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+              <div className="carousel-item awareness-carousel-item active">
+                <div className='row bg-white h-100'>
+                  <div className='col-lg-6 p-5'>
+                    <p></p>
+                    <h6 className='awareness-title mb-0'>Men's Health Awareness Campaign</h6>
+                    <p className='mb-4 awareness-description text-start'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
+                    <button className="main-btn btn-lg orange px-5 py-2">View All</button>
+                  </div>
+                  <div className='col-lg-6'>
+                    <img src="/assets/img/products/wellness/w-1.png" alt="Awareness 1" className='img-fluid' />
+                  </div>
                 </div>
               </div>
-              
-              <div className="carousel-item awareness-carousel-item">
-                <div className='text-center p-5'>
-                <h6>Men's Health Awareness Campaign</h6>
-                  <p className='w-75 mx-auto mb-4'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+
+              <div className="carousel-item awareness-carousel-item active">
+                <div className='row bg-white h-100'>
+                  <div className='col-lg-6 p-5'>
+                    <p></p>
+                    <h6 className='awareness-title mb-0'>Men's Health Awareness Campaign</h6>
+                    <p className='mb-4 awareness-description text-start'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
+                    <button className="main-btn btn-lg orange px-5 py-2">View All</button>
+                  </div>
+                  <div className='col-lg-6'>
+                    <img src="/assets/img/products/wellness/w-1.png" alt="Awareness 1" className='img-fluid' />
+                  </div>
                 </div>
               </div>
             </div>
-            
-
           </div>
         </div>
       </section>
@@ -312,6 +328,72 @@ const Products = () => {
           </div>
         </div>
       </section>
+      
+      <section className='testimonials' style={{ padding: "50px 0" }}>
+        <div className='container'>
+          <h1 className='section-title text-center'>What Our Users Say</h1>
+          <p className='text-center mb-5'>Trusted by healthcare professionals and patients alike</p>
+          <div className='row mt-5'>
+            <div className='col-lg-4 col-md-6'>
+              <div className='testimonial-card'>
+                <div className='testimonial-card-body'>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p>"The educational resources and support provided have been invaluable in my health journey. Professional, comprehensive, and trustworthy."</p>
+                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start'>
+                    <img src="/assets/img/home/testimonials/t-1.png" alt="Testimonial 1" />
+                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
+                    <h3>Healthcare Professional</h3>
+                    <p>Partner Institution</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6'>
+              <div className='testimonial-card'>
+                <div className='testimonial-card-body'>
+                <p>⭐⭐⭐⭐⭐</p>
+                  <p>"The educational resources and support provided have been invaluable in my health journey. Professional, comprehensive, and trustworthy."</p>
+                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start'>
+                    <img src="/assets/img/home/testimonials/t-1.png" alt="Testimonial 1" />
+                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
+                    <h3>Healthcare Professional</h3>
+                    <p>Partner Institution</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6'>
+              <div className='testimonial-card'>
+                <div className='testimonial-card-body'>
+                  <h5 style={{ fontWeight: "900" }}>Trust & Compliance</h5>
+                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start'>
+                    <img src="/assets/img/home/testimonials/shield.png" alt="Testimonial 1" />
+                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
+                    <h3>DPDP Compliant</h3>
+                    </div>
+                  </div>
+                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start mt-2'>
+                    <img src="/assets/img/home/testimonials/flower.png" alt="Testimonial 1" />
+                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
+                    <h3>HDMP Certified</h3>
+                    </div>
+                  </div>
+                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start mt-2'>
+                    <img src="/assets/img/home/testimonials/secure.png" alt="Testimonial 1" />
+                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
+                    <h3>EHR Secure</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <SupportSection />
     </main>
   );
 };

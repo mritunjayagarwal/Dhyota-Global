@@ -188,9 +188,574 @@
   font-size: 0.8rem;
 }
 
+/* ===== MOBILE OPTIMIZATIONS ===== */
 @media screen and (max-width: 768px) {
+  /* Hero Section Mobile */
   .home-page .hero {
+    margin: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .home-page .carousel-item {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .home-page .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .home-page .carousel-item h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .home-page .carousel-item p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  
+  .home-page .carousel-item .text-container {
+    padding: 0 25px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .home-page .carousel-item .main-btn {
+    padding: 12px 24px !important;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    min-height: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .home-page .carousel-control-prev,
+  .home-page .carousel-control-next {
+    width: 8%;
+    opacity: 0.8;
+  }
+  
+  .home-page .carousel-control-prev-icon,
+  .home-page .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .home-page .carousel-indicators {
+    margin-bottom: 1rem;
+  }
+  
+  .home-page .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+  }
+  
+  .home-page .carousel-indicators button.active {
+    background-color: white;
+    border-color: white;
+  }
+  
+  /* Impact Section Mobile */
+  .home-page .impact {
+    padding: 40px 0 !important;
+  }
+  
+  .home-page .impact-card {
+    margin-bottom: 20px;
+  }
+  
+  .home-page .impact-card .card-body {
+    padding: 20px !important;
+  }
+  
+  .home-page .impact-card img {
+    max-height: 60px !important;
+  }
+  
+  .home-page .impact-card h3 {
+    font-size: 1.8rem;
+  }
+  
+  .home-page .impact-card p {
+    font-size: 14px !important;
+  }
+  
+  /* Awareness Section Mobile */
+  .home-page .awareness {
+    padding: 40px 0;
+  }
+  
+  .home-page .awareness-main {
     margin: 10px;
+    padding: 0 10px;
+    max-width: calc(100% - 20px);
+    overflow-x: hidden;
+  }
+  
+  .home-page .awareness-main .container {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home-page .awareness-carousel-item {
+    height: 250px;
+  }
+  
+  .home-page .awareness-carousel-item .text-center {
+    padding: 15px !important;
+  }
+  
+  .home-page .awareness-carousel-item h6 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .home-page .awareness-carousel-item p {
+    font-size: 0.9rem;
+    margin-bottom: 15px !important;
+    line-height: 1.4;
+  }
+  
+  .home-page .awareness-carousel-item .main-btn {
+    padding: 8px 16px !important;
+    font-size: 0.85rem;
+    min-height: 36px;
+  }
+  
+  .home-page .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+  
+  /* Override Bootstrap utility classes for awareness carousel */
+  .home-page .awareness-carousel-item .p-5 {
+    padding: 15px !important;
+  }
+  
+  .home-page .awareness-carousel-item .mb-4 {
+    margin-bottom: 15px !important;
+  }
+  
+  .home-page .awareness-carousel-item .w-75 {
+    width: 90% !important;
+  }
+  
+  /* Mission Section Mobile */
+  .home-page .mission {
+    padding: 40px 0 !important;
+  }
+  
+  .home-page .mission-card {
+    margin-bottom: 20px;
+  }
+  
+  .home-page .mission-card-body {
+    padding: 20px !important;
+  }
+  
+  .home-page .mission-card-body img {
+    max-height: 80px !important;
+  }
+  
+  .home-page .mission-card-body h3 {
+    font-size: 1.3rem;
+  }
+  
+  .home-page .mission-card-body p {
+    font-size: 0.9rem;
+  }
+  
+  /* Partners Section Mobile */
+  .home-page .partners {
+    padding: 40px 0 !important;
+  }
+  
+  .home-page .partners img {
+    max-height: 80px !important;
+    margin-bottom: 20px;
+  }
+  
+  /* Campaign Section Mobile */
+  .home-page .campaign {
+    padding: 40px 0;
+  }
+  
+  .home-page .campaign-main {
+    margin: 10px;
+    padding: 0 10px;
+    max-width: calc(100% - 20px);
+  }
+  
+  .home-page .campaign-main .text-center {
+    padding: 30px 20px !important;
+  }
+  
+  .home-page .campaign-main h1 {
+    font-size: 2rem;
+  }
+  
+  .home-page .campaign-main p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-page .campaign-main .main-btn {
+    padding: 12px 24px !important;
+    font-size: 0.9rem;
+  }
+  
+  /* Testimonials Section Mobile */
+  .home-page .testimonials {
+    padding: 40px 0 !important;
+  }
+  
+  .home-page .testimonial-card {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .home-page .testimonial-card-body {
+    padding: 20px !important;
+  }
+  
+  .home-page .testimonial-card-body p {
+    font-size: 0.9rem;
+  }
+  
+  .home-page .testimonial-card-body h5 {
+    font-size: 1.1rem;
+  }
+  
+  .home-page .testimonial-card-footer {
+    margin-top: 15px;
+  }
+  
+  .home-page .testimonial-card-footer img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .home-page .testimonial-card-footer h3 {
+    font-size: 0.9rem;
+  }
+  
+  .home-page .testimonial-card-footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Hero Section Small Mobile */
+  .home-page .hero {
+    margin: 3px;
+    border-radius: 12px;
+  }
+  
+  .home-page .carousel-item {
+    height: 45vh;
+    min-height: 350px;
+  }
+  
+  .home-page .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .home-page .carousel-item h1 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .home-page .carousel-item p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .home-page .carousel-item .text-container {
+    padding: 0 20px;
+    text-align: center;
+    width: 95%;
+    max-width: 400px;
+  }
+  
+  .home-page .carousel-item .main-btn {
+    padding: 10px 20px !important;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    min-height: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .home-page .carousel-control-prev,
+  .home-page .carousel-control-next {
+    width: 6%;
+    opacity: 0.7;
+  }
+  
+  .home-page .carousel-control-prev-icon,
+  .home-page .carousel-control-next-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .home-page .carousel-indicators {
+    margin-bottom: 0.8rem;
+  }
+  
+  .home-page .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Impact Section Small Mobile */
+  .home-page .impact {
+    padding: 30px 0 !important;
+  }
+  
+  .home-page .impact-card h3 {
+    font-size: 1.6rem;
+  }
+  
+  .home-page .impact-card p {
+    font-size: 13px !important;
+  }
+  
+  /* Awareness Section Small Mobile */
+  .home-page .awareness {
+    padding: 30px 0;
+  }
+  
+  .home-page .awareness-carousel-item {
+    height: 220px;
+  }
+  
+  .home-page .awareness-carousel-item .text-center {
+    padding: 12px !important;
+  }
+  
+  .home-page .awareness-carousel-item h6 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .home-page .awareness-carousel-item p {
+    font-size: 0.85rem;
+    margin-bottom: 12px !important;
+  }
+  
+  .home-page .awareness-carousel-item .main-btn {
+    padding: 6px 12px !important;
+    font-size: 0.8rem;
+    min-height: 32px;
+  }
+  
+  .home-page .carousel-indicators button {
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+  }
+  
+  /* Override Bootstrap utility classes for awareness carousel - Small Mobile */
+  .home-page .awareness-carousel-item .p-5 {
+    padding: 12px !important;
+  }
+  
+  .home-page .awareness-carousel-item .mb-4 {
+    margin-bottom: 12px !important;
+  }
+  
+  .home-page .awareness-carousel-item .w-75 {
+    width: 95% !important;
+  }
+  
+  /* Mission Section Small Mobile */
+  .home-page .mission {
+    padding: 30px 0 !important;
+  }
+  
+  .home-page .mission-card-body img {
+    max-height: 70px !important;
+  }
+  
+  .home-page .mission-card-body h3 {
+    font-size: 1.2rem;
+  }
+  
+  .home-page .mission-card-body p {
+    font-size: 0.85rem;
+  }
+  
+  /* Partners Section Small Mobile */
+  .home-page .partners {
+    padding: 30px 0 !important;
+  }
+  
+  .home-page .partners img {
+    max-height: 70px !important;
+  }
+  
+  /* Campaign Section Small Mobile */
+  .home-page .campaign {
+    padding: 30px 0;
+  }
+  
+  .home-page .campaign-main .text-center {
+    padding: 20px 15px !important;
+  }
+  
+  .home-page .campaign-main h1 {
+    font-size: 1.8rem;
+  }
+  
+  .home-page .campaign-main p {
+    font-size: 0.85rem;
+  }
+  
+  .home-page .campaign-main .main-btn {
+    padding: 10px 20px !important;
+    font-size: 0.85rem;
+  }
+  
+  /* Testimonials Section Small Mobile */
+  .home-page .testimonials {
+    padding: 30px 0 !important;
+  }
+  
+  .home-page .testimonial-card-body p {
+    font-size: 0.85rem;
+  }
+  
+  .home-page .testimonial-card-body h5 {
+    font-size: 1rem;
+  }
+  
+  .home-page .testimonial-card-footer img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .home-page .testimonial-card-footer h3 {
+    font-size: 0.85rem;
+  }
+  
+  .home-page .testimonial-card-footer p {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Hero Section Extra Small Mobile */
+  .home-page .hero {
+    margin: 2px;
+    border-radius: 10px;
+  }
+  
+  .home-page .carousel-item {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .home-page .carousel-item h1 {
+    font-size: 1.6rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  
+  .home-page .carousel-item p {
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+    line-height: 1.2;
+  }
+  
+  .home-page .carousel-item .text-container {
+    padding: 0 15px;
+    width: 98%;
+    max-width: 350px;
+  }
+  
+  .home-page .carousel-item .main-btn {
+    padding: 8px 16px !important;
+    font-size: 0.8rem;
+    border-radius: 18px;
+    min-height: 36px;
+  }
+  
+  .home-page .carousel-control-prev,
+  .home-page .carousel-control-next {
+    width: 5%;
+    opacity: 0.6;
+  }
+  
+  .home-page .carousel-control-prev-icon,
+  .home-page .carousel-control-next-icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .home-page .carousel-indicators {
+    margin-bottom: 0.6rem;
+  }
+  
+  .home-page .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+  }
+  
+  /* Awareness Section Extra Small Mobile */
+  .home-page .awareness-carousel-item .text-center {
+    padding: 10px !important;
+  }
+  
+  .home-page .awareness-carousel-item h6 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .home-page .awareness-carousel-item p {
+    font-size: 0.8rem;
+    margin-bottom: 10px !important;
+  }
+  
+  .home-page .awareness-carousel-item .main-btn {
+    padding: 6px 10px !important;
+    font-size: 0.75rem;
+    min-height: 30px;
+  }
+  
+  /* Override Bootstrap utility classes for awareness carousel - Extra Small Mobile */
+  .home-page .awareness-carousel-item .p-5 {
+    padding: 10px !important;
+  }
+  
+  .home-page .awareness-carousel-item .mb-4 {
+    margin-bottom: 10px !important;
+  }
+  
+  .home-page .awareness-carousel-item .w-75 {
+    width: 98% !important;
   }
 }
 

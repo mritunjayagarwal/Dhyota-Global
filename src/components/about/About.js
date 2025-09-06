@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './About.css';
 import { journeyData } from './data';
+import { CampaignSection } from '../shared';
 
 const About = () => {
   const carouselRef = useRef(null);
@@ -17,39 +18,48 @@ const About = () => {
 
   return (
     <main className="about-page">
-      <section className='hero'>
+      <section className='hero' style={{ marginTop: "10px" }}>
         <img src="/assets/img/about/hero-bg.png" alt="About Us" className='img-fluid' style = {{"width": "100%", height: "auto" }} />
       </section>
       <section>
         <div className='container text-center'>
           <h1 className='section-title'>Our Story</h1>
-          <p className='text-muted'>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
-          <p className='text-muted'>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
+          <p className='text-muted text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p className='text-muted text-start mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </section>
-      <section>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-lg-4'>
-              <div className='story-card'>
-                <img src="/assets/img/about/story-1.png" alt="Our Story" className='img-fluid' />
-                <h3>Our Story</h3>
-                <p>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
-              </div>
+      <section style={{ backgroundColor: "#F9FAFB" }}>
+        <div className="container">
+          <h1 className="section-title text-center">Our Core Values</h1>
+          <p className="text-center mb-5">Working alongside industry leaders to deliver comprehensive healthcare solutions and drive innovation across the medical technology landscape.</p>
+          <div className="row">
+            <div className='col-lg-3 mb-4'>
+                <div className='partner-card'>
+                    <img src="/assets/img/about/values/1.png" alt="Partner 1" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
             </div>
-            <div className='col-lg-4'>
-              <div className='story-card'>
-                <img src="/assets/img/about/story-1.png" alt="Our Story" className='img-fluid' />
-                <h3>Our Story</h3>
-                <p>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
-              </div>
+            <div className='col-lg-3 mb-4'>
+                <div className='partner-card'>
+                    <img src="/assets/img/about/values/1.png" alt="Partner 1" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
             </div>
-            <div className='col-lg-4'>
-              <div className='story-card'>
-                <img src="/assets/img/about/story-1.png" alt="Our Story" className='img-fluid' />
-                <h3>Our Story</h3>
-                <p>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
-              </div>
+            <div className='col-lg-3 mb-4'>
+                <div className='partner-card'>
+                    <img src="/assets/img/about/values/1.png" alt="Partner 1" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className='col-lg-3 mb-4'>
+                <div className='partner-card'>
+                    <img src="/assets/img/about/values/1.png" alt="Partner 1" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
             </div>
           </div>
         </div>
@@ -74,43 +84,47 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section style={{ backgroundColor: "#F9FAFB" }}>
         <div className='container'>
           <h1 className='section-title'>Our Team</h1>
           <div className='row'>
             <div className='col-lg-3'>
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team-1.png" alt="Our Team" className='img-fluid' />
-                <h4>Our Team</h4>
-                <p>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
+                <img src="/assets/img/about/team/team-member-1.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dr. John Doe</h4>
+                <h5 className='team-card-designation'>CEO & Founder</h5>
+                <p className='team-card-description'>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
               </div>
             </div>
             <div className='col-lg-3'>
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team-1.png" alt="Our Team" className='img-fluid' />
-                <h4>Our Team</h4>
-                <p>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
+                <img src="/assets/img/about/team/team-member-1.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dr. John Doe</h4>
+                <h5 className='team-card-designation'>CEO & Founder</h5>
+                <p className='team-card-description'>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
               </div>
             </div>
             <div className='col-lg-3'>
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team-1.png" alt="Our Team" className='img-fluid' />
-                <h4>Our Team</h4>
-                <p>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
+                <img src="/assets/img/about/team/team-member-1.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dr. John Doe</h4>
+                <h5 className='team-card-designation'>CEO & Founder</h5>
+                <p className='team-card-description'>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
               </div>
             </div>
             <div className='col-lg-3'>
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team-1.png" alt="Our Team" className='img-fluid' />
-                <h4>Our Team</h4>
-                <p>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
+                <img src="/assets/img/about/team/team-member-1.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dr. John Doe</h4>
+                <h5 className='team-card-designation'>CEO & Founder</h5>
+                <p className='team-card-description'>We are a team of passionate individuals who are dedicated to providing the best possible care to our patients.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
       
-      <section className='partners' style={{ padding: "50px 0" }}>
+      <section className='partners' style={{ padding: "50px 0", backgroundColor: "#fff" }}>
         <div className="container">
           <h1 className='section-title text-center'>Our Partners</h1>
           <div className="row g-4 justify-content-center mt-4">
@@ -130,44 +144,7 @@ const About = () => {
         </div>
       </section>
       
-      <section className='awareness'>
-        <h1 className='section-title text-center'>Health Awareness Initiatives</h1>
-        <div className='container awareness-main mt-5'>
-          <div id="campaignCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
-            <div className="carousel-indicators">
-              <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            
-            <div className="carousel-inner awareness-carousel-inner">
-              <div className="carousel-item awareness-carousel-item active">
-                <div className='text-center p-5'>
-                  <h6>Men's Health Awareness Campaign</h6>
-                  <p className='w-75 mx-auto mb-4'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
-                </div>
-              </div>
-              
-              <div className="carousel-item awareness-carousel-item">
-                <div className='text-center p-5'>
-                <h6>Men's Health Awareness Campaign</h6>
-                  <p className='w-75 mx-auto mb-4'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
-                </div>
-              </div>
-              
-              <div className="carousel-item awareness-carousel-item">
-                <div className='text-center p-5'>
-                <h6>Men's Health Awareness Campaign</h6>
-                  <p className='w-75 mx-auto mb-4'>Breaking barriers and promoting open conversations about men's intimate health. Join our awareness to normalize essential health screenings.</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CampaignSection />
     </main>
   );
 };

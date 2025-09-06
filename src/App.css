@@ -6,6 +6,16 @@
   margin: 0 auto;
 }
 
+.hero {
+  margin-top: 0px !important
+}
+
+.main-carousel-text h1 {
+  font-family: Montserrat !important;
+  font-weight: 900 !important;
+  font-style: ExtraBold !important;
+}
+
 /* Typography */
 p {
   color: #5A5A5A;
@@ -30,7 +40,7 @@ p {
 /* ===== COLOR VARIATIONS ===== */
 .orange {
   background: linear-gradient(0deg, #FF6F00, #FF6F00),
-              linear-gradient(98.94deg, #FF6F00 100%, #FFB347 100%);
+    linear-gradient(98.94deg, #FF6F00 100%, #FFB347 100%);
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

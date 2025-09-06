@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import './Home.css';
+import { Navigation, Footer, PartnersSection, CampaignSection } from '../shared';
 
 const Home = () => {
   const carouselRef = useRef(null);
+  const awarenessCarouselRef = useRef(null);
 
   useEffect(() => {
     // Initialize Bootstrap carousel when component mounts
@@ -18,24 +20,100 @@ const Home = () => {
               existingCarousel.dispose();
             }
             
-            // Create new carousel instance
+            // Create new carousel instance with mobile-optimized settings
             const carousel = new Carousel(carouselElement, {
-              interval: 3000,
+              interval: 5000, // Longer interval for better mobile experience
               ride: 'carousel',
               wrap: true,
-              touch: true
+              touch: true,
+              keyboard: true, // Enable keyboard navigation
+              pause: 'hover' // Pause on hover
             });
             
             // Start the carousel
             carousel.cycle();
             
-            console.log('Carousel initialized successfully');
+            // Add touch event listeners for better mobile experience
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            carouselElement.addEventListener('touchstart', (e) => {
+              touchStartX = e.changedTouches[0].screenX;
+              carousel.pause();
+            });
+            
+            carouselElement.addEventListener('touchend', (e) => {
+              touchEndX = e.changedTouches[0].screenX;
+              handleSwipe();
+              carousel.cycle();
+            });
+            
+            function handleSwipe() {
+              const swipeThreshold = 50;
+              const diff = touchStartX - touchEndX;
+              
+              if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                  carousel.next();
+                } else {
+                  carousel.prev();
+                }
+              }
+            }
+            
+            console.log('Carousel initialized successfully with mobile optimizations');
           } catch (error) {
             console.error('Error initializing carousel:', error);
           }
         }
       }).catch(error => {
         console.error('Error importing Bootstrap:', error);
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    // Initialize Awareness carousel when component mounts
+    if (awarenessCarouselRef.current) {
+      import('bootstrap').then(({ Carousel }) => {
+        const carouselElement = awarenessCarouselRef.current;
+        if (carouselElement) {
+          try {
+            // Destroy existing carousel if it exists
+            const existingCarousel = Carousel.getInstance(carouselElement);
+            if (existingCarousel) {
+              existingCarousel.dispose();
+            }
+            
+            // Create new carousel instance with mobile-optimized settings
+            const carousel = new Carousel(carouselElement, {
+              interval: 3500, // Slightly different interval for awareness carousel
+              ride: 'carousel',
+              wrap: true,
+              touch: true,
+              keyboard: true,
+              pause: 'hover'
+            });
+            
+            // Start the carousel
+            carousel.cycle();
+            
+            // Add touch event listeners for better mobile experience
+            carouselElement.addEventListener('touchstart', () => {
+              carousel.pause();
+            });
+            
+            carouselElement.addEventListener('touchend', () => {
+              carousel.cycle();
+            });
+            
+            console.log('Awareness carousel initialized successfully with mobile optimizations');
+          } catch (error) {
+            console.error('Error initializing awareness carousel:', error);
+          }
+        }
+      }).catch(error => {
+        console.error('Error importing Bootstrap for awareness carousel:', error);
       });
     }
   }, []);
@@ -171,7 +249,14 @@ const Home = () => {
       <section className='awareness'>
         <h1 className='section-title text-center'>Health Awareness Initiatives</h1>
         <div className='container awareness-main mt-5'>
-          <div id="campaignCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+          <div 
+            ref={awarenessCarouselRef}
+            id="campaignCarousel" 
+            className="carousel slide" 
+            data-bs-ride="carousel" 
+            data-bs-interval="3500" 
+            data-bs-pause="hover"
+          >
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -251,35 +336,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='partners' style={{ padding: "50px 0" }}>
-        <div className="container">
-          <h1 className='section-title text-center'>Our Partners</h1>
-          <div className="row g-4 justify-content-center mt-4">
-            <div className="col-lg-2 col-md-3 col-6">
-              <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" style={{ maxHeight: "100px" }} />
-            </div>
-            <div className="col-lg-2 col-md-3 col-6">
-              <img src="/assets/img/home/partners/p-2.png" alt="Partner 2" className="img-fluid" style={{ maxHeight: "100px" }} />
-            </div>
-            <div className="col-lg-2 col-md-3 col-6">
-              <img src="/assets/img/home/partners/p-3.png" alt="Partner 3" className="img-fluid" style={{ maxHeight: "100px" }} />
-            </div>
-            <div className="col-lg-2 col-md-3 col-6">
-              <img src="/assets/img/home/partners/p-4.png" alt="Partner 4" className="img-fluid" style={{ maxHeight: "100px" }} />
-            </div>
-          </div>
-        </div>
-      </section>
+      <PartnersSection />
 
-      <section className='campaign'>
-        <div className='container bg-white campaign-main'>
-          <div className='text-center p-5'>
-            <h1 className='section-title'>Men's Health Awareness Campaign</h1>
-            <p className='w-75 mx-auto mb-4'>Breaking barriers and promoting open conversations about men's intimate health. Join our mission to normalize essential health screenings.</p>
-            <button className="main-btn btn-lg px-5 py-3 orange">View All</button>
-          </div>
-        </div>
-      </section>
+      <CampaignSection />
 
       <section className='testimonials' style={{ padding: "50px 0" }}>
         <div className='container'>

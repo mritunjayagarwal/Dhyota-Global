@@ -1,55 +1,103 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const navbar = document.querySelector('.navbar');
+      if (navbar && !navbar.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
+  // Close menu when clicking on nav links
+  const handleNavLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
+  // Toggle menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-transparent p-0">
+    <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          <img src = "/android-chrome-192x192.png" style={{ width: "40px", height: "40px" }} alt="Dhyota Logo" /> Dhyota <span style={{ color: "#FF6F00", "marginLeft": "-2px"}}>Global</span>
-        </a>
-        <button 
-          className="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" 
-          aria-expanded="false" 
+        {/* Brand */}
+        <Link className="navbar-brand" to="/" onClick={handleNavLinkClick}>
+          <img 
+            src="/android-chrome-192x192.png" 
+            style={{ width: "40px", height: "40px" }} 
+            alt="Dhyota Logo" 
+          /> 
+          Dhyota <span style={{ color: "#FF6F00", marginLeft: "-2px" }}>Global</span>
+        </Link>
+
+        {/* Toggle Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        {/* Navigation Menu */}
+        <div className={`navbar-collapse ${isMenuOpen ? 'show' : ''}`}>
           <ul className="navbar-nav me-auto ms-5 mid-nav">
-            <li className="nav-item active">
-              <Link className="nav-link" to="/">
-                Home <span className="sr-only">(current)</span>
+            <li className="nav-item">
+              <Link className="nav-link" to="/" onClick={handleNavLinkClick}>
+                Home
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">Who We Are</a>
+              <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>
+                Who We Are
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Brands</a>
+              <Link className="nav-link" to="/partners" onClick={handleNavLinkClick}>
+                Partners
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/partners">Partners</Link>
+              <Link className="nav-link" to="/campaign" onClick={handleNavLinkClick}>
+                Campaign
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/campaign">Campaign</Link>
+              <Link className="nav-link" to="/products" onClick={handleNavLinkClick}>
+                Products
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Products</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/contact">Contact Us</a>
+              <Link className="nav-link" to="/contact" onClick={handleNavLinkClick}>
+                Contact Us
+              </Link>
             </li>
           </ul>
-          <ul className="me-auto navbar-nav">
+          
+          {/* Right Side Button */}
+          <ul className="navbar-nav">
             <li className="nav-item">
-              <button className="main-btn orange" type="button">Discover</button>
+              <button className="main-btn orange" type="button">
+                Discover
+              </button>
             </li>
           </ul>
         </div>

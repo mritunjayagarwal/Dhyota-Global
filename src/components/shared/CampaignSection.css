@@ -1,0 +1,102 @@
+/* ===== CAMPAIGN SECTION ===== */
+.campaign-section {
+  padding: 80px 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+linear-gradient(90deg, #FFD93B 0%, #FFB347 100%);
+
+}
+
+.campaign-section .campaign-main {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.campaign-section .campaign-main:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.campaign-section .section-title {
+  font-size: 2.5rem !important;
+  font-weight: 900 !important;
+  color: #333 !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.campaign-section p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.campaign-section .main-btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 15px 40px !important;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-section .main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet Styles */
+@media (max-width: 991.98px) {
+  .campaign-section {
+    padding: 60px 0;
+  }
+  
+  .campaign-section .section-title {
+    font-size: 2rem !important;
+  }
+  
+  .campaign-section p {
+    font-size: 1rem;
+    width: 90% !important;
+  }
+  
+  .campaign-section .main-btn {
+    font-size: 1rem;
+    padding: 12px 35px !important;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .campaign-section {
+    padding: 50px 0;
+  }
+  
+  .campaign-section .campaign-main {
+    margin: 0 10px;
+  }
+  
+  .campaign-section .text-center {
+    padding: 2rem !important;
+  }
+  
+  .campaign-section .section-title {
+    font-size: 1.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .campaign-section p {
+    font-size: 0.95rem;
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+  }
+  
+  .campaign-section .main-btn {
+    font-size: 0.95rem;
+    padding: 10px 30px !important;
+  }
+}

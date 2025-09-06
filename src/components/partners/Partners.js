@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Partners.css';
+import { PartnersSection, SupportSection } from '../shared';
 
 const Partners = () => {
   const carouselRef = useRef(null);
@@ -16,7 +17,7 @@ const Partners = () => {
 
   return (
     <main className="partners-page">
-      <section className='hero'>
+      <section className='hero' style={{ marginTop: "10px" }}>
         <div 
           ref={carouselRef}
           id="partnersCarousel" 
@@ -40,7 +41,7 @@ const Partners = () => {
                               linear-gradient(135deg, #FFD93B 0%, #FFB347 50%, #FF6F00 100%)`,
                 }}
               ></div>
-              <div className="text-container">
+              <div className="text-container main-carousel-text">
                 <h1>Guided by Light, Driven by Care</h1>
                 <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
               </div>
@@ -91,13 +92,97 @@ const Partners = () => {
         <div className="container">
           <h1 className="section-title text-center">Strategic Partner Network</h1>
           <p className="text-center mb-5">Working alongside industry leaders to deliver comprehensive healthcare solutions and drive innovation across the medical technology landscape.</p>
-          <div className="row g-4 justify-content-center mt-4">
-            <div className="col-lg-2 col-md-3 col-6">
-              <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" style={{ maxHeight: "100px" }} />
+          <div className="row">
+            <div className='col-lg-3 mb-4'>
+                <div className='partner-card text-center'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className='col-lg-3 mb-4'>
+                <div className='partner-card text-center'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className='col-lg-3 mb-4'>
+                <div className='partner-card text-center'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className='col-lg-3 mb-4'>
+                <div className='partner-card text-center'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className='col-lg-3'>
+                <div className='partner-card text-center'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className='col-lg-3'>
+                <div className='partner-card text-center'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className='col-lg-3'>
+                <div className='partner-card text-center'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className='col-lg-3'>
+                <div className='partner-card text-center'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet</p>
+                </div>
             </div>
           </div>
         </div>
       </section>
+      <PartnersSection />
+      <section className="collaborative-excellence">
+        <div className="container">
+          <h1 className="section-title text-center">Collaborative Excellence</h1>
+          <p className="text-center mb-5">Our partnerships create synergies that amplify impact, drive innovation, and deliver superior outcomes for healthcare providers and patients.</p>
+          <div className="row"  >
+            <div className='col-lg-4'>
+                <div className='partner-card'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div className='col-lg-4'>
+                <div className='partner-card'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div className='col-lg-4'>
+                <div className='partner-card'>
+                    <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" />
+                    <h3 className='partner-card-title'>Partner 1</h3>
+                    <p className='partner-card-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <SupportSection />
     </main>
   );
 };

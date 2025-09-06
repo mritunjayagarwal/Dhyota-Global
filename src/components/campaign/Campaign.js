@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { campaignData } from './data';
 import './Campaign.css';
+import { SupportSection } from '../shared';
 
 const Campaign = () => {
   const carouselRef = useRef(null);
@@ -267,14 +268,7 @@ const Campaign = () => {
           </div>
         </div>
       </section>
-      <section className='support'>
-        <div className="container text-center">
-          <h1 className='section-title text-center text-white'>Support Men's Wellness Initiatives</h1>
-          <p className='text-center mb-5 text-white mb-0'>Join thousands of advocates, healthcare professionals, and community members in creating a healthier future for men everywhere.</p>
-          <button className="main-btn white px-5 py-3 m-0">Join Our Mission</button>
-        </div>
-
-      </section>
+      <SupportSection />
     </main>
   );
 };

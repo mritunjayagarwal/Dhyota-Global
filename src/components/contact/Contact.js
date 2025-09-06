@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import { contactData } from './data';
+import { SupportSection } from '../shared';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -209,32 +210,18 @@ const Contact = () => {
             <div className='testimonial-card mt-3'>
                 <div className='testimonial-card-body'>
                   <h5 style={{ fontWeight: "900" }}>Support Hours</h5>
-                  <div className='testimonial-card-footer'>
-                    <div style={{ paddingTop: "10px" }}>
-                      <div className="row">
-                        <div className="col-lg-6">
-                          <h6>Monday - Friday</h6>
-                        </div>
-                        <div className="col-lg-6 text-end">
-                          <h6>Monday - Friday</h6>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-lg-6">
-                          <h6>Monday - Friday</h6>
-                        </div>
-                        <div className="col-lg-6 text-end">
-                          <h6>Monday - Friday</h6>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-lg-6">
-                          <h6>Monday - Friday</h6>
-                        </div>
-                        <div className="col-lg-6 text-end">
-                          <h6>Monday - Friday</h6>
-                        </div>
-                      </div>
+                  <div className='support-hours-container'>
+                    <div className='support-hours-row'>
+                      <span className='support-hours-day'>Monday - Friday</span>
+                      <span className='support-hours-time'>9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div className='support-hours-row'>
+                      <span className='support-hours-day'>Saturday</span>
+                      <span className='support-hours-time'>10:00 AM - 4:00 PM</span>
+                    </div>
+                    <div className='support-hours-row'>
+                      <span className='support-hours-day'>Sunday</span>
+                      <span className='support-hours-time'>Closed</span>
                     </div>
                   </div>
                 </div>
@@ -286,6 +273,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <SupportSection />
     </main>
   );
 };
