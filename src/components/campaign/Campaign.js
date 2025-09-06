@@ -135,7 +135,7 @@ const Campaign = () => {
                   <div className="campaign-card-content">
                     <h4 className="campaign-card-title">{campaign.title}</h4>
                     <p className="campaign-card-description">{campaign.description}</p>
-                    <button className="btn btn-outline-primary">Support Campaign</button>
+                    <button className="btn yellow">Support Campaign</button>
                   </div>
                 </div>
               </div>
@@ -231,7 +231,7 @@ const Campaign = () => {
                   <div className="campaign-card-content">
                     <h4 className="campaign-card-title">{campaign.title}</h4>
                     <p className="campaign-card-description">{campaign.description}</p>
-                    <button className="btn btn-outline-primary">Support Campaign</button>
+                    <button className="btn yellow">Support Campaign</button>
                   </div>
                 </div>
               </div>
@@ -245,7 +245,7 @@ const Campaign = () => {
           <p className='text-center mb-5'>Join us in making a difference in men's health awareness</p>
           <div className="row g-4">
             {campaignData.getInvolved.map((item) => (
-              <div key={item.id} className="col-lg-3 col-md-6">
+              <div key={item.id} className="col-lg-4 col-md-6">
                 <div className="impact-card h-100">
                   <div className="card-body text-center p-4">
                     <img

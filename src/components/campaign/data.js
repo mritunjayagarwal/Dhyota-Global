@@ -140,12 +140,6 @@ export const campaignData = {
       title: "Partner",
       description: "Partner with us to create impactful health awareness programs.",
       icon: "/assets/img/home/impacts/i-3.png"
-    },
-    {
-      id: 4,
-      title: "Share",
-      description: "Help us reach more people by sharing our campaigns on social media.",
-      icon: "/assets/img/home/impacts/i-4.png"
     }
   ]
 };

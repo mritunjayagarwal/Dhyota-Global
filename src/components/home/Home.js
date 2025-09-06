@@ -1,10 +1,81 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
 import { Navigation, Footer, PartnersSection, CampaignSection } from '../shared';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
   const carouselRef = useRef(null);
   const awarenessCarouselRef = useRef(null);
+  const impactSectionRef = useRef(null);
+  
+  // Counter states
+  const [customersCount, setCustomersCount] = useState(0);
+  const [clinicsCount, setClinicsCount] = useState(0);
+  const [satisfactionCount, setSatisfactionCount] = useState(0);
+  const [countriesCount, setCountriesCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  // Counting animation function
+  const animateCount = (targetValue, setter, duration = 2000) => {
+    const startValue = 0;
+    const increment = targetValue / (duration / 16); // 60fps
+    let currentValue = startValue;
+    
+    const timer = setInterval(() => {
+      currentValue += increment;
+      if (currentValue >= targetValue) {
+        currentValue = targetValue;
+        clearInterval(timer);
+      }
+      
+      if (targetValue === 4.9) {
+        setter(parseFloat(currentValue.toFixed(1)));
+      } else {
+        setter(Math.floor(currentValue));
+      }
+    }, 16);
+  };
+
+  // Intersection Observer for counting animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            // Start counting animations
+            animateCount(10000, setCustomersCount);
+            animateCount(50, setClinicsCount);
+            animateCount(4.9, setSatisfactionCount);
+            animateCount(25, setCountriesCount);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (impactSectionRef.current) {
+      observer.observe(impactSectionRef.current);
+    }
+
+    return () => {
+      if (impactSectionRef.current) {
+        observer.unobserve(impactSectionRef.current);
+      }
+    };
+  }, [hasAnimated]);
+
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+      offset: 100
+    });
+  }, []);
 
   useEffect(() => {
     // Initialize Bootstrap carousel when component mounts
@@ -173,12 +244,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='impact' style={{ padding: "50px 0" }}>
+      <section className='impact' style={{ padding: "50px 0" }} ref={impactSectionRef}>
         <div className="container">
-          <h1 className='section-title text-center'>Our Impact</h1>
-          <p className='text-center mb-5'>Trusted by healthcare professionals and patients worldwide</p>
+          <h1 className='section-title text-center' data-aos="fade-down">Our Impact</h1>
+          <p className='text-center mb-5' data-aos="fade-up" data-aos-delay="100">Trusted by healthcare professionals and patients worldwide</p>
           <div className="row g-4">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div className="impact-card h-100">
                 <div className="card-body text-center p-4">
                   <img
@@ -187,14 +258,14 @@ const Home = () => {
                     alt="Customers Served"
                     style={{ maxHeight: "80px" }}
                   />
-                  <h3 className="h5 text-capitalize mb-3">10,000+</h3>
+                  <h3 className="h5 text-capitalize mb-3">{customersCount.toLocaleString()}+</h3>
                   <p className="text-muted" style={{ fontSize: "16px" }}>
                     Customers Served
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div className="impact-card h-100">
                 <div className="card-body text-center p-4">
                   <img
@@ -203,14 +274,14 @@ const Home = () => {
                     alt="Partner Clinics"
                     style={{ maxHeight: "80px" }}
                   />
-                  <h3 className="h5 text-capitalize mb-3">50+</h3>
+                  <h3 className="h5 text-capitalize mb-3">{clinicsCount}+</h3>
                   <p className="text-muted" style={{ fontSize: "16px" }}>
                     Partner Clinics
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div className="impact-card h-100">
                 <div className="card-body text-center p-4">
                   <img
@@ -219,14 +290,14 @@ const Home = () => {
                     alt="Patient Satisfaction"
                     style={{ maxHeight: "80px" }}
                   />
-                  <h3 className="h5 text-capitalize mb-3">4.9/5</h3>
+                  <h3 className="h5 text-capitalize mb-3">{satisfactionCount}/5</h3>
                   <p className="text-muted" style={{ fontSize: "16px" }}>
                     Patient Satisfaction
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
               <div className="impact-card h-100">
                 <div className="card-body text-center p-4">
                   <img
@@ -235,7 +306,7 @@ const Home = () => {
                     alt="Countries Served"
                     style={{ maxHeight: "80px" }}
                   />
-                  <h3 className="h5 text-capitalize mb-3">25</h3>
+                  <h3 className="h5 text-capitalize mb-3">{countriesCount}</h3>
                   <p className="text-muted" style={{ fontSize: "16px" }}>
                     Countries Served
                   </p>
@@ -247,8 +318,8 @@ const Home = () => {
       </section>
 
       <section className='awareness'>
-        <h1 className='section-title text-center'>Health Awareness Initiatives</h1>
-        <div className='container awareness-main mt-5'>
+        <h1 className='section-title text-center' data-aos="fade-down">Health Awareness Initiatives</h1>
+        <div className='container awareness-main mt-5' data-aos="fade-up" data-aos-delay="200">
           <div 
             ref={awarenessCarouselRef}
             id="campaignCarousel" 
@@ -294,38 +365,38 @@ const Home = () => {
 
       <section className='mission' style={{ padding: "50px 0" }}>
         <div className="container">
-          <h1 className='section-title text-center'>Our Mission</h1>
-          <p className='text-center mb-5'>Dedicated to advancing men's intimate and geriatric wellness through expertise, empathy, and innovation.</p>
+          <h1 className='section-title text-center' data-aos="fade-down">Our Mission</h1>
+          <p className='text-center mb-5' data-aos="fade-up" data-aos-delay="100">Dedicated to advancing men's intimate and geriatric wellness through expertise, empathy, and innovation.</p>
           <div className="row g-4">
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div className="mission-card h-100">
                 <div className="mission-card-body text-center p-4">
-                  <div className='mb-3'>
+                  <div className='mb-3' data-aos="zoom-in" data-aos-delay="300">
                     <img src="/assets/img/home/mission/m-1.png" alt="Mission Icon 1" className="img-fluid" style={{ maxHeight: "100px" }} />
                   </div>
-                  <h3 className="h5 mb-3">Expert Care</h3>
+                  <h3 className="h5 mb-3" data-aos="fade-up" data-aos-delay="400">Expert Care</h3>
                   <p className="text-muted">Professional healthcare services with clinical excellence</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div className="mission-card h-100">
                 <div className="mission-card-body text-center p-4">
-                  <div className='mb-3'>
+                  <div className='mb-3' data-aos="zoom-in" data-aos-delay="400">
                     <img src="/assets/img/home/mission/m-1.png" alt="Mission Icon 2" className="img-fluid" style={{ maxHeight: "100px" }} />
                   </div>
-                  <h3 className="h5 mb-3">Privacy First</h3>
+                  <h3 className="h5 mb-3" data-aos="fade-up" data-aos-delay="500">Privacy First</h3>
                   <p className="text-muted">Complete confidentiality in all our services</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
               <div className="mission-card h-100">
                 <div className="mission-card-body text-center p-4">
-                  <div className='mb-3'>
+                  <div className='mb-3' data-aos="zoom-in" data-aos-delay="500">
                     <img src="/assets/img/home/mission/m-1.png" alt="Mission Icon 3" className="img-fluid" style={{ maxHeight: "100px" }} />
                   </div>
-                  <h3 className="h5 mb-3">Innovation</h3>
+                  <h3 className="h5 mb-3" data-aos="fade-up" data-aos-delay="600">Innovation</h3>
                   <p className="text-muted">Cutting-edge diagnostics and treatment approaches</p>
                 </div>
               </div>
@@ -340,9 +411,9 @@ const Home = () => {
 
       <section className='testimonials' style={{ padding: "50px 0" }}>
         <div className='container'>
-          <h1 className='section-title text-center'>Testimonials & Trust</h1>
+          <h1 className='section-title text-center' data-aos="fade-down">Testimonials & Trust</h1>
           <div className='row mt-5'>
-            <div className='col-lg-4 col-md-6 mb-3'>
+            <div className='col-lg-4 col-md-6 mb-3' data-aos="fade-up" data-aos-delay="100">
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
                   <p>"The educational resources and support provided have been invaluable in my health journey. Professional, comprehensive, and trustworthy."</p>
@@ -356,7 +427,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 mb-3'>
+            <div className='col-lg-4 col-md-6 mb-3' data-aos="fade-up" data-aos-delay="200">
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
                   <p>"The educational resources and support provided have been invaluable in my health journey. Professional, comprehensive, and trustworthy."</p>
@@ -370,7 +441,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 mb-3'>
+            <div className='col-lg-4 col-md-6 mb-3' data-aos="fade-up" data-aos-delay="300">
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
                   <h5 style={{ fontWeight: "900" }}>Trust & Compliance</h5>
