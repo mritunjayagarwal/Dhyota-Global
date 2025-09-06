@@ -87,6 +87,17 @@ const Partners = () => {
           </button>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <h1 className="section-title text-center">Strategic Partner Network</h1>
+          <p className="text-center mb-5">Working alongside industry leaders to deliver comprehensive healthcare solutions and drive innovation across the medical technology landscape.</p>
+          <div className="row g-4 justify-content-center mt-4">
+            <div className="col-lg-2 col-md-3 col-6">
+              <img src="/assets/img/home/partners/p-1.png" alt="Partner 1" className="img-fluid" style={{ maxHeight: "100px" }} />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

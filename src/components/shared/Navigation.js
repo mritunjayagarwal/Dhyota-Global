@@ -29,7 +29,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Who We Are</a>
+              <a className="nav-link" href="/about">Who We Are</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Brands</a>
@@ -44,7 +44,7 @@ const Navigation = () => {
               <a className="nav-link" href="#">Products</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Careers</a>
+              <a className="nav-link" href="/contact">Contact Us</a>
             </li>
           </ul>
           <ul className="me-auto navbar-nav">

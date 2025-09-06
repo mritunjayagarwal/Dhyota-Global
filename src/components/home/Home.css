@@ -188,3 +188,9 @@
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 768px) {
+  .home-page .hero {
+    margin: 10px;
+  }
+}
+
