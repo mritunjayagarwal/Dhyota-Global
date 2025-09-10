@@ -90,8 +90,93 @@
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3ccircle cx='8' cy='8' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3ccircle cx='15' cy='8' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3ccircle cx='22' cy='8' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3ccircle cx='8' cy='15' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3ccircle cx='15' cy='15' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3ccircle cx='22' cy='15' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3ccircle cx='8' cy='22' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3ccircle cx='15' cy='22' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3ccircle cx='22' cy='22' r='2' fill='rgba%2833, 37, 41, 0.75%29'/%3e%3c/svg%3e");
   transition: transform 0.3s ease;
+}
+
+/* ===== CUSTOM HAMBURGER MENU ===== */
+.hamburger {
+  border: none;
+  padding: 0.5rem;
+  background: transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.hamburger:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.hamburger:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
+}
+
+.hamburger-dots {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center;
+  will-change: transform;
+}
+
+/* Individual colors for each dot */
+.dot:nth-child(1) {
+  background-color: #000000; /* Black */
+  transition-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  background-color: #000000; /* Black */
+  transition-delay: 0.05s;
+}
+
+.dot:nth-child(3) {
+  background-color: #000000; /* Black */
+  transition-delay: 0.1s;
+}
+
+/* When menu is open, arrange dots horizontally */
+.hamburger.is-active .hamburger-dots {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Smooth rotation and scale effects for each dot during transition */
+.hamburger.is-active .dot:nth-child(1) {
+  transform: rotate(45deg) scale(1.05);
+  transition-delay: 0s;
+}
+
+.hamburger.is-active .dot:nth-child(2) {
+  transform: rotate(0deg) scale(1.1);
+  transition-delay: 0.05s;
+}
+
+.hamburger.is-active .dot:nth-child(3) {
+  transform: rotate(-45deg) scale(1.05);
+  transition-delay: 0.1s;
 }
 
 /* ===== COLLAPSE MENU ===== */
