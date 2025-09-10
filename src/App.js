@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Navigation, Footer } from './components/shared';
+import { Navigation, Footer, WhatsAppButton } from './components/shared';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact';
@@ -24,6 +24,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <WhatsAppButton phoneNumber="+1234567890" />
     </div>
   );
 }
