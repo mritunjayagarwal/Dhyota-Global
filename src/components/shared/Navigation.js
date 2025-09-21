@@ -66,29 +66,29 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>
+              <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>
                 Who We Are
-              </Link>
+              </span>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/partners" onClick={handleNavLinkClick}>
+              <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>
                 Partners
-              </Link>
+              </span>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/campaign" onClick={handleNavLinkClick}>
+              <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>
                 Campaign
-              </Link>
+              </span>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/products" onClick={handleNavLinkClick}>
+              <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>
                 Products
-              </Link>
+              </span>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact" onClick={handleNavLinkClick}>
+              <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>
                 Contact Us
-              </Link>
+              </span>
             </li>
           </ul>
           

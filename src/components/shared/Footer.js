@@ -8,21 +8,33 @@ const Footer = () => {
         <div className="footer-wrapper">
           <div className="row">
             <div className="col-lg-5">
-                             <img src="/assets/img/shared/logo.png" className="img-fluid" alt="Dhyota Logo" />
-              <div className="footer-desc">
-                <p>Empowering men's health with innovation and empathy</p>
+              <div className="footer-brand">
+                <div className="d-flex align-items-start mb-2">
+                  <img 
+                    src="/android-chrome-192x192.png" 
+                    className="img-fluid me-3" 
+                    alt="Dhyota Logo" 
+                  />
+                  <div className="brand-content">
+                    <span className="brand-text">
+                      Dhyota <span style={{ color: "#FF6F00" }}>Global</span>
+                    </span>
+                    <p className="tagline">Empowering Men's Health Globally</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-lg-7">
               <div className="row">
                 <div className="col-lg-4">
-                  <h5 className="footer-list-head">Links</h5>
+                  <h5 className="footer-list-head">Quick Links</h5>
 
                   <ul className="footer-list">
                     <li><a href="/">Home</a></li>
-                    <li><a href='/download'>Downloads</a></li>
-                    <li><a href='/referral'>Referrals</a></li>
-                    <li><a href='/fees'>Fees</a></li>
+                    <li><a href='#'>About</a></li>
+                    <li><a href='#'>Pharma</a></li>
+                    <li><a href='#'>Devices</a></li>
+                    <li><a href='#'>Contact</a></li>
                   </ul>
                 </div>
                 <div className="col-lg-4">

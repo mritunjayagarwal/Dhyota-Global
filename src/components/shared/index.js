@@ -4,3 +4,4 @@ export { default as PartnersSection } from './PartnersSection';
 export { default as SupportSection } from './SupportSection';
 export { default as CampaignSection } from './CampaignSection';
 export { default as WhatsAppButton } from './WhatsAppButton';
+export { default as NotFound } from './NotFound';
