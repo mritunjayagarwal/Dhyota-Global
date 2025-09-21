@@ -39,22 +39,26 @@ const Navigation = () => {
         {/* Brand */}
         <Link className="navbar-brand" to="/" onClick={handleNavLinkClick}>
           <img 
-            src="/android-chrome-192x192.png" 
-            style={{ width: "40px", height: "40px" }} 
-            alt="Dhyota Logo" 
+            src="/dhyota-logo.jpeg" 
+            style={{ width: "200px", height: "auto" }} 
+            alt="Dhyota Global Healthcare Solutions Logo" 
           /> 
-          Dhyota <span style={{ color: "#FF6F00", marginLeft: "-2px" }}>Global</span>
         </Link>
 
         {/* Toggle Button */}
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler hamburger ${isMenuOpen ? 'is-active' : ''}`}
           type="button"
           onClick={toggleMenu}
+          style={{border: "none"}}
           aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <div className="hamburger-dots">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
         </button>
 
         {/* Navigation Menu */}

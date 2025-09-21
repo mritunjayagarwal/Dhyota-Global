@@ -28,4 +28,3 @@ const WhatsAppButton = ({ phoneNumber = "+1234567890" }) => {
 };
 
 export default WhatsAppButton;
-
