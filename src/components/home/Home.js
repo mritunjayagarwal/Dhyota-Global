@@ -208,7 +208,7 @@ const Home = () => {
 
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="d-block w-100 hero-bg" src="/assets/img/home/hero-bg-3.jpeg" alt="First slide" />
+              <img className="d-block w-100 hero-bg" src="/assets/img/home/her-3.png" alt="First slide" />
               <div className="text-container">
                 <h1>"Guided by Light, Driven by Care"</h1>
                 <p>From pharma to devices, from innovation to care — Dhyota is building a healthier
@@ -217,7 +217,7 @@ const Home = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100 hero-bg" src="/assets/img/home/hero-bg-2.jpg" alt="Second slide" />
+              <img className="d-block w-100 hero-bg" src="/assets/img/home/hero-bg-4.jpeg" alt="Second slide" />
               <div className="text-container">
                 <h1>"Innovation with Purpose, Care without Boundaries"</h1>
                 <p>From advanced pharma to cutting-edge medtech, Dhyota is shaping a world where men’s health drives stronger families and thriving communities.</p>
@@ -225,7 +225,7 @@ const Home = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100 hero-bg" src="/assets/img/home/hero-bg-1.webp" alt="Third slide" />
+              <img className="d-block w-100 hero-bg" src="/assets/img/home/hero-bg-2.jpg" alt="Third slide" />
               <div className="text-container">
                 <h1>"Empowering Health, Inspiring Tomorrow"</h1>
                 <p>Through pharma, devices, and medical technology, Dhyota is redefining care — creating a sustainable ecosystem for healthier lives everywhere.</p>
@@ -399,7 +399,7 @@ const Home = () => {
               <div className="mission-card h-100">
                 <div className="mission-card-body text-center p-4">
                   <div className='mb-3' data-aos="zoom-in" data-aos-delay="400">
-                    <img src="/assets/img/home/mission/m-1.png" alt="Mission Icon 2" className="img-fluid" style={{ maxHeight: "100px" }} />
+                    <img src="/assets/img/home/mission/m-2.png" alt="Mission Icon 2" className="img-fluid" style={{ maxHeight: "100px" }} />
                   </div>
                   <h3 className="h5 mb-3" data-aos="fade-up" data-aos-delay="500">Global Wellness</h3>
                   <p className="text-muted">guiding light for men’s health globally, while building a robust healthcare
@@ -411,7 +411,7 @@ const Home = () => {
               <div className="mission-card h-100">
                 <div className="mission-card-body text-center p-4">
                   <div className='mb-3' data-aos="zoom-in" data-aos-delay="500">
-                    <img src="/assets/img/home/mission/m-1.png" alt="Mission Icon 3" className="img-fluid" style={{ maxHeight: "100px" }} />
+                    <img src="/assets/img/home/mission/m-3.png" alt="Mission Icon 3" className="img-fluid" style={{ maxHeight: "100px" }} />
                   </div>
                   <h3 className="h5 mb-3" data-aos="fade-up" data-aos-delay="600">Innovation</h3>
                   <p className="text-muted">Driving transformative solutions in men’s health worldwide by fostering a robust healthcare ecosystem across pharmaceuticals, medical devices, disposables, and cutting-edge medical technologies.</p>
@@ -459,26 +459,15 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 mb-3' data-aos="fade-up" data-aos-delay="300">
+            <div className='col-lg-4 col-md-6 mb-3' data-aos="fade-up" data-aos-delay="200">
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
-                  <h5 style={{ fontWeight: "900" }}>Trust & Compliance</h5>
+                  <p>"Collaborating with them has shown me how meaningful innovation can improve patient outcomes. Their comprehensive approach ensures men’s health receives the attention, research, and solutions it has long deserved."</p>
                   <div className='testimonial-card-footer d-flex align-items-center justify-content-start'>
-                    <img src="/assets/img/home/testimonials/shield.png" alt="Testimonial 1" />
+                    <img src="/assets/img/home/testimonials/3.jpeg" alt="Testimonial 1" style={{ width: "50px", height: "50px", borderRadius: "50%" }} />
                     <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                      <h3>DPDP Compliant</h3>
-                    </div>
-                  </div>
-                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start mt-2'>
-                    <img src="/assets/img/home/testimonials/flower.png" alt="Testimonial 1" />
-                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                      <h3>HDMP Certified</h3>
-                    </div>
-                  </div>
-                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start mt-2'>
-                    <img src="/assets/img/home/testimonials/secure.png" alt="Testimonial 1" />
-                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                      <h3>EHR Secure</h3>
+                      <h3>Rahul Mehta</h3>
+                      <p>Urology Specialist</p>
                     </div>
                   </div>
                 </div>

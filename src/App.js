@@ -4,10 +4,10 @@ import { Navigation, Footer, WhatsAppButton, NotFound } from './components/share
 import Home from './components/home/Home';
 // Temporarily disabled imports
 // import About from './components/about/About';
-// import Contact from './components/contact';
+import Contact from './components/contact';
 // import Campaign from './components/campaign/Campaign';
 // import Partners from './components/partners';
-// import Products from './components/products';
+import Products from './components/products';
 import './App.css';
 
 function App() {
@@ -17,12 +17,12 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
           {/* Temporarily disabled routes */}
           {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/campaign" element={<Campaign />} />
           <Route path="/partners" element={<Partners />} />
-          <Route path="/products" element={<Products />} /> */}
           {/* Catch-all route for 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -19,7 +19,7 @@ const Footer = () => {
                     <span className="brand-text">
                       Dhyota <span style={{ color: "#FF6F00" }}>Global</span>
                     </span>
-                    <p className="tagline">Empowering Men's Health Globally</p>
+                    <p className="tagline">The Guiding Light in Men’s Health</p>
                   </div>
                 </div>
               </div>

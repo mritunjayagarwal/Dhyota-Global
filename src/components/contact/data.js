@@ -67,23 +67,33 @@ export const contactData = {
   faqs: [
     {
       id: 1,
-      question: "What services does Dhyota offer?",
-      answer: "Dhyota provides comprehensive men's health services including digital health platforms, AI-powered health assessments, personalized treatment plans, and access to leading healthcare providers nationwide."
+      question: "What makes Dhyota different from other healthcare providers?",
+      answer: "Dhyota focuses exclusively on men’s health, offering a holistic ecosystem that spans pharmaceuticals, medical devices, disposables, and digital healthcare services. We combine innovation, research, and compassionate care to address every dimension of well-being—physical, emotional, mental, and social."
     },
     {
       id: 2,
       question: "How do I get started with Dhyota?",
-      answer: "Getting started is easy! Simply contact us through our website, call our main number, or reach out to our patient support team. We'll guide you through the registration process and help you access our services."
+      answer: "Getting started is simple! You can contact us through our website, reach out to our patient support team, or schedule a consultation at one of our specialized men’s health clinics. We’ll guide you step by step to access the right services for your needs."
     },
     {
       id: 3,
       question: "Is my health information secure?",
-      answer: "Absolutely. We use industry-standard encryption and security measures to protect your personal health information. All data is stored securely and we comply with HIPAA regulations to ensure your privacy."
+      answer: "Absolutely. We use industry-standard encryption and security protocols to protect all personal health information. Data is stored securely, and we comply with global privacy regulations to ensure your confidentiality and peace of mind."
     },
     {
       id: 4,
-      question: "What are your business hours?",
-      answer: "Our main office is open Monday through Friday from 9:00 AM to 6:00 PM, Saturday from 10:00 AM to 4:00 PM, and closed on Sundays. Our patient support team is available extended hours for urgent matters."
+      question: "Which areas of men’s health does Dhyota cover?",
+      answer: "We specialize in urological health, sexual and hormonal health, mental health, general wellness, hygiene and grooming, and physical performance. Our solutions cover the full lifecycle of men’s health from adolescence to older age."
+    },
+    {
+      id: 5,
+      question: "How can I partner with Dhyota?",
+      answer: "We collaborate with pharmaceutical companies, medical device innovators, hospitals, specialty clinics, and research institutions. Partners benefit from our integrated men’s health ecosystem, innovation, and shared commitment to improving patient outcomes. Contact us via the Partner With Us page."
+    },
+    {
+      id: 6,
+      question: "Do you offer telehealth services?",
+      answer: "Yes, Dhyota provides virtual consultations through secure telehealth platforms, giving patients convenient access to specialists, personalized care plans, and follow-ups from the comfort of their home."
     }
-  ]
+  ]  
 };

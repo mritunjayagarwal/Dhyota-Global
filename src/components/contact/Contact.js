@@ -59,8 +59,8 @@ const Contact = () => {
           <div className="row">
             <div className="col-lg-8">
               <div className="contact-form-container">
-                <h6 className="section-title text-start">Send us a Message</h6>
-                <p className="text-start">Fill out the form below and we'll get back to you within 24 hours.</p>
+                <h6 className="section-title text-center">Send us a Message</h6>
+                <p className="text-center">Fill out the form below and we'll get back to you within 24 hours.</p>
                 <form onSubmit={handleSubmit} className="contact-form">
                   <div className="row">
                     <div className="col-md-6">
@@ -160,7 +160,7 @@ const Contact = () => {
                       type="submit"
                       className="btn btn-primary btn-lg w-100 text-center"
                       disabled={isSubmitting}
-                      style={{ background: "linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)),linear-gradient(90deg, #FF6F00 0%, #FFD93B 100%)", color: "#fff", border: "none", borderRadius: "none", textAlign: "center" }}
+                      style={{ background: "linear-gradient(0deg, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.001)),linear-gradient(90deg, #FF6F00 0%, #FFD93B 100%)", color: "#fff", border: "none", borderRadius: "none", textAlign: "center", borderRadius: "10px" }}
                     >
                       {isSubmitting ? (
                         <>
@@ -187,23 +187,23 @@ const Contact = () => {
             <div className="col-lg-4">
             <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
-                  <h5 style={{ fontWeight: "900" }}>Trust & Compliance</h5>
-                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start'>
-                    <img src="/assets/img/home/testimonials/shield.png" alt="Testimonial 1" />
+                  <h5 style={{ fontWeight: "900" }}>Contact Information</h5>
+                  <div className='testimonial-card-footer d-flex align-items-center mt-3 justify-content-start'>
+                    <img src="/assets/img/contact/location.png" alt="Testimonial 1" />
                     <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3>DPDP Compliant</h3>
+                    <h3 style = {{marginTop: "-15px"}}>H.No 8, Krishna Sindhu Residency, 2-120/86/2/A, Banjara Hills Rd Number 3, BNR Colony, Venkat Nagar, Banjara Hills, Hyderabad, Telangana 500034</h3>
                     </div>
                   </div>
-                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start mt-2'>
-                    <img src="/assets/img/home/testimonials/flower.png" alt="Testimonial 1" />
+                  <div className='testimonial-card-footer d-flex align-items-center mt-3 justify-content-start mt-2'>
+                    <img src="/assets/img/contact/phone.png" alt="Testimonial 1" />
                     <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3>HDMP Certified</h3>
+                    <h3 style = {{marginTop: "-15px"}}>+91 964-964-7108</h3>
                     </div>
                   </div>
-                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start mt-2'>
-                    <img src="/assets/img/home/testimonials/secure.png" alt="Testimonial 1" />
+                  <div className='testimonial-card-footer d-flex align-items-center mt-3 justify-content-start mt-2'>
+                    <img src="/assets/img/contact/email.png" alt="Testimonial 1" />
                     <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3>EHR Secure</h3>
+                    <h3 style = {{marginTop: "-15px"}}>askme@dhyota.com</h3>
                     </div>
                   </div>
                 </div>
@@ -213,12 +213,8 @@ const Contact = () => {
                   <h5 style={{ fontWeight: "900" }}>Support Hours</h5>
                   <div className='support-hours-container'>
                     <div className='support-hours-row'>
-                      <span className='support-hours-day'>Monday - Friday</span>
-                      <span className='support-hours-time'>9:00 AM - 6:00 PM</span>
-                    </div>
-                    <div className='support-hours-row'>
-                      <span className='support-hours-day'>Saturday</span>
-                      <span className='support-hours-time'>10:00 AM - 4:00 PM</span>
+                      <span className='support-hours-day'>Monday - Saturday</span>
+                      <span className='support-hours-time'>10:00 AM - 5:00 PM</span>
                     </div>
                     <div className='support-hours-row'>
                       <span className='support-hours-day'>Sunday</span>
@@ -230,7 +226,7 @@ const Contact = () => {
             <div className='testimonial-card mt-3'>
                 <div className='testimonial-card-body'>
                   <h5 style={{ fontWeight: "900" }}><img src="/assets/img/home/testimonials/shield.png" alt="Testimonial 1" /> Trust & Compliance</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                  <p>Your privacy is our priority. All communications are protected under DPDP Act and EHR standards compliance.</p>
                 </div>
               </div>
             </div>
@@ -275,7 +271,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <SupportSection />
+      <SupportSection title="Discover Solutions for Every Stage of Men's Health" description="Join thousands of healthcare professionals who trust Dhyota Global for comprehensive wellness solutions." buttonText="Get Started" buttonClass="white" />
     </main>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './CampaignSection.css';
 
 const CampaignSection = ({ 
@@ -13,7 +14,7 @@ const CampaignSection = ({
         <div className='text-center p-5'>
           <h1 className='section-title'>{title}</h1>
           <p className='w-75 mx-auto mb-4'>{description}</p>
-          <button className={`main-btn btn-lg px-5 py-3 ${buttonClass}`}>{buttonText}</button>
+          <Link to="/products" className={`main-btn btn-lg px-5 py-3 ${buttonClass}`}>{buttonText}</Link>
         </div>
       </div>
     </section>

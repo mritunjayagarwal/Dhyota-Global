@@ -1,7 +1,7 @@
 import React from 'react';
 import './WhatsAppButton.css';
 
-const WhatsAppButton = ({ phoneNumber = "+1234567890" }) => {
+const WhatsAppButton = ({ phoneNumber = "+919649647108" }) => {
   const handleWhatsAppClick = () => {
     // Format phone number for WhatsApp (remove spaces, dashes, parentheses)
     const formattedNumber = phoneNumber.replace(/[\s\-\(\)]/g, '');

@@ -179,10 +179,6 @@ const Products = () => {
                                       <div className="campaign-card-content">
                       <h4 className="campaign-card-title">{product.name}</h4>
                       <p className="campaign-card-description">{product.description}</p>
-                      <div className="d-flex justify-content-between align-items-center mb-3">
-                        <span className="product-price fw-bold text-success">{product.price}</span>
-                      </div>
-                      <button className="btn yellow">Add to Cart</button>
                     </div>
                 </div>
               </div>

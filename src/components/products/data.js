@@ -1,119 +1,119 @@
 export const productsData = {
   categories: [
     { id: "all", name: "All", filter: "*" },
-    { id: "diagnostic", name: "Diagnostic Tools", filter: ".diagnostic" },
-    { id: "treatment", name: "Treatment Devices", filter: ".treatment" },
-    { id: "wellness", name: "Wellness Products", filter: ".wellness" },
-    { id: "monitoring", name: "Monitoring Equipment", filter: ".monitoring" }
+    // { id: "diagnostic", name: "Diagnostic Tools", filter: ".diagnostic" },
+    // { id: "treatment", name: "Treatment Devices", filter: ".treatment" },
+    // { id: "wellness", name: "Wellness Products", filter: ".wellness" },
+    // { id: "monitoring", name: "Monitoring Equipment", filter: ".monitoring" }
   ],
   products: [
     {
       id: 1,
-      name: "Prostate Health Scanner",
-      description: "Advanced diagnostic tool for early detection of prostate issues with non-invasive technology.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "diagnostic",
-      price: "$2,499",
-      features: ["Non-invasive", "Real-time results", "FDA approved"]
+      name: "Silodosin Capsules",
+      description: "Helps ease urinary problems caused by an enlarged prostate by relaxing the prostate and bladder muscles, improving urine flow and overall comfort.",
+      image: "/assets/img/products/products/1.jpeg",
+      category: "urology",
+      price: "$49",
+      features: ["Relieves urinary symptoms", "Improves flow", "Enhances comfort"]
     },
     {
       id: 2,
-      name: "Urological Treatment Device",
-      description: "State-of-the-art treatment device for various urological conditions with minimal side effects.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "treatment",
-      price: "$4,999",
-      features: ["Minimally invasive", "High success rate", "Quick recovery"]
+      name: "Silodosin 8mg + Dutasteride 0.5mg Tablets",
+      description: "Dual-action treatment that relieves frequent urination, weak flow, and gradually shrinks the prostate for long-term relief.",
+      image: "/assets/img/products/products/2.jpeg",
+      category: "urology",
+      price: "$79",
+      features: ["Dual-action relief", "Reduces prostate size", "Long-term results"]
     },
     {
       id: 3,
-      name: "Men's Wellness Tracker",
-      description: "Comprehensive wellness monitoring system designed specifically for men's health metrics.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "wellness",
-      price: "$199",
-      features: ["24/7 monitoring", "Mobile app", "Health insights"]
+      name: "Tamsulosin Hydrochloride 0.4mg Capsules",
+      description: "Provides quick and effective relief from difficulty passing urine, weak stream, and urgency linked to prostate enlargement.",
+      image: "/assets/img/products/products/3.jpeg",
+      category: "urology",
+      price: "$39",
+      features: ["Quick relief", "Improves urine flow", "Trusted therapy"]
     },
     {
       id: 4,
-      name: "Bladder Function Monitor",
-      description: "Advanced monitoring device for bladder function assessment and health tracking.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "monitoring",
-      price: "$799",
-      features: ["Continuous monitoring", "Data analytics", "Alert system"]
+      name: "Tamsulosin 0.4mg + Dutasteride 0.5mg Tablets",
+      description: "Combination therapy that eases urination immediately while also reducing prostate size over time for lasting control.",
+      image: "/assets/img/products/products/4.jpeg",
+      category: "urology",
+      price: "$69",
+      features: ["Immediate relief", "Prostate shrinkage", "Long-term comfort"]
     },
     {
       id: 5,
-      name: "Kidney Health Analyzer",
-      description: "Diagnostic tool for comprehensive kidney function analysis and early disease detection.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "diagnostic",
-      price: "$1,299",
-      features: ["Comprehensive analysis", "Early detection", "Portable design"]
+      name: "Tadalafil 5mg + Alfuzosin 10mg Tablets",
+      description: "Specially designed for men with urinary issues and erectile dysfunction, improving urine flow while restoring sexual performance.",
+      image: "/assets/img/products/products/5.jpeg",
+      category: "men's health",
+      price: "$99",
+      features: ["Dual benefit", "Better urinary flow", "Improves intimacy"]
     },
     {
       id: 6,
-      name: "Therapeutic Massage Device",
-      description: "Specialized therapeutic device for pelvic floor muscle therapy and rehabilitation.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "treatment",
-      price: "$599",
-      features: ["Therapeutic massage", "Adjustable intensity", "Home use"]
+      name: "Tadalafil Tablets 5mg/10mg/20mg",
+      description: "Widely trusted tablets for erectile dysfunction that enhance erections and confidence. The 5mg dose also helps with urinary issues related to prostate enlargement.",
+      image: "/assets/img/products/products/6.jpeg",
+      category: "men's health",
+      price: "$89",
+      features: ["Improves erections", "Restores confidence", "Supports prostate health"]
     },
     {
       id: 7,
-      name: "Hormone Level Monitor",
-      description: "Continuous monitoring system for testosterone and other male hormone levels.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "monitoring",
-      price: "$399",
-      features: ["Real-time tracking", "Hormone analysis", "Trend reporting"]
+      name: "Lidocaine 7.5mg + Prilocaine 2.5mg Spray",
+      description: "Fast-acting spray that gently reduces sensitivity, helping delay ejaculation and extend intimacy for greater satisfaction.",
+      image: "/assets/img/products/products/7.jpeg",
+      category: "sexual health",
+      price: "$29",
+      features: ["Delays ejaculation", "Enhances intimacy", "Easy to use"]
     },
     {
       id: 8,
-      name: "Men's Health Supplements",
-      description: "Premium supplement line specifically formulated for men's urological and overall health.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "wellness",
-      price: "$49",
-      features: ["Natural ingredients", "Clinically tested", "Monthly supply"]
+      name: "Lidocaine Hydrochloride 2% Jelly",
+      description: "A soothing anesthetic jelly for pain relief in urological or gynecological use, offering comfort during minor medical procedures.",
+      image: "/assets/img/products/products/8.jpeg",
+      category: "anesthetic",
+      price: "$19",
+      features: ["Pain relief", "Soothing effect", "Safe application"]
     },
     {
       id: 9,
-      name: "Erectile Function Tester",
-      description: "Medical-grade device for comprehensive erectile function assessment and monitoring.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "diagnostic",
-      price: "$899",
-      features: ["Medical grade", "Detailed reports", "Privacy focused"]
+      name: "Mirabegron Extended-Release Tablets 25mg & 50mg",
+      description: "Helps control sudden urges, frequent urination, and leakage due to overactive bladder, allowing you to live more freely and confidently.",
+      image: "/assets/img/products/products/9.jpeg",
+      category: "urology",
+      price: "$79",
+      features: ["Reduces urgency", "Controls leakage", "Improves bladder function"]
     },
     {
       id: 10,
-      name: "Pelvic Floor Strengthener",
-      description: "Advanced exercise device for strengthening pelvic floor muscles and improving bladder control.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "treatment",
-      price: "$299",
-      features: ["Progressive resistance", "Biofeedback", "Exercise tracking"]
+      name: "Solifenacin Succinate 5mg Tablets",
+      description: "Calms an overactive bladder, reducing frequent bathroom trips and accidental leakage for improved daily confidence.",
+      image: "/assets/img/products/products/10.jpeg",
+      category: "urology",
+      price: "$59",
+      features: ["Better bladder control", "Fewer trips", "Reduces leakage"]
     },
     {
       id: 11,
-      name: "Sleep Quality Monitor",
-      description: "Specialized monitoring device for tracking sleep patterns and their impact on men's health.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "monitoring",
-      price: "$199",
-      features: ["Sleep tracking", "Health correlation", "Improvement suggestions"]
+      name: "Cefixime 200mg + Ofloxacin 200mg Tablets",
+      description: "A strong antibiotic combination that treats infections of the lungs, urinary tract, and stomach, helping you recover quickly and effectively.",
+      image: "/assets/img/products/products/11.jpeg",
+      category: "antibiotic",
+      price: "$69",
+      features: ["Fights tough infections", "Broad-spectrum action", "Fast recovery"]
     },
     {
       id: 12,
-      name: "Stress Management Kit",
-      description: "Comprehensive wellness kit for managing stress and its impact on men's urological health.",
-      image: "/assets/img/products/products/p-1.png",
-      category: "wellness",
-      price: "$149",
-      features: ["Stress tracking", "Relaxation techniques", "Health guidance"]
+      name: "Faropenem Tablets",
+      description: "An advanced antibiotic that works against resistant infections, providing strong protection and ensuring reliable recovery.",
+      image: "/assets/img/products/products/12.jpeg",
+      category: "antibiotic",
+      price: "$89",
+      features: ["Powerful antibiotic", "Fights resistance", "Reliable treatment"]
     }
-  ]
+  ]  
 };
