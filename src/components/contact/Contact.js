@@ -29,10 +29,38 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Create email content
+      const emailSubject = `Contact Form Submission: ${formData.subject || 'General Inquiry'}`;
+      const emailBody = `
+Dear Dhyota Global Team,
+
+You have received a new contact form submission with the following details:
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Department: ${formData.department}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+
+---
+This message was sent from the Dhyota Global website contact form.
+      `.trim();
+
+      // Create mailto link
+      const mailtoLink = `mailto:askme@dhyota.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+      
+      // Open email client
+      window.open(mailtoLink, '_blank');
+      
+      // Show success message
       setIsSubmitting(false);
       setSubmitStatus('success');
+      
+      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -44,7 +72,13 @@ const Contact = () => {
       
       // Reset status after 5 seconds
       setTimeout(() => setSubmitStatus(null), 5000);
-    }, 2000);
+      
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
   };
 
   const toggleFaq = (faqId) => {
@@ -74,6 +108,7 @@ const Contact = () => {
                           onChange={handleInputChange}
                           required
                           className="form-control"
+                          placeholder="Enter your full name"
                         />
                       </div>
                     </div>
@@ -88,6 +123,7 @@ const Contact = () => {
                           onChange={handleInputChange}
                           required
                           className="form-control"
+                          placeholder="Enter your email address"
                         />
                       </div>
                     </div>
@@ -104,6 +140,7 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={handleInputChange}
                           className="form-control"
+                          placeholder="Enter your phone number"
                         />
                       </div>
                     </div>
@@ -138,6 +175,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       className="form-control"
+                      placeholder="What is your inquiry about?"
                     />
                   </div>
                   
@@ -178,7 +216,14 @@ const Contact = () => {
                   {submitStatus === 'success' && (
                     <div className="alert alert-success mt-3">
                       <i className="fas fa-check-circle"></i>
-                      Thank you! Your message has been sent successfully. We'll get back to you soon.
+                      Thank you! Your email client has opened with your message ready to send to askme@dhyota.com. Please send the email to complete your inquiry.
+                    </div>
+                  )}
+                  
+                  {submitStatus === 'error' && (
+                    <div className="alert alert-danger mt-3">
+                      <i className="fas fa-exclamation-circle"></i>
+                      There was an error opening your email client. Please try again or contact us directly at askme@dhyota.com.
                     </div>
                   )}
                 </form>

@@ -5,14 +5,32 @@ const SupportSection = ({
   title = "Support Men's Wellness Initiatives", 
   description = "Join thousands of advocates, healthcare professionals, and community members in creating a healthier future for men everywhere.",
   buttonText = "Join Our Mission",
-  buttonClass = "white"
+  buttonClass = "white",
+  scrollToSection = null
 }) => {
+  const handleButtonClick = () => {
+    if (scrollToSection) {
+      const element = document.querySelector(scrollToSection);
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  };
+
   return (
     <section className='support-section'>
       <div className="container text-center">
         <h1 className='section-title text-center text-white'>{title}</h1>
         <p className='text-center mb-5 text-white mb-0'>{description}</p>
-        <button className={`main-btn ${buttonClass} px-5 py-3 m-0`}>{buttonText}</button>
+        <button 
+          className={`main-btn ${buttonClass} px-5 py-3 m-0`}
+          onClick={handleButtonClick}
+        >
+          {buttonText}
+        </button>
       </div>
     </section>
   );

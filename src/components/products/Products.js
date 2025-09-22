@@ -89,8 +89,8 @@ const Products = () => {
                 }}
               ></div>
               <div className="text-container main-carousel-text">
-                <h1>Guided by Light, Driven by Care</h1>
-                <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
+                <h1>Targeted Medicines for Men’s Health</h1>
+                <p>From urological and hormonal health to mental wellness and general fitness, Dhyota’s pharmaceutical products are designed to support men at every stage of life with safe, effective, and science-backed therapies.</p>
               </div>
             </div>
             <div className="carousel-item">
@@ -104,8 +104,8 @@ const Products = () => {
                 }}
               ></div>
               <div className="text-container main-carousel-text">
-                <h1>Guided by Light, Driven by Care</h1>
-                <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
+                <h1>Trusted Solutions, Better Outcomes</h1>
+                <p>Dhyota delivers a comprehensive range of medicines focused on improving men’s health — addressing vitality, recovery, and overall well-being with innovative formulations and quality you can trust.</p>
               </div>
             </div>
             <div className="carousel-item">
@@ -119,8 +119,8 @@ const Products = () => {
                 }}
               ></div>
               <div className="text-container main-carousel-text">
-                <h1>Guided by Light, Driven by Care</h1>
-                <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
+                <h1>Holistic Care Through Medicines</h1>
+                <p>Our pharmaceuticals go beyond treatment — they promote preventive care, lifestyle support, and balanced wellness for men, helping them lead healthier and more confident lives.</p>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@ const Products = () => {
       </section>
 
       {/* Products Grid Section */}
-      <section className="products-grid-section">
+      <section id="products-grid" className="products-grid-section">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -187,8 +187,7 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Awareness Section */}
-      <section className='awareness'>
+      {/* <section className='awareness'>
         <div className='container awareness-main mt-5'>
           <div 
             ref={campaignCarouselRef}
@@ -249,7 +248,7 @@ const Products = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Impact Section */}
       <section className='impact' style={{ padding: "50px 0" }}>
@@ -266,7 +265,7 @@ const Products = () => {
                     alt="Customers Served"
                     style={{ maxHeight: "80px" }}
                   />
-                  <h3 className="h5 text-capitalize mb-3">10,000+</h3>
+                  <h3 className="h5 text-capitalize mb-3">4863+</h3>
                   <p className="text-muted" style={{ fontSize: "16px" }}>
                     Customers Served
                   </p>
@@ -282,7 +281,7 @@ const Products = () => {
                     alt="Partner Clinics"
                     style={{ maxHeight: "80px" }}
                   />
-                  <h3 className="h5 text-capitalize mb-3">50+</h3>
+                  <h3 className="h5 text-capitalize mb-3">200+</h3>
                   <p className="text-muted" style={{ fontSize: "16px" }}>
                     Partner Clinics
                   </p>
@@ -325,61 +324,48 @@ const Products = () => {
         </div>
       </section>
       
-      <section className='testimonials' style={{ padding: "50px 0" }}>
+      <section className='testimonials' style={{ padding: "50px 0", backgroundColor: "#f8f9fa" }}>
         <div className='container'>
-          <h1 className='section-title text-center'>What Our Users Say</h1>
-          <p className='text-center mb-5'>Trusted by healthcare professionals and patients alike</p>
+          <h1 className='section-title text-center'>Testimonials & Trust</h1>
+          <p className='text-center mb-5'>Trusted by healthcare professionals and patients worldwide</p>
           <div className='row mt-5'>
-            <div className='col-lg-4 col-md-6'>
+            <div className='col-lg-4 col-md-6 mb-3'>
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
-                  <p>⭐⭐⭐⭐⭐</p>
-                  <p>"The educational resources and support provided have been invaluable in my health journey. Professional, comprehensive, and trustworthy."</p>
+                  <p>"Their commitment to innovation in men’s health is unmatched. By integrating pharmaceuticals, devices, and medical technology under one ecosystem, they’ve made quality healthcare more accessible and impactful worldwide."</p>
                   <div className='testimonial-card-footer d-flex align-items-center justify-content-start'>
-                    <img src="/assets/img/home/testimonials/t-1.png" alt="Testimonial 1" />
+                    <img src="/assets/img/home/testimonials/arjun.webp" alt="Testimonial 1" style={{ width: "50px", height: "50px", borderRadius: "50%" }} />
                     <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3>Healthcare Professional</h3>
-                    <p>Partner Institution</p>
+                      <h3>Dr. Arjun Mehta</h3>
+                      <p>Urologist & Global Health Advocate</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6'>
+            <div className='col-lg-4 col-md-6 mb-3'>
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
-                <p>⭐⭐⭐⭐⭐</p>
-                  <p>"The educational resources and support provided have been invaluable in my health journey. Professional, comprehensive, and trustworthy."</p>
+                  <p>"Partnering with them has shown me how true innovation can transform patient outcomes. Their holistic approach ensures men's health receives the attention, research, and solutions it has long deserved."</p>
                   <div className='testimonial-card-footer d-flex align-items-center justify-content-start'>
-                    <img src="/assets/img/home/testimonials/t-1.png" alt="Testimonial 1" />
+                    <img src="/assets/img/home/testimonials/ananya.webp" alt="Testimonial 1" style={{ width: "50px", height: "50px", borderRadius: "50%" }} />
                     <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3>Healthcare Professional</h3>
-                    <p>Partner Institution</p>
+                      <h3>Ananya Rao</h3>
+                      <p>Healthcare Technology Consultant</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6'>
+            <div className='col-lg-4 col-md-6 mb-3'>
               <div className='testimonial-card'>
                 <div className='testimonial-card-body'>
-                  <h5 style={{ fontWeight: "900" }}>Trust & Compliance</h5>
+                  <p>"Collaborating with them has shown me how meaningful innovation can improve patient outcomes. Their comprehensive approach ensures men’s health receives the attention, research, and solutions it has long deserved."</p>
                   <div className='testimonial-card-footer d-flex align-items-center justify-content-start'>
-                    <img src="/assets/img/home/testimonials/shield.png" alt="Testimonial 1" />
+                    <img src="/assets/img/home/testimonials/3.jpeg" alt="Testimonial 1" style={{ width: "50px", height: "50px", borderRadius: "50%" }} />
                     <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3>DPDP Compliant</h3>
-                    </div>
-                  </div>
-                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start mt-2'>
-                    <img src="/assets/img/home/testimonials/flower.png" alt="Testimonial 1" />
-                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3>HDMP Certified</h3>
-                    </div>
-                  </div>
-                  <div className='testimonial-card-footer d-flex align-items-center justify-content-start mt-2'>
-                    <img src="/assets/img/home/testimonials/secure.png" alt="Testimonial 1" />
-                    <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3>EHR Secure</h3>
+                      <h3>Rahul Mehta</h3>
+                      <p>Urology Specialist</p>
                     </div>
                   </div>
                 </div>
@@ -389,7 +375,13 @@ const Products = () => {
         </div>
       </section>
       
-      <SupportSection />
+      <SupportSection 
+        title="Discover Solutions for Every Stage of Men's Health"
+        description="Join thousands of healthcare professionals who trust Dhyota Global for comprehensive wellness solutions."
+        buttonText="View Products"
+        buttonClass="white"
+        scrollToSection="#products-grid"
+      />
     </main>
   );
 };
