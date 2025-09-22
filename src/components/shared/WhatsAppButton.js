@@ -5,7 +5,8 @@ const WhatsAppButton = ({ phoneNumber = "+919649647108" }) => {
   const handleWhatsAppClick = () => {
     // Format phone number for WhatsApp (remove spaces, dashes, parentheses)
     const formattedNumber = phoneNumber.replace(/[\s\-\(\)]/g, '');
-    const whatsappUrl = `https://wa.me/${formattedNumber}`;
+    const message = encodeURIComponent("Hello! I'm interested in learning more about Dhyota Global's men's health solutions. Could you please provide me with more information?");
+    const whatsappUrl = `https://wa.me/${formattedNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
