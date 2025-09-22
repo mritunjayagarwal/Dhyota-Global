@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-7">
               <div className="row">
-                <div className="col-lg-4">
+                <div className="col-6 col-lg-4">
                   <h5 className="footer-list-head">Quick Links</h5>
 
                   <ul className="footer-list">
@@ -40,7 +40,7 @@ const Footer = () => {
                     <li><a href='#'>Contact</a></li>
                   </ul>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-6 col-lg-4">
                   <h5 className="footer-list-head">Company</h5>
 
                   <ul className="footer-list">
@@ -49,7 +49,7 @@ const Footer = () => {
                     <li><a href='/kyc'>KML & KYC Policy</a></li>
                   </ul>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-12 col-lg-4">
                   <h5 className="footer-list-head">Contact Information</h5>
 
                   <ul className="footer-list">

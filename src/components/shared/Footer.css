@@ -100,6 +100,16 @@ footer {
 @media (max-width: 768px) {
   .footer-brand {
     margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .footer-brand .d-flex {
+    justify-content: flex-start;
+  }
+  
+  .footer-description {
+    text-align: left !important;
+    margin: 10px 0 0 !important;
   }
   
   .footer-brand img {
