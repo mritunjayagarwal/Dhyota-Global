@@ -70,6 +70,16 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/products" onClick={handleNavLinkClick}>
+                Products
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact" onClick={handleNavLinkClick}>
+                Contact Us
+              </Link>
+            </li>
+            <li className="nav-item">
               <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>
                 Who We Are
               </span>
@@ -84,24 +94,14 @@ const Navigation = () => {
                 Campaign
               </span>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/products" onClick={handleNavLinkClick}>
-                Products
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact" onClick={handleNavLinkClick}>
-                Contact Us
-              </Link>
-            </li>
           </ul>
           
           {/* Right Side Button */}
           <ul className="navbar-nav">
             <li className="nav-item">
-              <button className="main-btn orange" type="button">
+              <Link className="main-btn orange" to="/products" onClick={handleNavLinkClick}>
                 Discover
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

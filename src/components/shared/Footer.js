@@ -19,9 +19,12 @@ const Footer = () => {
                     <span className="brand-text">
                       Dhyota <span style={{ color: "#FF6F00" }}>Global</span>
                     </span>
-                    <p className="tagline">The Guiding Light in Men’s Health</p>
+                    <p className="tagline" style={{marginTop: "-10px"}}>Healthcare Solutions Pvt Ltd</p>
                   </div>
                 </div>
+                <p className="footer-description" style={{marginTop: "10px", fontSize: "0.9rem", textAlign: "left", lineHeight: "1.4", maxWidth: "400px"}}>
+                  The Guiding Light in Men's Health - Pioneering comprehensive wellness solutions through innovative pharmaceuticals, advanced medical devices, and cutting-edge technology to empower men's health worldwide.
+                </p>
               </div>
             </div>
             <div className="col-lg-7">
@@ -47,14 +50,17 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className="col-lg-4">
-                  <h5 className="footer-list-head">Learn & Support</h5>
+                  <h5 className="footer-list-head">Contact Information</h5>
 
                   <ul className="footer-list">
-                    <li><a href="#">Telegram Channel</a></li>
-                    <li><a href="#">Medium - Blogs</a></li>
-                    <li><a href="#">FAQ's & Support</a></li>
-                    <li><a href="#">Tutorials ( Coming Soon )</a></li>
+                    <li>Email: askme@dhyota.com</li>
+                    <li>Phone: +91 964-964-7108</li>
                   </ul>
+                  <div className="social-icon mt-3">
+                    <a href="https://x.com/drragoori" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-x-twitter" style={{ fontSize: "1.5rem", color: "#FF6F00" }}></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

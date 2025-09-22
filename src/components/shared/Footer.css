@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 /* ===== FOOTER SECTION ===== */
 footer {
   background: #2C2C2C;
@@ -30,13 +33,20 @@ footer {
   font-weight: 700;
   color: #fff;
   margin-bottom: 5px;
+  font-family: 'EB Garamond', serif;
 }
 
 .tagline {
   color: #ccc;
   font-size: 0.9rem;
   margin: 0;
-  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+
+.footer-description {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 .footer-desc p {
