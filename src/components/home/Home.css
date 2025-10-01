@@ -162,7 +162,26 @@
 }
 
 .home-page .awareness-carousel-item {
-  height: 300px;
+  height: 400px;
+  min-height: 400px;
+}
+
+.home-page .awareness-carousel-item h6 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.home-page .awareness-carousel-item p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 30px;
+  line-height: 1.7;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
 }
 
 /* ===== CAMPAIGN SECTION ===== */
@@ -316,7 +335,8 @@
   }
   
   .home-page .awareness-carousel-item {
-    height: 350px;
+    height: 450px;
+    min-height: 450px;
     /* background: linear-gradient(45deg, #FF6F00, #FF8C00, #FFA500); */
     position: relative;
     overflow: hidden;
@@ -335,21 +355,21 @@
   }
   
   .home-page .awareness-carousel-item h6 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 800;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.5px;
   }
   
   .home-page .awareness-carousel-item p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.95);
-    margin-bottom: 25px;
-    line-height: 1.6;
+    margin-bottom: 30px;
+    line-height: 1.7;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    max-width: 90%;
+    max-width: 95%;
   }
   
   .home-page .awareness-carousel-item .main-btn {
@@ -594,7 +614,8 @@
   }
   
   .home-page .awareness-carousel-item {
-    height: 300px;
+    height: 400px;
+    min-height: 400px;
   }
   
   .home-page .awareness-carousel-item .text-center {
@@ -602,14 +623,15 @@
   }
   
   .home-page .awareness-carousel-item h6 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
   }
   
   .home-page .awareness-carousel-item p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
     max-width: 95%;
+    line-height: 1.6;
   }
   
   .home-page .awareness-carousel-item .main-btn {

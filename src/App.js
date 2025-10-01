@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Navigation, Footer, WhatsAppButton, NotFound } from './components/shared';
 import Home from './components/home/Home';
 // Temporarily disabled imports
-// import About from './components/about/About';
+import About from './components/about/About';
 import Contact from './components/contact';
 // import Campaign from './components/campaign/Campaign';
 // import Partners from './components/partners';
@@ -19,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
           {/* Temporarily disabled routes */}
           {/* <Route path="/about" element={<About />} />
           <Route path="/campaign" element={<Campaign />} />

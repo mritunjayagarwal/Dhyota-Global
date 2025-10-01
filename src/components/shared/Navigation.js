@@ -80,9 +80,9 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>
+            <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>
                 Who We Are
-              </span>
+              </Link>
             </li>
             <li className="nav-item">
               <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>

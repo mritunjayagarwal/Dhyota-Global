@@ -55,6 +55,7 @@ const Footer = () => {
                   <ul className="footer-list">
                     <li>Email: askme@dhyota.com</li>
                     <li>Phone: +91 964-964-7108</li>
+                    <li>Landline: +91 40-453-77055</li>
                   </ul>
                   <div className="social-icon mt-3">
                     <a href="https://x.com/drragoori" target="_blank" rel="noopener noreferrer">

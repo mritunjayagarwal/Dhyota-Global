@@ -236,7 +236,7 @@ This message was sent from the Dhyota Global website contact form.
                   <div className='testimonial-card-footer d-flex align-items-center mt-3 justify-content-start'>
                     <img src="/assets/img/contact/location.png" alt="Testimonial 1" />
                     <div style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-                    <h3 style = {{marginTop: "-15px"}}>H.No 8, Krishna Sindhu Residency, 2-120/86/2/A, Banjara Hills Rd Number 3, BNR Colony, Venkat Nagar, Banjara Hills, Hyderabad, Telangana 500034</h3>
+                    <h3 style = {{marginTop: "-15px"}}>G 2, Krishna Sindhu Residency, 8-2-120/86/2/A & 86/3, Road No. 3, Banjara Hills, Hyderabad - 500034, TG, INDIA</h3>
                     </div>
                   </div>
                   <div className='testimonial-card-footer d-flex align-items-center mt-3 justify-content-start mt-2'>
