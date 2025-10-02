@@ -335,59 +335,48 @@ const Home = () => {
         </div>
       </section>
 
+
       <section className='awareness' style={{ background: "#F2F5F6"}}>
-        <h1 className='section-title text-center' data-aos="fade-down">Health Awareness Initiatives</h1>
+        <h1 className='section-title text-center' data-aos="fade-down">Our Vision</h1>
         <div className='container awareness-main mt-5' data-aos="fade-up" data-aos-delay="200">
           <div
-            ref={awarenessCarouselRef}
-            id="awarenessCarousel1"
+            ref={awarenessCarousel2Ref}
+            id="awarenessCarousel2"
             className="carousel slide"
             data-bs-ride="carousel"
-            data-bs-interval="3500"
+            data-bs-interval="4000"
             data-bs-pause="hover"
           >
             <div className="carousel-indicators">
-              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#awarenessCarousel2" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#awarenessCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#awarenessCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
             <div className="carousel-inner awareness-carousel-inner">
               <div className="carousel-item awareness-carousel-item active">
                 <div className='text-center p-5'>
-                  <h6>Men's Health Clinics</h6>
-                  <p className='w-75 mx-auto mb-4'>Specialized diagnosis and treatment</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+                  <h6>Pharmaceuticals</h6>
+                  <p className='w-75 mx-auto mb-4'>Innovative, safe, and affordable medicines form the foundation of our journey. Our pharmaceutical vertical will focus on urology, nephrology, and men’s health—delivering both prescription and over-the-counter products to improve patient outcomes and enhance quality of life.</p>
                 </div>
               </div>
 
               <div className="carousel-item awareness-carousel-item">
                 <div className='text-center p-5'>
-                  <h6>Telehealth Solutions</h6>
-                  <p className='w-75 mx-auto mb-4'>Virtual consultations for accessible care</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
-                </div>
-              </div>
-
-              <div className="carousel-item awareness-carousel-item">
-                <div className='text-center p-5'>
-                  <h6>Health Education</h6>
-                  <p className='w-75 mx-auto mb-4'>Webinars, workshops, and digital resources</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+                  <h6>Medical Devices</h6>
+                  <p className='w-75 mx-auto mb-4'>Cutting-edge devices designed in collaboration with global partners. This vertical will introduce advanced, surgeon-centric technologies that simplify complex procedures and bring the latest innovations to clinical practice. This will be part of our phase 2 of operations. </p>
                 </div>
               </div>
               <div className="carousel-item awareness-carousel-item">
                 <div className='text-center p-5'>
-                  <h6>Corporate Wellness Programs</h6>
-                  <p className='w-75 mx-auto mb-4'>Workplace health solutions for male employees</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+                  <h6>Disposables</h6>
+                  <p className='w-75 mx-auto mb-4'>Our disposables division will focus on delivering high-quality, cost-effective, and eco-friendly products that meet the evolving needs of healthcare providers and patients. With a strong emphasis on biodegradable solutions, this vertical is especially geared towards continence care for men, starting with adult male diapers that combine comfort, reliability, and sustainability. Through innovation in materials and design, we aim to support both clinical care and personal dignity, while reducing environmental impact.</p>
                 </div>
               </div>
               <div className="carousel-item awareness-carousel-item">
                 <div className='text-center p-5'>
-                  <h6>Research &amp; Innovation</h6>
-                  <p className='w-75 mx-auto mb-4'>Driving the science of men's health forward</p>
-                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+                  <h6>Medical Coding & Billing</h6>
+                  <p className='w-75 mx-auto mb-4'>Our healthcare services vertical will provide specialty-driven coding and billing solutions tailored to complex fields like urology, nephrology, and men’s health. By integrating AI-powered tools, we aim to ensure greater accuracy, compliance, and efficiency in medical documentation and claims processing. This vertical is designed to empower hospitals, clinics, and practitioners with streamlined workflows, optimized revenue cycles, and data-driven insights—delivering value beyond conventional coding and billing systems.</p>
                 </div>
               </div>
             </div>
@@ -524,46 +513,58 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
       </section>
 
       <section className='awareness' style={{ background: "#F2F5F6"}}>
-        <h1 className='section-title text-center' data-aos="fade-down">Our Vision</h1>
+        <h1 className='section-title text-center' data-aos="fade-down">Health Awareness Initiatives</h1>
         <div className='container awareness-main mt-5' data-aos="fade-up" data-aos-delay="200">
           <div
-            ref={awarenessCarousel2Ref}
-            id="awarenessCarousel2"
+            ref={awarenessCarouselRef}
+            id="awarenessCarousel1"
             className="carousel slide"
             data-bs-ride="carousel"
-            data-bs-interval="4000"
+            data-bs-interval="3500"
             data-bs-pause="hover"
           >
             <div className="carousel-indicators">
-              <button type="button" data-bs-target="#awarenessCarousel2" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#awarenessCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#awarenessCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
             <div className="carousel-inner awareness-carousel-inner">
               <div className="carousel-item awareness-carousel-item active">
                 <div className='text-center p-5'>
-                  <h6>Pharmaceuticals</h6>
-                  <p className='w-75 mx-auto mb-4'>Innovative, safe, and affordable medicines form the foundation of our journey. Our pharmaceutical vertical will focus on urology, nephrology, and men’s health—delivering both prescription and over-the-counter products to improve patient outcomes and enhance quality of life.</p>
+                  <h6>Men's Health Clinics</h6>
+                  <p className='w-75 mx-auto mb-4'>Specialized diagnosis and treatment</p>
+                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
                 </div>
               </div>
 
               <div className="carousel-item awareness-carousel-item">
                 <div className='text-center p-5'>
-                  <h6>Medical Devices</h6>
-                  <p className='w-75 mx-auto mb-4'>Cutting-edge devices designed in collaboration with global partners. This vertical will introduce advanced, surgeon-centric technologies that simplify complex procedures and bring the latest innovations to clinical practice. This will be part of our phase 2 of operations. </p>
+                  <h6>Telehealth Solutions</h6>
+                  <p className='w-75 mx-auto mb-4'>Virtual consultations for accessible care</p>
+                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+                </div>
+              </div>
+
+              <div className="carousel-item awareness-carousel-item">
+                <div className='text-center p-5'>
+                  <h6>Health Education</h6>
+                  <p className='w-75 mx-auto mb-4'>Webinars, workshops, and digital resources</p>
+                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
                 </div>
               </div>
               <div className="carousel-item awareness-carousel-item">
                 <div className='text-center p-5'>
-                  <h6>Disposables</h6>
-                  <p className='w-75 mx-auto mb-4'>Our disposables division will focus on delivering high-quality, cost-effective, and eco-friendly products that meet the evolving needs of healthcare providers and patients. With a strong emphasis on biodegradable solutions, this vertical is especially geared towards continence care for men, starting with adult male diapers that combine comfort, reliability, and sustainability. Through innovation in materials and design, we aim to support both clinical care and personal dignity, while reducing environmental impact.</p>
+                  <h6>Corporate Wellness Programs</h6>
+                  <p className='w-75 mx-auto mb-4'>Workplace health solutions for male employees</p>
+                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
                 </div>
               </div>
               <div className="carousel-item awareness-carousel-item">
                 <div className='text-center p-5'>
-                  <h6>Medical Coding & Billing</h6>
-                  <p className='w-75 mx-auto mb-4'>Our healthcare services vertical will provide specialty-driven coding and billing solutions tailored to complex fields like urology, nephrology, and men’s health. By integrating AI-powered tools, we aim to ensure greater accuracy, compliance, and efficiency in medical documentation and claims processing. This vertical is designed to empower hospitals, clinics, and practitioners with streamlined workflows, optimized revenue cycles, and data-driven insights—delivering value beyond conventional coding and billing systems.</p>
+                  <h6>Research &amp; Innovation</h6>
+                  <p className='w-75 mx-auto mb-4'>Driving the science of men's health forward</p>
+                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
                 </div>
               </div>
             </div>
