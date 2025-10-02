@@ -9,7 +9,7 @@ export const productsData = {
   products: [
     {
       id: 1,
-      name: "Silodosin Capsules",
+      name: "Silodosin Tablets",
       description: "Helps ease urinary problems caused by an enlarged prostate by relaxing the prostate and bladder muscles, improving urine flow and overall comfort.",
       image: "/assets/img/products/products/1.jpeg",
       category: "urology",
@@ -27,7 +27,7 @@ export const productsData = {
     },
     {
       id: 3,
-      name: "Tamsulosin Hydrochloride 0.4mg Capsules",
+      name: "Tamsulosin Hydrochloride 0.4mg Tablets",
       description: "Provides quick and effective relief from difficulty passing urine, weak stream, and urgency linked to prostate enlargement.",
       image: "/assets/img/products/products/3.jpeg",
       category: "urology",

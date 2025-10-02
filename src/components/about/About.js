@@ -47,7 +47,7 @@ const About = () => {
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">Through partnerships with leading hospitals, medical experts, and digital health platforms, DHYOTA is making high-quality men’s health solutions accessible across India. Our mission is to break barriers, educate, and empower men to take charge of their well-being—without shame, without hesitation.</p>
         </div>
       </section>
-      <section style={{ backgroundColor: "#F9FAFB" }}>
+      {/* <section style={{ backgroundColor: "#F9FAFB" }}>
         <div className="container">
           <h1 className="section-title text-center" data-aos="fade-down">Our Core Values</h1>
           <p className="text-center mb-5" data-aos="fade-up" data-aos-delay="100">Working alongside industry leaders to deliver comprehensive healthcare solutions and drive innovation across the medical technology landscape.</p>
@@ -82,7 +82,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* 
       <section className='journey-section'>
         <div className='container'>
@@ -137,7 +137,7 @@ Consultant Urologist & Facility Director at AINU. Depth Knowledge ensures the or
             </div>
             <div className='col-lg-3' data-aos="fade-up" data-aos-delay="400">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/bhavtej.jpg" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/bhavtej.JPG" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Dr. Bhavatej Enganti</h4>
                 <h5 className='team-card-designation'>Co-Founder & Executive Director</h5>
                 <p className='team-card-description'>Renowned Consultant Urologist with 15+ years in Men's Health, Urology & Reconstructive Surgery. Senior Consultant at AINU, Director of Best Ferticare, and academic researcher. Combines clinical expertise with entrepreneurial vision to advance men's health solutions.</p>
