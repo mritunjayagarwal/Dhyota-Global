@@ -119,14 +119,6 @@ Consultant Urologist & Facility Director at AINU. Depth Knowledge ensures the or
 </p>
               </div>
             </div>
-            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/charan.jpeg" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Dr. Sreecharan Thamatam</h4>
-                <h5 className='team-card-designation'>Co-Founder & Director</h5>
-                <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p>
-              </div>
-            </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="300">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/shailendra.jpeg" alt="Our Team" className='img-fluid' />
@@ -135,10 +127,26 @@ Consultant Urologist & Facility Director at AINU. Depth Knowledge ensures the or
                 <p className='team-card-description'>Pharma leader with 18+ years of experience in top companies including Alkem, Intas, Orchid, and Dr. Reddy’s. Spearheaded urology business launches, brand strategies, and nationwide marketing. Brings deep expertise in building and scaling healthcare brands in India.</p>
               </div>
             </div>
+            <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="400">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/bhavtej.JPG" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dr. Bhavatej Enganti</h4>
+                <h5 className='team-card-designation'>Co-Founder & Executive Director</h5>
+                <p className='team-card-description'>Renowned Consultant Urologist with 15+ years in Men's Health, Urology & Reconstructive Surgery. Senior Consultant at AINU, Director of Best Ferticare, and academic researcher. Combines clinical expertise with entrepreneurial vision to advance men's health solutions.</p>
+              </div>
+            </div>
           </div>
           
           {/* Second row for last 2 team members - centered */}
           <div className='row justify-content-center mt-5'>
+          <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/charan.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dr. Sreecharan Thamatam</h4>
+                <h5 className='team-card-designation'>Co-Founder & Director</h5>
+                <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p>
+              </div>
+            </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="500">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/joji.jpeg" alt="Our Team" className='img-fluid' />
@@ -153,14 +161,6 @@ Consultant Urologist & Facility Director at AINU. Depth Knowledge ensures the or
                 <h4 className='team-card-title'>P. Vinod Reddy</h4>
                 <h5 className='team-card-designation'>Head – Supply Chain Management</h5>
                 <p className='team-card-description'>with more than 14 years of extensive experience in supply chain management, procurement, and operations within leading healthcare institutions.</p>
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="400">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/bhavtej.JPG" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Dr. Bhavatej Enganti</h4>
-                <h5 className='team-card-designation'>Co-Founder & Executive Director</h5>
-                <p className='team-card-description'>Renowned Consultant Urologist with 15+ years in Men's Health, Urology & Reconstructive Surgery. Senior Consultant at AINU, Director of Best Ferticare, and academic researcher. Combines clinical expertise with entrepreneurial vision to advance men's health solutions.</p>
               </div>
             </div>
           </div>
