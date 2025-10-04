@@ -299,16 +299,11 @@
 
 .about-page .team-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: top;
+  height: 280px;
+  object-fit: contain;
+  object-position: center;
   border-radius: 10px;
   margin-bottom: 20px;
-}
-
-.about-page .team-card-img-complete {
-  object-fit: contain !important;
-  object-position: center !important;
   background-color: #f8f9fa;
 }
 
@@ -675,14 +670,9 @@
   }
 
   .about-page .team-card img {
-    height: 180px;
-    object-fit: cover;
-    object-position: top;
-  }
-
-  .about-page .team-card-img-complete {
-    object-fit: contain !important;
-    object-position: center !important;
+    height: 220px;
+    object-fit: contain;
+    object-position: center;
     background-color: #f8f9fa;
   }
 
@@ -826,14 +816,9 @@
   }
 
   .about-page .team-card img {
-    height: 160px;
-    object-fit: cover;
-    object-position: top;
-  }
-
-  .about-page .team-card-img-complete {
-    object-fit: contain !important;
-    object-position: center !important;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
     background-color: #f8f9fa;
   }
 
@@ -961,14 +946,9 @@
   }
 
   .about-page .team-card img {
-    height: 140px;
-    object-fit: cover;
-    object-position: top;
-  }
-
-  .about-page .team-card-img-complete {
-    object-fit: contain !important;
-    object-position: center !important;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
     background-color: #f8f9fa;
   }
 
