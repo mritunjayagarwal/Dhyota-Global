@@ -114,9 +114,7 @@ const About = () => {
                 <img src="/assets/img/about/team/ragoori.jpeg" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Dr. Deepak Ragoori </h4>
                 <h5 className='team-card-designation'>Chairman & Managing Director (CMD)</h5>
-                <p className='team-card-description'>Senior Consultant Urologist with 12+ years of clinical experience across leading hospitals. Expert in Endo-Urology, Lasers with Special Interest in RIRS. Member of Various Prestigious medical institute.
-Consultant Urologist & Facility Director at AINU. Depth Knowledge ensures the organic growth of organisation.
-</p>
+                <p className='team-card-description'>Dr. Ragoori is a distinguished urologist and healthcare entrepreneur with over two decades of experience in clinical practice, innovation, and leadership. As Chairman and Co-Founder of Dhyota Global Healthcare Solutions, he drives the company’s mission to advance men’s health through integrated solutions spanning urology, nephrology, and wellness.</p>
               </div>
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="300">
