@@ -39,9 +39,6 @@ const About = () => {
 
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">At DHYOTA, we believe it’s time for change.</p>
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">We are a new-age Indian healthcare startup dedicated to men’s urological and sexual health. By combining clinical science with empathy, we bring innovative, evidence-based solutions that are safe, discreet, and effective. From rapid-onset ED sprays to performance capsules, our products are carefully formulated to help men regain confidence and live fuller lives.</p>
-
-          <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">We are a new-age Indian healthcare startup dedicated to men’s urological and sexual health. By combining clinical science with empathy, we bring innovative, evidence-based solutions that are safe, discreet, and effective. From rapid-onset ED sprays to performance capsules, our products are carefully formulated to help men regain confidence and live fuller lives.</p>
-
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">But we are more than just products—we are building an ecosystem of care.</p>
 
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">Through partnerships with leading hospitals, medical experts, and digital health platforms, DHYOTA is making high-quality men’s health solutions accessible across India. Our mission is to break barriers, educate, and empower men to take charge of their well-being—without shame, without hesitation.</p>
