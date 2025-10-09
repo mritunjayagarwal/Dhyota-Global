@@ -532,7 +532,7 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
             <div className="carousel-inner awareness-carousel-inner">
               <div className="carousel-item awareness-carousel-item active">
                 <div className='text-center p-5'>
-                  <h6>Men's Health Clinics</h6>
+                  <h6>Digital and Social Media Campaigns</h6>
                   <p className='w-75 mx-auto mb-4'>Specialized diagnosis and treatment</p>
                   <button className="main-btn btn-lg white px-4 py-2">View All</button>
                 </div>
@@ -540,8 +540,24 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
 
               <div className="carousel-item awareness-carousel-item">
                 <div className='text-center p-5'>
-                  <h6>Telehealth Solutions</h6>
+                  <h6>⁠⁠Thematic Awareness Drives</h6>
                   <p className='w-75 mx-auto mb-4'>Virtual consultations for accessible care</p>
+                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+                </div>
+              </div>
+
+              <div className="carousel-item awareness-carousel-item">
+                <div className='text-center p-5'>
+                  <h6>⁠Influencer and ambassador programs</h6>
+                  <p className='w-75 mx-auto mb-4'>To overcome the cultural and societal barriers</p>
+                  <button className="main-btn btn-lg white px-4 py-2">View All</button>
+                </div>
+              </div>
+
+              <div className="carousel-item awareness-carousel-item">
+                <div className='text-center p-5'>
+                  <h6>Collaborations and flagship events</h6>
+                  <p className='w-75 mx-auto mb-4'>To raise awareness and promote men's health</p>
                   <button className="main-btn btn-lg white px-4 py-2">View All</button>
                 </div>
               </div>
