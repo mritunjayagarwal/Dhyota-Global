@@ -30,7 +30,7 @@ const About = () => {
   return (
     <main className="about-page">
       <section className='hero' style={{ marginTop: "10px" }}>
-        <img src="https://indipaisa.netlify.app/img/others/About%20us/Top%20photo.png" alt="About Us" className='img-fluid' style = {{"width": "100%", height: "auto" }} data-aos="fade-up" />
+        <img src="https://indipaisa.netlify.app/img/others/About%20us/Top%20photo.png" alt="About Us" className='img-fluid' style={{ "width": "100%", height: "auto" }} data-aos="fade-up" />
       </section>
       <section>
         <div className='container text-center'>
@@ -105,7 +105,7 @@ const About = () => {
       <section>
         <div className='container'>
           <h1 className='section-title' data-aos="fade-down">Our Team</h1>
-          <div className='row'>
+          <div className='row justify-content-center'>
           <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/charan.jpeg" alt="Our Team" className='img-fluid' />
@@ -122,11 +122,7 @@ const About = () => {
                 <p className='team-card-description'>Pharma leader with 18+ years of experience in top companies including Alkem, Intas, Orchid, and Dr. Reddy’s. Spearheaded urology business launches, brand strategies, and nationwide marketing. Brings deep expertise in building and scaling healthcare brands in India.</p>
               </div>
             </div>
-          </div>
-          
-          {/* Second row for last 2 team members - centered */}
-          <div className='row justify-content-center mt-5'>
-            <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="500">
+          <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="500">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/joji.jpeg" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Joji Reddy</h4>
@@ -142,10 +138,66 @@ const About = () => {
                 <p className='team-card-description'>with more than 14 years of extensive experience in supply chain management, procurement, and operations within leading healthcare institutions.</p>
               </div>
             </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/Ashish.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Ashish Patil</h4>
+                <h5 className='team-card-designation'>Sales head, Maharashtra & Chhattisgarh</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/Satyajeet.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Satyajit Sinha Mohapatra </h4>
+                <h5 className='team-card-designation'>Sales head, West Bengal and North East & Key Account Management East</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/Amit.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Amit Verma</h4>
+                <h5 className='team-card-designation'>Sales head for Delhi NCR, Punjab, Haryana, Jammu & Kashmir</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/Venkateshwarlu.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Venkateswarlu Abbisetti</h4>
+                <h5 className='team-card-designation'>Sales head for Telangana, Andhra Pradesh & Karnataka</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/Sandeep.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Sandeep Tiwari</h4>
+                <h5 className='team-card-designation'>Sales head for Uttar Pradesh & Uttarakhand</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/Dipan.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dipan Shukla</h4>
+                <h5 className='team-card-designation'>West Zone ( Gujarat, Madhya Pradesh & Rajasthan) Sales Head</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/Anandha.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Anandha Krishnan</h4>
+                <h5 className='team-card-designation'>Sales head for Tamilnadu & Kerala</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      
+
       <CampaignSection />
     </main>
   );
