@@ -114,6 +114,15 @@ export const productsData = {
       category: "antibiotic",
       price: "$89",
       features: ["Powerful antibiotic", "Fights resistance", "Reliable treatment"]
+    },
+    {
+      id: 13,
+      name: "Lignocaine Hydrochloride 2% Gel",
+      description: "Lignocaine Hydrochloride 2% Gel is a topical numbing gel used to temporarily relieve pain, burning, or discomfort on the skin or mucous membranes. It works by blocking nerve signals. Common uses include minor skin irritation, mouth/anal discomfort, and as anesthesia before small procedures. Side effects are usually mild—burning or redness. Avoid overuse or applying on large/broken skin.",
+      image: "/assets/img/products/products/13.png",
+      category: "anesthetic",
+      price: "$69",
+      features: ["Temporarily relieves pain", "Burning or discomfort", "Anesthesia before small procedures"]
     }
   ]  
 };
