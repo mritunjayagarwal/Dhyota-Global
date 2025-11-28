@@ -30,7 +30,7 @@ const About = () => {
   return (
     <main className="about-page">
       <section className='hero' style={{ marginTop: "10px" }}>
-        <img src="https://indipaisa.netlify.app/img/others/About%20us/Top%20photo.png" alt="About Us" className='img-fluid' style={{ "width": "100%", height: "auto" }} data-aos="fade-up" />
+        <img src="/assets/img/about/hero-bg.png" alt="About Us" className='img-fluid' style={{ "width": "100%", height: "auto" }} data-aos="fade-up" />
       </section>
       <section>
         <div className='container text-center'>
@@ -42,6 +42,36 @@ const About = () => {
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">But we are more than just products—we are building an ecosystem of care.</p>
 
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">Through partnerships with leading hospitals, medical experts, and digital health platforms, DHYOTA is making high-quality men’s health solutions accessible across India. Our mission is to break barriers, educate, and empower men to take charge of their well-being—without shame, without hesitation.</p>
+        </div>
+      </section>
+
+      <section>
+        <div className='container text-center'>
+          <h1 className='section-title' data-aos="fade-down">Our Leadership</h1>
+          <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+  Our leadership team brings together the perfect blend of medical expertise, pharmaceutical experience, and operational strength. Dhyota Global Healthcare Solutions is guided by six directors whose collective knowledge drives our vision of building innovative, accessible, and impactful healthcare products.
+</p>
+
+<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+  At the core of our leadership are Deepak Ragoori and Bhavatej Enganti, senior urologists with extensive clinical and surgical experience. Their deep understanding of patient needs, product relevance, and evidence-based innovation shapes Dhyota’s medical and scientific direction.
+</p>
+
+<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+  Supporting this foundation are Shailendra Pal and Joji Reddy, seasoned professionals with vast experience in the pharmaceutical industry. Their expertise in product development, regulatory insight, and market strategy strengthens Dhyota’s position in a highly competitive healthcare landscape.
+</p>
+
+<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+  Sree Charan Reddy, a senior anesthesiologist, adds valuable clinical depth and perspective on patient safety, perioperative care, and practical application of healthcare solutions.
+</p>
+
+<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+  Completing the team is Vinod Reddy, who brings over 15 years of experience in supply chain management. His operational expertise ensures seamless execution, quality assurance, and efficient distribution across domestic and global markets.
+</p>
+
+<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+  Together, this leadership group forms a unified force—combining clinical excellence, pharma expertise, and operational rigour—to guide Dhyota’s journey toward becoming a global healthcare innovator.
+</p>
+
         </div>
       </section>
       {/* <section style={{ backgroundColor: "#F9FAFB" }}>

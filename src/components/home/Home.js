@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
 import { Navigation, Footer, PartnersSection, CampaignSection } from '../shared';
+import { productsData } from '../products/data';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -384,7 +385,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='impact' style={{ padding: "50px 0" }} ref={impactSectionRef}>
+      {/* <section className='impact' style={{ padding: "50px 0" }} ref={impactSectionRef}>
         <div className="container">
           <h1 className='section-title text-center' data-aos="fade-down">Our Impact</h1>
           <p className='text-center mb-5' data-aos="fade-up" data-aos-delay="100">Trusted by healthcare professionals and patients worldwide</p>
@@ -455,14 +456,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <PartnersSection /> */}
 
       <CampaignSection title="Partner With Us" description="Let’s Build the Future of Men’s Health Together. We collaborate with pharma companies,
 medical device innovators, hospitals &amp; specialty clinics, and research institutions." buttonText="Start a Partnership" buttonClass="orange" />
 
-      <section className='testimonials' style={{ padding: "50px 0" }}>
+      {/* <section className='testimonials' style={{ padding: "50px 0" }}>
         <div className='container'>
           <h1 className='section-title text-center' data-aos="fade-down">Testimonials & Trust</h1>
           <div className='row mt-5'>
@@ -510,6 +511,39 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
             </div>
           </div>
         </div>
+      </section> */}
+
+      {/* Products Slider Section */}
+      <section className="products-slider-section">
+        <div className="container">
+          <div className="products-wrap">
+            <div className="products-heading text-center">
+              <h3 className="section-title">Our Products</h3>
+            </div>
+            <div className="products-contwrap">
+              <div className="products-carousel">
+                <div className="products-track">
+                  {/* First set of products */}
+                  {productsData.products.map((product) => (
+                    <div key={product.id} className="products-item">
+                      <div className="products-img text-center">
+                        <img src={product.image} className="img-fluid" alt={product.name} />
+                      </div>
+                    </div>
+                  ))}
+                  {/* Duplicate set for seamless loop */}
+                  {productsData.products.map((product) => (
+                    <div key={`duplicate-${product.id}`} className="products-item">
+                      <div className="products-img text-center">
+                        <img src={product.image} className="img-fluid" alt={product.name} />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className='awareness' style={{ background: "#F2F5F6"}}>
@@ -527,6 +561,10 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
               <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#awarenessCarousel1" data-bs-slide-to="6" aria-label="Slide 7"></button>
             </div>
 
             <div className="carousel-inner awareness-carousel-inner">
@@ -548,7 +586,7 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
 
               <div className="carousel-item awareness-carousel-item">
                 <div className='text-center p-5'>
-                  <h6>⁠Influencer and ambassador programs</h6>
+                  <h6>Influencer and ambassador programs</h6>
                   <p className='w-75 mx-auto mb-4'>To overcome the cultural and societal barriers</p>
                   <button className="main-btn btn-lg white px-4 py-2">View All</button>
                 </div>
@@ -587,6 +625,7 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
           </div>
         </div>
       </section>
+
     </main>
   );
 };
