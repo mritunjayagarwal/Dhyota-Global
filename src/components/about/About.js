@@ -49,28 +49,28 @@ const About = () => {
         <div className='container text-center'>
           <h1 className='section-title' data-aos="fade-down">Our Leadership</h1>
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
-  Our leadership team brings together the perfect blend of medical expertise, pharmaceutical experience, and operational strength. Dhyota Global Healthcare Solutions is guided by six directors whose collective knowledge drives our vision of building innovative, accessible, and impactful healthcare products.
-</p>
+            Our leadership team brings together the perfect blend of medical expertise, pharmaceutical experience, and operational strength. Dhyota Global Healthcare Solutions is guided by six directors whose collective knowledge drives our vision of building innovative, accessible, and impactful healthcare products.
+          </p>
 
-<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
-  At the core of our leadership are Deepak Ragoori and Bhavatej Enganti, senior urologists with extensive clinical and surgical experience. Their deep understanding of patient needs, product relevance, and evidence-based innovation shapes Dhyota’s medical and scientific direction.
-</p>
+          <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+            At the core of our leadership are Deepak Ragoori and Bhavatej Enganti, senior urologists with extensive clinical and surgical experience. Their deep understanding of patient needs, product relevance, and evidence-based innovation shapes Dhyota’s medical and scientific direction.
+          </p>
 
-<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
-  Supporting this foundation are Shailendra Pal and Joji Reddy, seasoned professionals with vast experience in the pharmaceutical industry. Their expertise in product development, regulatory insight, and market strategy strengthens Dhyota’s position in a highly competitive healthcare landscape.
-</p>
+          <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+            Supporting this foundation are Shailendra Pal and Joji Reddy, seasoned professionals with vast experience in the pharmaceutical industry. Their expertise in product development, regulatory insight, and market strategy strengthens Dhyota’s position in a highly competitive healthcare landscape.
+          </p>
 
-<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
-  Sree Charan Reddy, a senior anesthesiologist, adds valuable clinical depth and perspective on patient safety, perioperative care, and practical application of healthcare solutions.
-</p>
+          <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+            Sree Charan Reddy, a senior anesthesiologist, adds valuable clinical depth and perspective on patient safety, perioperative care, and practical application of healthcare solutions.
+          </p>
 
-<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
-  Completing the team is Vinod Reddy, who brings over 15 years of experience in supply chain management. His operational expertise ensures seamless execution, quality assurance, and efficient distribution across domestic and global markets.
-</p>
+          <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+            Completing the team is Vinod Reddy, who brings over 15 years of experience in supply chain management. His operational expertise ensures seamless execution, quality assurance, and efficient distribution across domestic and global markets.
+          </p>
 
-<p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
-  Together, this leadership group forms a unified force—combining clinical excellence, pharma expertise, and operational rigour—to guide Dhyota’s journey toward becoming a global healthcare innovator.
-</p>
+          <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
+            Together, this leadership group forms a unified force—combining clinical excellence, pharma expertise, and operational rigour—to guide Dhyota’s journey toward becoming a global healthcare innovator.
+          </p>
 
         </div>
       </section>
@@ -138,6 +138,23 @@ const About = () => {
           <div className='row justify-content-center'>
           <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
+                <img src="/assets/img/about/team/ragoori.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dr. Deepak Ragoori</h4>
+                <h5 className='team-card-designation'>Chairman</h5>
+                <p className='team-card-description'>Senior Consultant Urologist with 12+ years of clinical experience across leading hospitals. Expert in Endo-Urology, Lasers with Special Interest in RIRS. Member of Various Prestigious medical institute.
+Consultant Urologist & Facility Director at AINU. Depth Knowledge ensures the organic growth of organisation.</p>
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/bhavtej.JPG" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Dr. Bhavatej Enganti</h4>
+                <h5 className='team-card-designation'>Executive Director</h5>
+                <p className='team-card-description'>Renowned Consultant Urologist with 15+ years in Men’s Health, Urology & Reconstructive Surgery. Senior Consultant at AINU, Director of Best Ferticare, and academic researcher. Combines clinical expertise with entrepreneurial vision to advance men’s health solutions.</p>
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
                 <img src="/assets/img/about/team/charan.jpeg" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Dr. Sreecharan Thamatam</h4>
                 <h5 className='team-card-designation'>Co-Founder & Director</h5>
@@ -148,11 +165,11 @@ const About = () => {
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/shailendra.jpeg" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Shailendra Pal</h4>
-                <h5 className='team-card-designation'>Co-Founder & Managing Director</h5>
+                <h5 className='team-card-designation'>Managing Director</h5>
                 <p className='team-card-description'>Pharma leader with 18+ years of experience in top companies including Alkem, Intas, Orchid, and Dr. Reddy’s. Spearheaded urology business launches, brand strategies, and nationwide marketing. Brings deep expertise in building and scaling healthcare brands in India.</p>
               </div>
             </div>
-          <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="500">
+            <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="500">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/joji.jpeg" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Joji Reddy</h4>
