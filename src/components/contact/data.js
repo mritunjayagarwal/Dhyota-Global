@@ -68,12 +68,12 @@ export const contactData = {
     {
       id: 1,
       question: "What makes Dhyota different from other healthcare providers?",
-      answer: "Dhyota focuses exclusively on men’s health, offering a holistic ecosystem that spans pharmaceuticals, medical devices, disposables, and digital healthcare services. We combine innovation, research, and compassionate care to address every dimension of well-being—physical, emotional, mental, and social."
+      answer: "Dhyota focuses exclusively on men’s health, offering a holistic ecosystem that spans pharmaceuticals, medical devices, disposables, and medical coding. We combine innovation, research, and compassionate care to address every dimension of well-being—physical, emotional, mental, and social."
     },
     {
       id: 2,
       question: "How do I get started with Dhyota?",
-      answer: "Getting started is simple! You can contact us through our website, reach out to our patient support team, or schedule a consultation at one of our specialized men’s health clinics. We’ll guide you step by step to access the right services for your needs."
+      answer: "Getting started is simple! You can contact us through our website and linkedin page. We’ll guide you step by step to access the right services for your needs."
     },
     {
       id: 3,
@@ -82,18 +82,13 @@ export const contactData = {
     },
     {
       id: 4,
-      question: "Which areas of men’s health does Dhyota cover?",
-      answer: "We specialize in urological health, sexual and hormonal health, mental health, general wellness, hygiene and grooming, and physical performance. Our solutions cover the full lifecycle of men’s health from adolescence to older age."
+      question: "What product categories do we offer??",
+      answer: "We offer products across urological care, sexual health, personal hygiene, general wellness, grooming, and continence care."
     },
     {
       id: 5,
       question: "How can I partner with Dhyota?",
       answer: "We collaborate with pharmaceutical companies, medical device innovators, hospitals, specialty clinics, and research institutions. Partners benefit from our integrated men’s health ecosystem, innovation, and shared commitment to improving patient outcomes. Contact us via the Partner With Us page."
-    },
-    {
-      id: 6,
-      question: "Do you offer telehealth services?",
-      answer: "Yes, Dhyota provides virtual consultations through secure telehealth platforms, giving patients convenient access to specialists, personalized care plans, and follow-ups from the comfort of their home."
     }
   ]  
 };

@@ -53,7 +53,7 @@ const About = () => {
           </p>
 
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
-            At the core of our leadership are Deepak Ragoori and Bhavatej Enganti, senior urologists with extensive clinical and surgical experience. Their deep understanding of patient needs, product relevance, and evidence-based innovation shapes Dhyota’s medical and scientific direction.
+            At the core of our leadership are Deepak Ragoori and Bhavatej Enganti with extensive clinical and surgical experience. Their deep understanding of patient needs, product relevance, and evidence-based innovation shapes Dhyota’s medical and scientific direction.
           </p>
 
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
@@ -71,6 +71,39 @@ const About = () => {
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
             Together, this leadership group forms a unified force—combining clinical excellence, pharma expertise, and operational rigour—to guide Dhyota’s journey toward becoming a global healthcare innovator.
           </p>
+
+          <div className='row mt-5'>
+            <div className='col-lg-4 mt-3'>
+              <p className='text-muted m-0'>Founder & Chairman</p>
+              <h4 className='my-2'>Dr. Deepak Ragoori</h4>
+              <p className='text-muted'>Senior Urologist | Founder | Strategic & Medical Leadership</p>
+            </div>
+            <div className='col-lg-4 mt-3'>
+              <p className='text-muted m-0'>Executive Director</p>
+              <h4 className='my-2'>Bhavatej Enganti</h4>
+              <p className='text-muted'>Senior Urologist | Operations & Clinical Innovation</p>
+            </div>
+            <div className='col-lg-4 mt-3'>
+              <p className='text-muted m-0'>Managing Director</p>
+              <h4 className='my-2'>Shailendra Pal</h4>
+              <p className='text-muted'>Pharmaceutical Expertise | Regulatory & Market Strategy</p>
+            </div>
+            <div className='col-lg-4 mt-3'>
+              <p className='text-muted m-0'>Co-Founder & Director</p>
+              <h4 className='my-2'>Sree Charan Reddy</h4>
+              <p className='text-muted'>Clinical Affairs & Patient Safety</p>
+            </div>
+            <div className='col-lg-4 mt-3'>
+              <p className='text-muted m-0'>President</p>
+              <h4 className='my-2'>Joji Reddy</h4>
+              <p className='text-muted'>Pharma Sales, Marketing & Growth</p>
+            </div>
+            <div className='col-lg-4 mt-3'>
+              <p className='text-muted m-0'>Head - Supply Chain Management</p>
+              <h4 className='my-2'>P. Vinod Reddy</h4>
+              <p className='text-muted'>Supply Chain, Distribution & Systems Management</p>
+            </div>
+          </div>
 
         </div>
       </section>
@@ -136,23 +169,6 @@ const About = () => {
         <div className='container'>
           <h1 className='section-title' data-aos="fade-down">Our Team</h1>
           <div className='row justify-content-center'>
-          <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/ragoori.jpeg" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Dr. Deepak Ragoori</h4>
-                <h5 className='team-card-designation'>Chairman</h5>
-                <p className='team-card-description'>Senior Consultant Urologist with 12+ years of clinical experience across leading hospitals. Expert in Endo-Urology, Lasers with Special Interest in RIRS. Member of Various Prestigious medical institute.
-Consultant Urologist & Facility Director at AINU. Depth Knowledge ensures the organic growth of organisation.</p>
-              </div>
-            </div>
-            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/bhavtej.JPG" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Dr. Bhavatej Enganti</h4>
-                <h5 className='team-card-designation'>Executive Director</h5>
-                <p className='team-card-description'>Renowned Consultant Urologist with 15+ years in Men’s Health, Urology & Reconstructive Surgery. Senior Consultant at AINU, Director of Best Ferticare, and academic researcher. Combines clinical expertise with entrepreneurial vision to advance men’s health solutions.</p>
-              </div>
-            </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/charan.jpeg" alt="Our Team" className='img-fluid' />

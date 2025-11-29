@@ -251,7 +251,7 @@ const Products = () => {
       </section> */}
 
       {/* Impact Section */}
-      <section className='impact' style={{ padding: "50px 0" }}>
+      {/* <section className='impact' style={{ padding: "50px 0" }}>
         <div className="container">
           <h1 className='section-title text-center'>Our Impact</h1>
           <p className='text-center mb-5'>Trusted by healthcare professionals and patients worldwide</p>
@@ -322,9 +322,9 @@ const Products = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       
-      <section className='testimonials' style={{ padding: "50px 0", backgroundColor: "#f8f9fa" }}>
+      {/* <section className='testimonials' style={{ padding: "50px 0", backgroundColor: "#f8f9fa" }}>
         <div className='container'>
           <h1 className='section-title text-center'>Testimonials & Trust</h1>
           <p className='text-center mb-5'>Trusted by healthcare professionals and patients worldwide</p>
@@ -373,7 +373,7 @@ const Products = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       
       <SupportSection 
         title="Discover Solutions for Every Stage of Men's Health"

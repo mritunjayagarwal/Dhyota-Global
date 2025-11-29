@@ -72,9 +72,9 @@ export const productsData = {
     },
     {
       id: 8,
-      name: "Lidocaine Hydrochloride 2% Jelly",
+      name: "Lignocaine Hydrochloride 2% Gel",
       description: "A soothing anesthetic jelly for pain relief in urological or gynecological use, offering comfort during minor medical procedures.",
-      image: "/assets/img/products/products/8.jpeg",
+      image: "/assets/img/products/products/13.png",
       category: "anesthetic",
       price: "$19",
       features: ["Pain relief", "Soothing effect", "Safe application"]
@@ -114,15 +114,6 @@ export const productsData = {
       category: "antibiotic",
       price: "$89",
       features: ["Powerful antibiotic", "Fights resistance", "Reliable treatment"]
-    },
-    {
-      id: 13,
-      name: "Lignocaine Hydrochloride 2% Gel",
-      description: "Lignocaine Hydrochloride 2% Gel is a topical numbing gel used to temporarily relieve pain, burning, or discomfort on the skin or mucous membranes. It works by blocking nerve signals.",
-      image: "/assets/img/products/products/13.png",
-      category: "anesthetic",
-      price: "$69",
-      features: ["Temporarily relieves pain", "Burning or discomfort", "Anesthesia before small procedures"]
     }
   ]  
 };
