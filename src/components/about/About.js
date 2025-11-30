@@ -75,7 +75,7 @@ const About = () => {
           <div className='row mt-5'>
             <div className='col-lg-4 mt-3'>
               <p className='text-muted m-0'>Founder & Chairman</p>
-              <h4 className='my-2'>Dr. Deepak Ragoori</h4>
+              <h4 className='my-2'>Deepak Ragoori</h4>
               <p className='text-muted'>Senior Urologist | Founder | Strategic & Medical Leadership</p>
             </div>
             <div className='col-lg-4 mt-3'>
