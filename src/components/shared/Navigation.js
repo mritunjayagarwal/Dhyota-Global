@@ -90,7 +90,7 @@ const Navigation = () => {
               </span>
             </li>
             <li className="nav-item">
-              <span className="nav-link disabled" style={{ color: '#999', cursor: 'not-allowed' }}>
+              <span className="nav-link" to="/campaign" style={{ color: '#999', cursor: 'not-allowed' }}>
                 Campaign
               </span>
             </li>
