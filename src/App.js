@@ -5,7 +5,7 @@ import Home from './components/home/Home';
 // Temporarily disabled imports
 import About from './components/about/About';
 import Contact from './components/contact';
-// import Campaign from './components/campaign/Campaign';
+import Campaign from './components/campaign/Campaign';
 // import Partners from './components/partners';
 import Products from './components/products';
 import './App.css';
