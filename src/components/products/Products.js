@@ -4,6 +4,52 @@ import { productsData } from './data';
 import Isotope from 'isotope-layout';
 import { SupportSection } from '../shared';
 
+const SLIDESHOW_INTERVAL_MS = 1200;
+
+const ProductCard = ({ product }) => {
+  const images = product.images && product.images.length > 0 ? product.images : [];
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    if (!isHovered || images.length <= 1) {
+      setActiveIndex(0);
+      return;
+    }
+    setActiveIndex((prev) => (prev + 1) % images.length);
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % images.length);
+    }, SLIDESHOW_INTERVAL_MS);
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isHovered, images.length]);
+
+  return (
+    <div className={`product-item ${product.category}`}>
+      <div
+        className="campaign-card"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="campaign-card-image">
+          {images.map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt={product.name}
+              className={`product-img${i === activeIndex ? ' active-img' : ''}`}
+            />
+          ))}
+        </div>
+        <div className="campaign-card-content">
+          <h4 className="campaign-card-title">{product.name}</h4>
+          <p className="campaign-card-description">{product.description}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Products = () => {
   const carouselRef = useRef(null);
   const campaignCarouselRef = useRef(null);
@@ -171,17 +217,7 @@ const Products = () => {
           </div>
           <div ref={isotopeRef} className="products-grid">
             {productsData.products.map((product) => (
-              <div key={product.id} className={`product-item ${product.category}`}>
-                <div className="campaign-card">
-                  <div className="campaign-card-image">
-                    <img src={product.image} alt={product.name} />
-                  </div>
-                                      <div className="campaign-card-content">
-                      <h4 className="campaign-card-title">{product.name}</h4>
-                      <p className="campaign-card-description">{product.description}</p>
-                    </div>
-                </div>
-              </div>
+              <ProductCard key={product.id} product={product} />
             ))}
           </div>
         </div>

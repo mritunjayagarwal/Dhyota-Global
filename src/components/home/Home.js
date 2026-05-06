@@ -527,7 +527,7 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
                   {productsData.products.map((product) => (
                     <div key={product.id} className="products-item">
                       <div className="products-img text-center">
-                        <img src={product.image} className="img-fluid" alt={product.name} />
+                        <img src={product.images?.[0]} className="img-fluid" alt={product.name} />
                       </div>
                     </div>
                   ))}
@@ -535,7 +535,7 @@ medical device innovators, hospitals &amp; specialty clinics, and research insti
                   {productsData.products.map((product) => (
                     <div key={`duplicate-${product.id}`} className="products-item">
                       <div className="products-img text-center">
-                        <img src={product.image} className="img-fluid" alt={product.name} />
+                        <img src={product.images?.[0]} className="img-fluid" alt={product.name} />
                       </div>
                     </div>
                   ))}
