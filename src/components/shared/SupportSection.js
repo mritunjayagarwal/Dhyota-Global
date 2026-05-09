@@ -1,18 +1,27 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SupportSection.css';
 
-const SupportSection = ({ 
-  title = "Support Men's Wellness Initiatives", 
+const SupportSection = ({
+  title = "Support Men's Wellness Initiatives",
   description = "Join thousands of advocates, healthcare professionals, and community members in creating a healthier future for men everywhere.",
   buttonText = "Join Our Mission",
   buttonClass = "white",
-  scrollToSection = null
+  scrollToSection = null,
+  linkTo = null
 }) => {
+  const navigate = useNavigate();
+
   const handleButtonClick = () => {
+    if (linkTo) {
+      navigate(linkTo);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
     if (scrollToSection) {
       const element = document.querySelector(scrollToSection);
       if (element) {
-        element.scrollIntoView({ 
+        element.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });

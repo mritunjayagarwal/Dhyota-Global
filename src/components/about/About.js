@@ -81,7 +81,7 @@ const About = () => {
             <div className='col-lg-6 mt-3'>
               <p className='text-muted m-0'>Executive Director</p>
               <h4 className='my-2'>Bhavatej Enganti</h4>
-              <p className='text-muted'>Senior Urologist | Operations & Clinical Innovation</p>
+              <p className='text-muted'>Senior Urologist | Founder | Operations & Clinical Innovation</p>
             </div>
             {/* <div className='col-lg-4 mt-3'>
               <p className='text-muted m-0'>Managing Director</p>
@@ -203,10 +203,18 @@ const About = () => {
             </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
               <div className='team-card text-center'>
+                <img src="/assets/img/about/team/SANJIB DUTTA.JPEG" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Sanjib Dutta</h4>
+                <h5 className='team-card-designation'>General Manager (West Zone)</h5>
+                {/* <p className='team-card-description'></p> */}
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
+              <div className='team-card text-center'>
                 <img src="/assets/img/about/team/ANIL KUMAR.jpeg" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Anil Kumar Podishetty</h4>
                 <h5 className='team-card-designation'>Associate General Manager</h5>
-                <p className='team-card-description'>Pharmaceutical business leader with 17 years of experience in sales, strategy, product commercialisation, and speciality therapy development across leading organisations such as Pfizer, Ranbaxy Laboratories, Dr Reddy’s Laboratories, Hetero, Shilpa Medicare Ltd, and Celon Laboratories. Focused on men’s health, urology, and oncology, he is known for an innovation-led approach that blends therapeutic insight with commercial acumen to build scalable brands and drive sustainable growth & collaborations.</p>
+                <p className='team-card-description'>Pharmaceutical business leader with 17 years of experience across Pfizer, Ranbaxy, Dr Reddy’s, Hetero, Shilpa Medicare, and Celon Laboratories, specialising in men’s health, urology, and oncology. Known for combining therapeutic expertise with commercial strategy to build scalable brands, drive growth, and enable strategic collaborations.</p>
               </div>
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">

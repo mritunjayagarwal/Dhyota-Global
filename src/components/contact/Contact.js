@@ -258,7 +258,7 @@ This message was sent from the Dhyota Global website contact form.
                   <h5 style={{ fontWeight: "900" }}>Support Hours</h5>
                   <div className='support-hours-container'>
                     <div className='support-hours-row'>
-                      <span className='support-hours-day'>Monday - Saturday</span>
+                      <span className='support-hours-day'>Monday - Friday</span>
                       <span className='support-hours-time'>10:00 AM - 5:00 PM</span>
                     </div>
                     <div className='support-hours-row'>

@@ -411,12 +411,12 @@ const Products = () => {
         </div>
       </section> */}
       
-      <SupportSection 
+      <SupportSection
         title="Discover Solutions for Every Stage of Men's Health"
         description="Join thousands of healthcare professionals who trust Dhyota Global for comprehensive wellness solutions."
-        buttonText="View Products"
+        buttonText="Contact Us"
         buttonClass="white"
-        scrollToSection="#products-grid"
+        linkTo="/contact"
       />
     </main>
   );

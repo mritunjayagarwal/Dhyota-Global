@@ -13,7 +13,8 @@ export const productsData = {
       description: "Helps ease urinary problems caused by an enlarged prostate by relaxing the prostate and bladder muscles, improving urine flow and overall comfort.",
       images: [
         "/assets/img/products/products/1.jpeg",
-        "/assets/img/products/products/hover/Bnign 4 Black.jpeg"
+        "/assets/img/products/products/hover/Bnign 4 Black.jpeg",
+        "/assets/img/products/products/hover/Bnign 8 White.jpeg"
       ],
       category: "urology",
       price: "$49",
@@ -85,22 +86,11 @@ export const productsData = {
       description: "Fast-acting spray that gently reduces sensitivity, helping delay ejaculation and extend intimacy for greater satisfaction.",
       images: [
         "/assets/img/products/products/7.jpeg",
-        "/assets/img/products/products/hover/IMG_1073.jpeg"
+        "/assets/img/products/products/hover/EdSpray Black.jpeg"
       ],
       category: "sexual health",
       price: "$29",
       features: ["Delays ejaculation", "Enhances intimacy", "Easy to use"]
-    },
-    {
-      id: 8,
-      name: "Lignocaine Hydrochloride 2% Gel",
-      description: "A soothing anesthetic jelly for pain relief in urological or gynecological use, offering comfort during minor medical procedures.",
-      images: [
-        "/assets/img/products/products/13.png"
-      ],
-      category: "anesthetic",
-      price: "$19",
-      features: ["Pain relief", "Soothing effect", "Safe application"]
     },
     {
       id: 9,
@@ -108,7 +98,8 @@ export const productsData = {
       description: "Helps control sudden urges, frequent urination, and leakage due to overactive bladder, allowing you to live more freely and confidently.",
       images: [
         "/assets/img/products/products/9.jpeg",
-        "/assets/img/products/products/hover/Betmira 50 White.jpeg"
+        "/assets/img/products/products/hover/Betmira 50 White.jpeg",
+        "/assets/img/products/products/hover/Betmira 25.jpeg"
       ],
       category: "urology",
       price: "$79",
@@ -131,7 +122,8 @@ export const productsData = {
       name: "Cefixime 200mg + Ofloxacin 200mg Tablets",
       description: "A strong antibiotic combination that treats infections of the lungs, urinary tract, and stomach, helping you recover quickly and effectively.",
       images: [
-        "/assets/img/products/products/11.jpeg"
+        "/assets/img/products/products/11.jpeg",
+         "/assets/img/products/products/hover/Demxim.jpeg"
       ],
       category: "antibiotic",
       price: "$69",
@@ -143,11 +135,23 @@ export const productsData = {
       description: "An advanced antibiotic that works against resistant infections, providing strong protection and ensuring reliable recovery.",
       images: [
         "/assets/img/products/products/12.jpeg",
-        "/assets/img/products/products/hover/Dfaro 200 White.jpeg"
+        "/assets/img/products/products/hover/Dfaro 200 White.jpeg",
+        "/assets/img/products/products/hover/Dfaro ER 300.jpeg"
       ],
       category: "antibiotic",
       price: "$89",
       features: ["Powerful antibiotic", "Fights resistance", "Reliable treatment"]
+    },
+    {
+      id: 8,
+      name: "Lignocaine Hydrochloride 2% Gel",
+      description: "A soothing anesthetic jelly for pain relief in urological or gynecological use, offering comfort during minor medical procedures.",
+      images: [
+        "/assets/img/products/products/13.png"
+      ],
+      category: "anesthetic",
+      price: "$19",
+      features: ["Pain relief", "Soothing effect", "Safe application"]
     }
   ]
 };
