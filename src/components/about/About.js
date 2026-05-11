@@ -203,7 +203,7 @@ const About = () => {
             </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/SANJIB DUTTA.JPEG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/SANJIB.jpeg" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Sanjib Dutta</h4>
                 <h5 className='team-card-designation'>General Manager (West Zone)</h5>
                 {/* <p className='team-card-description'></p> */}
