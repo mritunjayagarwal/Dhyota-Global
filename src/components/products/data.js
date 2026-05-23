@@ -61,7 +61,8 @@ export const productsData = {
       name: "Tadalafil 5mg + Alfuzosin 10mg Tablets",
       description: "Specially designed for men with urinary issues and erectile dysfunction, improving urine flow while restoring sexual performance.",
       images: [
-        "/assets/img/products/products/5.jpeg"
+        "/assets/img/products/products/5.jpeg",
+        "/assets/img/products/products/hover/Tedalfa.jpeg"
       ],
       category: "men's health",
       price: "$99",
@@ -86,7 +87,7 @@ export const productsData = {
       description: "Fast-acting spray that gently reduces sensitivity, helping delay ejaculation and extend intimacy for greater satisfaction.",
       images: [
         "/assets/img/products/products/7.jpeg",
-        "/assets/img/products/products/hover/EdSpray Black.jpeg"
+        "/assets/img/products/products/hover/EdSprayBlack.jpeg"
       ],
       category: "sexual health",
       price: "$29",

@@ -1,145 +1,170 @@
-// Campaign page data
 export const campaignData = {
   hero: {
-    title: "Our Campaigns",
-    subtitle: "Making a difference through impactful initiatives",
-    description: "Join us in our mission to create positive change in communities worldwide through our various campaigns and initiatives."
-  },
-  carousel: {
-    slides: [
-      {
-        id: 1,
-        image: "/assets/img/home/campaign/smile.png",
-        title: "Smile Campaign",
-        description: "Bringing joy and happiness to communities through our smile initiative. Every smile matters in building a better world.",
-        buttonText: "Learn More",
-        buttonLink: "#"
-      },
-      {
-        id: 2,
-        image: "/assets/img/home/hero-bg-2.jpg",
-        title: "Health Awareness",
-        description: "Promoting health awareness and providing essential healthcare services to underserved communities.",
-        buttonText: "Get Involved",
-        buttonLink: "#"
-      },
-      {
-        id: 3,
-        image: "/assets/img/home/hero-bg-3.jpeg",
-        title: "Education for All",
-        description: "Ensuring quality education reaches every child, regardless of their background or circumstances.",
-        buttonText: "Support Us",
-        buttonLink: "#"
-      }
+    title: 'Campaigns',
+    description: "Explore our initiatives aimed at advancing men's health and building a healthier tomorrow.",
+    stats: [
+      { id: 'lives', value: '10,000+', label: 'Lives Impacted', icon: 'fa-solid fa-user-group' },
+      { id: 'countries', value: '25+', label: 'Countries Reached', icon: 'fa-solid fa-earth-asia' }
     ]
   },
-  stats: [
-    {
-      number: "50+",
-      label: "Active Campaigns",
-      description: "Ongoing initiatives making a real impact"
-    },
-    {
-      number: "100K+",
-      label: "Lives Touched",
-      description: "People positively affected by our campaigns"
-    },
-    {
-      number: "25+",
-      label: "Countries",
-      description: "Global reach of our campaign efforts"
-    },
-    {
-      number: "95%",
-      label: "Success Rate",
-      description: "Campaigns achieving their intended goals"
-    }
+  categories: [
+    { id: 'all', name: 'All Campaigns', filter: '*', icon: 'fa-solid fa-table-cells-large' },
+    { id: 'awareness', name: 'Awareness', filter: 'awareness', icon: 'fa-solid fa-sun' },
+    { id: 'education', name: 'Education', filter: 'education', icon: 'fa-solid fa-graduation-cap' },
+    { id: 'community', name: 'Community', filter: 'community', icon: 'fa-solid fa-people-group' },
+    { id: 'research', name: 'Research', filter: 'research', icon: 'fa-solid fa-flask' },
+    { id: 'lifestyle', name: 'Lifestyle', filter: 'lifestyle', icon: 'fa-solid fa-heart' }
   ],
-  featuredCampaigns: [
+  badgeColors: {
+    awareness: { bg: '#FF6F00', color: '#fff' },
+    education: { bg: '#2D7DD2', color: '#fff' },
+    community: { bg: '#3FA34D', color: '#fff' },
+    research: { bg: '#00A4B8', color: '#fff' },
+    lifestyle: { bg: '#F2A007', color: '#fff' }
+  },
+  sortOptions: [
+    { id: 'latest', label: 'Latest First' },
+    { id: 'oldest', label: 'Oldest First' },
+    { id: 'popular', label: 'Most Enrolled' }
+  ],
+  campaigns: [
     {
       id: 1,
-      title: "Clean Water Initiative",
-      description: "Providing access to clean drinking water in rural communities across developing nations.",
-      image: "/assets/img/home/hero-bg.png",
-      progress: 75,
-      target: "$50,000",
-      raised: "$37,500"
+      title: 'Together for a Healthier Tomorrow',
+      description: "A nationwide movement encouraging men to prioritize their health and wellbeing.",
+      category: 'awareness',
+      date: 'Nov 18, 2023',
+      sortDate: '2023-11-18',
+      location: 'Nationwide',
+      enrolled: 1245,
+      image: '/assets/img/home/hero-bg.png'
     },
     {
       id: 2,
-      title: "Digital Literacy Program",
-      description: "Teaching essential digital skills to help bridge the technology gap in underserved areas.",
-      image: "/assets/img/home/hero-bg-1.png",
-      progress: 60,
-      target: "$30,000",
-      raised: "$18,000"
+      title: 'Know Your Numbers',
+      description: 'Educating men about key health parameters and regular check-ups.',
+      category: 'education',
+      date: 'Aug 12, 2023',
+      sortDate: '2023-08-12',
+      location: 'Pan India',
+      enrolled: 892,
+      image: '/assets/img/home/hero-bg-2.jpg'
     },
     {
       id: 3,
-      title: "Women Empowerment",
-      description: "Supporting women entrepreneurs with training, resources, and mentorship opportunities.",
-      image: "/assets/img/home/hero-bg-2.jpg",
-      progress: 90,
-      target: "$40,000",
-      raised: "$36,000"
-    }
-  ],
-  allCampaigns: [
+      title: 'Redefining Healthcare for Men',
+      description: "A campaign to break stereotypes and start open conversations around men's health.",
+      category: 'awareness',
+      date: 'Sep 5, 2023',
+      sortDate: '2023-09-05',
+      location: 'Multiple Cities',
+      enrolled: 1576,
+      image: '/assets/img/home/hero-bg-3.jpeg'
+    },
     {
       id: 4,
-      title: "Community Health Initiative",
-      description: "Providing free health screenings and medical consultations to underserved communities across urban and rural areas.",
-      image: "/assets/img/home/hero-bg-3.jpeg"
+      title: "Men's Health Awareness Camp",
+      description: 'Bringing healthcare to communities through free check-ups and expert consultations.',
+      category: 'community',
+      date: 'Jan 25, 2024',
+      sortDate: '2024-01-25',
+      location: 'Pune',
+      enrolled: 1032,
+      image: '/assets/img/home/hero-bg-1.jpg'
     },
     {
       id: 5,
-      title: "Youth Education Program",
-      description: "Empowering young people with essential life skills, career guidance, and educational resources for a brighter future.",
-      image: "/assets/img/home/hero-bg-2.jpg"
+      title: 'Research for a Better Tomorrow',
+      description: 'Investing in innovative research to address men-specific health challenges.',
+      category: 'research',
+      date: 'Dec 10, 2023',
+      sortDate: '2023-12-10',
+      location: 'Hyderabad',
+      enrolled: 645,
+      image: '/assets/img/home/hero-bg-4.jpeg'
     },
     {
       id: 6,
-      title: "Environmental Sustainability",
-      description: "Promoting eco-friendly practices and renewable energy solutions to combat climate change and protect our planet.",
-      image: "/assets/img/home/hero-bg-1.webp"
+      title: 'Fit Body. Strong Mind.',
+      description: 'Promoting fitness, mental well-being, and healthy lifestyle choices.',
+      category: 'lifestyle',
+      date: 'Jul 22, 2023',
+      sortDate: '2023-07-22',
+      location: 'Digital Campaign',
+      enrolled: 2318,
+      image: '/assets/img/home/her-1.jpg'
     },
     {
       id: 7,
-      title: "Mental Health Awareness",
-      description: "Breaking the stigma around mental health and providing accessible counseling services to those in need.",
-      image: "/assets/img/home/hero-bg.png"
+      title: 'Silence is Not Strength',
+      description: "Breaking the stigma around mental health conversations for men.",
+      category: 'awareness',
+      date: 'Jun 10, 2024',
+      sortDate: '2024-06-10',
+      location: 'Pan India',
+      enrolled: 1820,
+      image: '/assets/img/home/her-3.png'
     },
     {
       id: 8,
-      title: "Senior Care Program",
-      description: "Supporting elderly community members with healthcare, companionship, and essential services for dignified aging.",
-      image: "/assets/img/home/hero-bg-3.jpeg"
+      title: 'Healthy Hearts, Healthy Lives',
+      description: 'Cardiovascular health screenings and lifestyle education for working professionals.',
+      category: 'education',
+      date: 'Apr 14, 2024',
+      sortDate: '2024-04-14',
+      location: 'Bengaluru',
+      enrolled: 740,
+      image: '/assets/img/home/hero-bg.png'
     },
     {
       id: 9,
-      title: "Technology Access Initiative",
-      description: "Bridging the digital divide by providing technology training and access to underserved communities.",
-      image: "/assets/img/home/hero-bg-2.jpg"
+      title: 'Rural Outreach Mission',
+      description: "Mobile health units bringing screenings and care to underserved villages.",
+      category: 'community',
+      date: 'Mar 2, 2024',
+      sortDate: '2024-03-02',
+      location: 'Rajasthan',
+      enrolled: 1180,
+      image: '/assets/img/home/hero-bg-2.jpg'
+    },
+    {
+      id: 10,
+      title: 'Active Every Day',
+      description: 'Daily fitness routines and habit-building for sustainable lifestyle change.',
+      category: 'lifestyle',
+      date: 'Feb 18, 2024',
+      sortDate: '2024-02-18',
+      location: 'Digital Campaign',
+      enrolled: 1640,
+      image: '/assets/img/home/her-1.jpg'
+    },
+    {
+      id: 11,
+      title: 'Breakthroughs in Urology',
+      description: "Funding clinical studies advancing care for men's urological conditions.",
+      category: 'research',
+      date: 'Dec 28, 2023',
+      sortDate: '2023-12-28',
+      location: 'Mumbai',
+      enrolled: 510,
+      image: '/assets/img/home/hero-bg-3.jpeg'
+    },
+    {
+      id: 12,
+      title: 'Workplace Wellness Drive',
+      description: "Partnering with employers to bring health awareness into the workday.",
+      category: 'awareness',
+      date: 'Oct 5, 2023',
+      sortDate: '2023-10-05',
+      location: 'Multiple Cities',
+      enrolled: 980,
+      image: '/assets/img/home/hero-bg-4.jpeg'
     }
   ],
-  getInvolved: [
-    {
-      id: 1,
-      title: "Volunteer",
-      description: "Join our team of dedicated volunteers and help spread awareness about men's health issues.",
-      icon: "/assets/img/home/impacts/i-1.png"
-    },
-    {
-      id: 2,
-      title: "Donate",
-      description: "Support our campaigns and initiatives with your generous contributions.",
-      icon: "/assets/img/home/impacts/i-2.png"
-    },
-    {
-      id: 3,
-      title: "Partner",
-      description: "Partner with us to create impactful health awareness programs.",
-      icon: "/assets/img/home/impacts/i-3.png"
-    }
+  impact: [
+    { id: 1, value: '10,000+', label: 'Lives Impacted', icon: 'fa-solid fa-user-group', accent: '#FF6F00' },
+    { id: 2, value: '50+', label: 'Partner Clinics', icon: 'fa-solid fa-hospital', accent: '#FF6F00' },
+    { id: 3, value: '4.9/5', label: 'Patient Satisfaction', icon: 'fa-solid fa-star', accent: '#FF6F00' },
+    { id: 4, value: '25+', label: 'Countries Reached', icon: 'fa-solid fa-earth-asia', accent: '#FF6F00' }
   ]
 };

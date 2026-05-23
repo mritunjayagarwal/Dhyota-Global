@@ -1,274 +1,301 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { campaignData } from './data';
 import './Campaign.css';
-import { SupportSection } from '../shared';
+
+const PAGE_SIZE = 6;
 
 const Campaign = () => {
-  const carouselRef = useRef(null);
+  const navigate = useNavigate();
+  const [activeFilter, setActiveFilter] = useState('*');
+  const [sortBy, setSortBy] = useState('latest');
+  const [sortOpen, setSortOpen] = useState(false);
+  const [page, setPage] = useState(1);
+  const sortRef = useRef(null);
+  const gridTopRef = useRef(null);
 
   useEffect(() => {
-    // Initialize Bootstrap carousel when component mounts
-    if (carouselRef.current) {
-      import('bootstrap').then(({ Carousel }) => {
-        const carouselElement = carouselRef.current;
-        if (carouselElement) {
-          try {
-            // Destroy existing carousel if it exists
-            const existingCarousel = Carousel.getInstance(carouselElement);
-            if (existingCarousel) {
-              existingCarousel.dispose();
-            }
-            
-            // Create new carousel instance
-            const carousel = new Carousel(carouselElement, {
-              interval: 3000,
-              ride: 'carousel',
-              wrap: true,
-              touch: true
-            });
-            
-            // Start the carousel
-            carousel.cycle();
-            
-            console.log('Campaign carousel initialized successfully');
-          } catch (error) {
-            console.error('Error initializing campaign carousel:', error);
-          }
-        }
-      }).catch(error => {
-        console.error('Error importing Bootstrap:', error);
-      });
-    }
+    const handleClickOutside = (e) => {
+      if (sortRef.current && !sortRef.current.contains(e.target)) {
+        setSortOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  useEffect(() => {
+    setPage(1);
+  }, [activeFilter, sortBy]);
+
+  const sortedFiltered = useMemo(() => {
+    let list = campaignData.campaigns;
+    if (activeFilter !== '*') {
+      list = list.filter((c) => c.category === activeFilter);
+    }
+    list = [...list];
+    if (sortBy === 'latest') {
+      list.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
+    } else if (sortBy === 'oldest') {
+      list.sort((a, b) => new Date(a.sortDate) - new Date(b.sortDate));
+    } else if (sortBy === 'popular') {
+      list.sort((a, b) => b.enrolled - a.enrolled);
+    }
+    return list;
+  }, [activeFilter, sortBy]);
+
+  const totalPages = Math.max(1, Math.ceil(sortedFiltered.length / PAGE_SIZE));
+  const pagedItems = sortedFiltered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  const goToPage = (p) => {
+    if (p < 1 || p > totalPages) return;
+    setPage(p);
+    if (gridTopRef.current) {
+      gridTopRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const activeSortLabel =
+    campaignData.sortOptions.find((o) => o.id === sortBy)?.label || 'Latest First';
+
+  const categoryName = (key) =>
+    campaignData.categories.find((c) => c.filter === key)?.name || key;
+
+  const badgeStyle = (key) => {
+    const c = campaignData.badgeColors[key];
+    return c ? { backgroundColor: c.bg, color: c.color } : {};
+  };
+
+  const formatEnrolled = (n) => n.toLocaleString('en-IN');
 
   return (
     <main className="campaign-page">
-      {/* Hero Carousel Section */}
-      <section className='hero'>
-        <div 
-          ref={carouselRef}
-          id="campaignCarousel" 
-          className="carousel slide" 
-          data-bs-ride="carousel" 
-          data-bs-interval="3000"
-          data-bs-wrap="true"
-        >
-          <div className="carousel-indicators">
-            <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#campaignCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div 
-                className="d-block w-100 hero-bg" 
-                style={{
-                  background: `linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-                              linear-gradient(135deg, #FFD93B 0%, #FFB347 50%, #FF6F00 100%)`,
-                }}
-              ></div>
-              <div className="text-container main-carousel-text">
-                <h1>Guided by Light, Driven by Care</h1>
-                <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div 
-                className="d-block w-100 hero-bg" 
-                style={{
-                  background: `linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-                              linear-gradient(135deg, #FFD93B 0%, #FFB347 50%, #FF6F00 100%)`,
-                  height: "100vh",
-                  minHeight: "600px"
-                }}
-              ></div>
-              <div className="text-container main-carousel-text">
-                <h1>Guided by Light, Driven by Care</h1>
-                <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div 
-                className="d-block w-100 hero-bg" 
-                style={{
-                  background: `linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-                              linear-gradient(135deg, #FFD93B 0%, #FFB347 50%, #FF6F00 100%)`,
-                  height: "100vh",
-                  minHeight: "600px"
-                }}
-              ></div>
-              <div className="text-container main-carousel-text">
-                <h1>Guided by Light, Driven by Care</h1>
-                <p>Discover our ongoing efforts to champion men's wellbeing and break the stigma around urological health.</p>
-              </div>
-            </div>
-          </div>
-          
-          <button className="carousel-control-prev" type="button" data-bs-target="#campaignCarousel" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#campaignCarousel" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-
-      {/* Featured Campaigns Section */}
-      <section className="featured-campaigns">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 text-center mb-5">
-              <h2 className="section-title">Featured Campaigns</h2>
-              <p className="section-subtitle">Join our most impactful initiatives</p>
-            </div>
-          </div>
-          <div className="row">
-            {campaignData.featuredCampaigns.map((campaign) => (
-              <div key={campaign.id} className="col-lg-4 col-md-6 mb-4">
-                <div className="campaign-card">
-                  <div className="campaign-card-image">
-                    <img src={campaign.image} alt={campaign.title} />
-                  </div>
-                  <div className="campaign-card-content">
-                    <h4 className="campaign-card-title">{campaign.title}</h4>
-                    <p className="campaign-card-description">{campaign.description}</p>
-                    <button className="btn yellow">Support Campaign</button>
+      {/* Hero */}
+      <section className="hero">
+        <div className="campaign-hero">
+          <div className="campaign-hero-content">
+            <h1>{campaignData.hero.title}</h1>
+            <p>{campaignData.hero.description}</p>
+            <div className="campaign-hero-stats">
+              {campaignData.hero.stats.map((s) => (
+                <div key={s.id} className="campaign-hero-stat">
+                  <span className="hero-stat-icon">
+                    <i className={s.icon}></i>
+                  </span>
+                  <div className="hero-stat-text">
+                    <div className="hero-stat-value">{s.value}</div>
+                    <div className="hero-stat-label">{s.label}</div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+          <div className="campaign-hero-icon">
+            <i className="fa-solid fa-bullhorn"></i>
           </div>
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section className='impact' style={{ padding: "50px 0" }}>
+      {/* Breadcrumb */}
+      <section className="campaign-breadcrumb-section">
         <div className="container">
-          <h1 className='section-title text-center'>Our Impact</h1>
-          <p className='text-center mb-5'>Trusted by healthcare professionals and patients worldwide</p>
-          <div className="row g-4">
-            <div className="col-lg-3 col-md-6">
-              <div className="impact-card h-100">
-                <div className="card-body text-center p-4">
-                  <img
-                    src="/assets/img/home/impacts/i-1.png"
-                    className="img-fluid mb-3"
-                    alt="Customers Served"
-                    style={{ maxHeight: "80px" }}
-                  />
-                  <h3 className="h5 text-capitalize mb-3">10,000+</h3>
-                  <p className="text-muted" style={{ fontSize: "16px" }}>
-                    Customers Served
-                  </p>
-                </div>
-              </div>
+          <nav className="campaign-breadcrumb" aria-label="breadcrumb">
+            <Link to="/" className="breadcrumb-link">
+              <i className="fa-solid fa-house"></i>
+            </Link>
+            <span className="breadcrumb-separator">/</span>
+            <span className="breadcrumb-current">Campaigns</span>
+          </nav>
+        </div>
+      </section>
+
+      {/* Filter + Sort */}
+      <section className="campaign-toolbar-section" ref={gridTopRef}>
+        <div className="container">
+          <div className="campaign-toolbar">
+            <div className="campaign-filter-buttons">
+              {campaignData.categories.map((category) => (
+                <button
+                  key={category.id}
+                  className={`campaign-filter-btn ${activeFilter === category.filter ? 'active' : ''}`}
+                  onClick={() => setActiveFilter(category.filter)}
+                >
+                  <i className={category.icon}></i>
+                  <span>{category.name}</span>
+                </button>
+              ))}
             </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="impact-card h-100">
-                <div className="card-body text-center p-4">
-                  <img
-                    src="/assets/img/home/impacts/i-2.png"
-                    className="img-fluid mb-3"
-                    alt="Partner Clinics"
-                    style={{ maxHeight: "80px" }}
-                  />
-                  <h3 className="h5 text-capitalize mb-3">50+</h3>
-                  <p className="text-muted" style={{ fontSize: "16px" }}>
-                    Partner Clinics
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="impact-card h-100">
-                <div className="card-body text-center p-4">
-                  <img
-                    src="/assets/img/home/impacts/i-3.png"
-                    className="img-fluid mb-3"
-                    alt="Patient Satisfaction"
-                    style={{ maxHeight: "80px" }}
-                  />
-                  <h3 className="h5 text-capitalize mb-3">4.9/5</h3>
-                  <p className="text-muted" style={{ fontSize: "16px" }}>
-                    Patient Satisfaction
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="impact-card h-100">
-                <div className="card-body text-center p-4">
-                  <img
-                    src="/assets/img/home/impacts/i-4.png"
-                    className="img-fluid mb-3"
-                    alt="Countries Served"
-                    style={{ maxHeight: "80px" }}
-                  />
-                  <h3 className="h5 text-capitalize mb-3">25</h3>
-                  <p className="text-muted" style={{ fontSize: "16px" }}>
-                    Countries Served
-                  </p>
-                </div>
-              </div>
+            <div className="campaign-sort" ref={sortRef}>
+              <button
+                className="sort-toggle"
+                onClick={() => setSortOpen((o) => !o)}
+                aria-haspopup="listbox"
+                aria-expanded={sortOpen}
+              >
+                <span>{activeSortLabel}</span>
+                <i className={`fa-solid fa-chevron-down sort-chevron ${sortOpen ? 'open' : ''}`}></i>
+              </button>
+              {sortOpen && (
+                <ul className="sort-menu" role="listbox">
+                  {campaignData.sortOptions.map((opt) => (
+                    <li
+                      key={opt.id}
+                      role="option"
+                      aria-selected={sortBy === opt.id}
+                      className={`sort-option ${sortBy === opt.id ? 'selected' : ''}`}
+                      onClick={() => {
+                        setSortBy(opt.id);
+                        setSortOpen(false);
+                      }}
+                    >
+                      {opt.label}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </div>
       </section>
-      <section className='all-campaigns'>
+
+      {/* Grid */}
+      <section className="campaign-grid-section">
         <div className="container">
-          <h1 className='section-title text-center'>All Campaigns</h1>
-          <p className='text-center mb-5'>Explore our comprehensive health awareness initiatives</p>
-          <div className="row">
-            {campaignData.allCampaigns.map((campaign) => (
-              <div key={campaign.id} className="col-lg-4 col-md-6 mb-4">
-                <div className="campaign-card">
-                  <div className="campaign-card-image">
-                    <img src={campaign.image} alt={campaign.title} />
-                  </div>
-                  <div className="campaign-card-content">
-                    <h4 className="campaign-card-title">{campaign.title}</h4>
-                    <p className="campaign-card-description">{campaign.description}</p>
-                    <button className="btn yellow">Support Campaign</button>
+          {pagedItems.length === 0 ? (
+            <div className="campaign-empty">No campaigns match your filter.</div>
+          ) : (
+            <div className="row g-4">
+              {pagedItems.map((c) => (
+                <div key={c.id} className="col-lg-4 col-md-6">
+                  <article className="campaign-card-v2">
+                    <div className="campaign-card-image">
+                      <img src={c.image} alt={c.title} />
+                      <span className="campaign-badge" style={badgeStyle(c.category)}>
+                        {categoryName(c.category)}
+                      </span>
+                    </div>
+                    <div className="campaign-card-body">
+                      <h3 className="campaign-card-title">{c.title}</h3>
+                      <p className="campaign-card-description">{c.description}</p>
+                      <div className="campaign-card-meta">
+                        <div className="meta-item">
+                          <i className="fa-regular fa-calendar"></i>
+                          <span>{c.date}</span>
+                        </div>
+                        <div className="meta-item">
+                          <i className="fa-solid fa-location-dot"></i>
+                          <span>{c.location}</span>
+                        </div>
+                        <div className="meta-item meta-enrolled">
+                          <i className="fa-solid fa-user-group"></i>
+                          <div className="enrolled-stack">
+                            <span className="enrolled-value">{formatEnrolled(c.enrolled)}</span>
+                            <span className="enrolled-label">Enrolled</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="campaign-card-footer">
+                        <button
+                          type="button"
+                          className="view-details"
+                          onClick={() => navigate('/contact')}
+                        >
+                          View Details <i className="fa-solid fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {totalPages > 1 && (
+            <nav className="campaign-pagination" aria-label="Campaign pagination">
+              <button
+                className="page-arrow"
+                onClick={() => goToPage(page - 1)}
+                disabled={page === 1}
+                aria-label="Previous page"
+              >
+                <i className="fa-solid fa-chevron-left"></i>
+              </button>
+              {Array.from({ length: totalPages }).map((_, i) => {
+                const p = i + 1;
+                return (
+                  <button
+                    key={p}
+                    className={`page-btn ${page === p ? 'active' : ''}`}
+                    onClick={() => goToPage(p)}
+                    aria-current={page === p ? 'page' : undefined}
+                  >
+                    {p}
+                  </button>
+                );
+              })}
+              <button
+                className="page-arrow"
+                onClick={() => goToPage(page + 1)}
+                disabled={page === totalPages}
+                aria-label="Next page"
+              >
+                <i className="fa-solid fa-chevron-right"></i>
+              </button>
+            </nav>
+          )}
+        </div>
+      </section>
+
+      {/* Impact */}
+      <section className="campaign-impact-section">
+        <div className="container">
+          <div className="impact-wrap">
+            <h2 className="impact-title">Our Impact</h2>
+            <p className="impact-subtitle">
+              Trusted by healthcare professionals and patients worldwide
+            </p>
+            <div className="row g-4 impact-row">
+              {campaignData.impact.map((stat) => (
+                <div key={stat.id} className="col-lg-3 col-md-6">
+                  <div className="impact-stat-card">
+                    <span className="impact-stat-icon" style={{ color: stat.accent }}>
+                      <i className={stat.icon}></i>
+                    </span>
+                    <div className="impact-stat-text">
+                      <div className="impact-stat-value">{stat.value}</div>
+                      <div className="impact-stat-label">{stat.label}</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
-      <section className='get-involved'>
+
+      {/* Collaborate CTA */}
+      <section className="campaign-cta-section">
         <div className="container">
-          <h1 className='section-title text-center'>Get Involved</h1>
-          <p className='text-center mb-5'>Join us in making a difference in men's health awareness</p>
-          <div className="row g-4">
-            {campaignData.getInvolved.map((item) => (
-              <div key={item.id} className="col-lg-4 col-md-6">
-                <div className="impact-card h-100">
-                  <div className="card-body text-center p-4">
-                    <img
-                      src={item.icon}
-                      className="img-fluid mb-3 d-block mx-auto"
-                      alt={item.title}
-                      style={{ maxHeight: "75px", width: "auto" }}
-                    />
-                    <h3 className="h5 text-capitalize mb-3">{item.title}</h3>
-                    <p className="text-muted mb-4" style={{ fontSize: "16px" }}>
-                      {item.description}
-                    </p>
-                    <button className="main-btn orange">
-                      {item.title}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="campaign-cta-banner">
+            <div className="cta-icon">
+              <i className="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div className="cta-text">
+              <h3>Want to collaborate on a campaign?</h3>
+              <p>Let's work together to create meaningful impact for men's health.</p>
+            </div>
+            <button
+              className="main-btn white cta-btn"
+              onClick={() => {
+                navigate('/contact');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            >
+              Partner With Us
+            </button>
           </div>
         </div>
       </section>
-      <SupportSection />
     </main>
   );
 };

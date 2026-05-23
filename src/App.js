@@ -8,6 +8,7 @@ import Contact from './components/contact';
 import Campaign from './components/campaign/Campaign';
 // import Partners from './components/partners';
 import Products from './components/products';
+import Gallery from './components/gallery';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/campaign" element={<Campaign />} />
+          <Route path="/gallery" element={<Gallery />} />
           {/* Temporarily disabled routes */}
           {/* <Route path="/about" element={<About />} />
           <Route path="/campaign" element={<Campaign />} />
