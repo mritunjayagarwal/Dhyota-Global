@@ -87,7 +87,7 @@ export const productsData = {
       description: "Fast-acting spray that gently reduces sensitivity, helping delay ejaculation and extend intimacy for greater satisfaction.",
       images: [
         "/assets/img/products/products/7.jpeg",
-        "/assets/img/products/products/hover/EdSprayBlack.jpeg"
+        "/assets/img/products/products/hover/eds.jpeg"
       ],
       category: "sexual health",
       price: "$29",
