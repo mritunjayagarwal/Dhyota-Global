@@ -1,15 +1,19 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import './About.css';
 import { journeyData } from './data';
 import { CampaignSection } from '../shared';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const heroImages = [
+  '/assets/img/about/dhyotagroup2.jpg',
+  '/assets/img/about/hero-bg.png'
+];
+
 const About = () => {
-  const carouselRef = useRef(null);
+  const [slide, setSlide] = useState(0);
 
   useEffect(() => {
-    // Initialize AOS
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
@@ -17,20 +21,39 @@ const About = () => {
       mirror: false,
       offset: 100
     });
+  }, []);
 
-    // Initialize Bootstrap carousel
-    if (carouselRef.current && window.bootstrap) {
-      const carousel = new window.bootstrap.Carousel(carouselRef.current, {
-        interval: 3000,
-        wrap: true
-      });
-    }
+  useEffect(() => {
+    const id = setInterval(() => {
+      setSlide((s) => (s + 1) % heroImages.length);
+    }, 4000);
+    return () => clearInterval(id);
   }, []);
 
   return (
     <main className="about-page">
       <section className='hero' style={{ marginTop: "10px" }}>
-        <img src="/assets/img/about/hero-bg.png" alt="About Us" className='img-fluid' style={{ "width": "100%", height: "auto" }} data-aos="fade-up" />
+        <div className="about-hero-slider" data-aos="fade-up">
+          {heroImages.map((src, i) => (
+            <img
+              key={src}
+              src={src}
+              alt="About Us"
+              className={`about-hero-slide ${i === slide ? 'active' : ''}`}
+            />
+          ))}
+          <div className="about-hero-dots">
+            {heroImages.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                className={`about-hero-dot ${i === slide ? 'active' : ''}`}
+                onClick={() => setSlide(i)}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
+        </div>
       </section>
       <section>
         <div className='container text-center'>
@@ -61,7 +84,7 @@ const About = () => {
           </p>
 
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
-            Sree Charan Reddy, a senior anesthesiologist, adds valuable clinical depth and perspective on patient safety, perioperative care, and practical application of healthcare solutions.
+            Sreecharan Thamatam, a senior anesthesiologist, adds valuable clinical depth and perspective on patient safety, perioperative care, and practical application of healthcare solutions.
           </p>
 
           <p className='text-muted text-start' data-aos="fade-up" data-aos-delay="100">
@@ -72,37 +95,37 @@ const About = () => {
             Together, this leadership group forms a unified force—combining clinical excellence, pharma expertise, and operational rigour—to guide Dhyota’s journey toward becoming a global healthcare innovator.
           </p>
 
-          <div className='row mt-5'>
-            <div className='col-lg-6 mt-3'>
+          <div className='row mt-5 justify-content-center'>
+            <div className='col-lg-4 mt-3'>
               <p className='text-muted m-0'>Founder & Chairman</p>
               <h4 className='my-2'>Deepak Ragoori</h4>
               <p className='text-muted'>Senior Urologist | Founder | Strategic & Medical Leadership</p>
             </div>
-            <div className='col-lg-6 mt-3'>
+            <div className='col-lg-4 mt-3'>
               <p className='text-muted m-0'>Executive Director</p>
               <h4 className='my-2'>Bhavatej Enganti</h4>
               <p className='text-muted'>Senior Urologist | Founder | Operations & Clinical Innovation</p>
             </div>
-            {/* <div className='col-lg-4 mt-3'>
-              <p className='text-muted m-0'>Managing Director</p>
+            <div className='col-lg-4 mt-3'>
+              <p className='text-muted m-0'>Co-Founder & Director</p>
+              <h4 className='my-2'>Sreecharan Thamatam</h4>
+              <p className='text-muted'>Clinical Affairs & Patient Safety</p>
+            </div>
+            <div className='col-lg-4 mt-3'>
+              <p className='text-muted m-0'>Co-Founder & Managing Director</p>
               <h4 className='my-2'>Shailendra Pal</h4>
               <p className='text-muted'>Pharmaceutical Expertise | Regulatory & Market Strategy</p>
             </div>
             <div className='col-lg-4 mt-3'>
-              <p className='text-muted m-0'>Co-Founder & Director</p>
-              <h4 className='my-2'>Sree Charan Reddy</h4>
-              <p className='text-muted'>Clinical Affairs & Patient Safety</p>
-            </div>
-            <div className='col-lg-4 mt-3'>
-              <p className='text-muted m-0'>President</p>
+              <p className='text-muted m-0'>Co-Founder & President</p>
               <h4 className='my-2'>Joji Reddy</h4>
               <p className='text-muted'>Pharma Sales, Marketing & Growth</p>
             </div>
             <div className='col-lg-4 mt-3'>
-              <p className='text-muted m-0'>Head - Supply Chain Management</p>
+              <p className='text-muted m-0'>Co-Founder & Head - Supply Chain Management</p>
               <h4 className='my-2'>P. Vinod Reddy</h4>
               <p className='text-muted'>Supply Chain, Distribution & Systems Management</p>
-            </div> */}
+            </div>
           </div>
 
         </div>

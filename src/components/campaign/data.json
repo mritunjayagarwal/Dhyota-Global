@@ -1,0 +1,53 @@
+{
+  "logo": "/assets/img/campaigns/lethimbehe.jpeg",
+  "heroHeading": {
+    "text": "Let Him Be",
+    "accent": "HE"
+  },
+  "healthAreas": [
+    { "icon": "fa-solid fa-mars", "tint": "green", "title": "Men's Health", "desc": "Comprehensive care for every stage of life." },
+    { "icon": "fa-solid fa-spa", "tint": "blue", "title": "Intimate Wellness", "desc": "Regain confidence and performance." },
+    { "icon": "fa-solid fa-people-roof", "tint": "orange", "title": "Fertility", "desc": "Building families with hope." },
+    { "icon": "fa-solid fa-dumbbell", "tint": "purple", "title": "Hormonal", "desc": "Restore energy, vitality and drive." },
+    { "icon": "fa-solid fa-hand-holding-heart", "tint": "teal", "title": "Supportive Care", "desc": "Compassionate support at every step." }
+  ],
+  "concerns": {
+    "title": "Common Health Concerns",
+    "image": "/assets/img/home/her-1.jpg",
+    "items": [
+      { "title": "Prostate Health", "desc": "Frequent urination, discomfort, weak flow." },
+      { "title": "Erectile Dysfunction", "desc": "Common and treatable." },
+      { "title": "Testosterone Decline", "desc": "Low energy, mood changes, reduced strength." },
+      { "title": "Metabolic Health", "desc": "Diabetes, weight gain and slow metabolism." },
+      { "title": "Supportive Care", "desc": "Stress, anxiety and emotional fatigue." }
+    ]
+  },
+  "help": {
+    "title": "How We Help",
+    "image": "/assets/img/home/hero-bg-1.jpg",
+    "items": [
+      { "title": "Spreading Awareness", "desc": "Open, judgment-free conversations that break the stigma." },
+      { "title": "Careful Diagnosis", "desc": "Thorough screening to identify the root cause." },
+      { "title": "Valid Treatment Solutions", "desc": "Science-backed, proven treatments that work." },
+      { "title": "Supportive Care", "desc": "Compassionate guidance at every step of the journey." },
+      { "title": "Complete Confidentiality", "desc": "Your details stay private and secure, always." }
+    ]
+  },
+  "testimonial": {
+    "quote": "The guidance and treatment I received changed my life. I feel more energetic, confident, and in control.",
+    "name": "Rajat S.",
+    "avatar": "/assets/img/home/testimonials/arjun.webp",
+    "rating": 5
+  },
+  "stats": [
+    { "icon": "fa-solid fa-user-group", "value": "50K+", "label": "Happy Patients" },
+    { "icon": "fa-solid fa-user-doctor", "value": "100+", "label": "Expert Doctors" },
+    { "icon": "fa-regular fa-calendar", "value": "10+ Years", "label": "Of Trusted Care" }
+  ],
+  "finalCta": {
+    "image": "/assets/img/home/hero-bg.png",
+    "title": "Your Health Journey Starts Today",
+    "text": "Talk to our experts and take the first step towards a better, stronger you.",
+    "button": "Talk to a Specialist"
+  }
+}

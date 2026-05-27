@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { campaignData } from './data';
+import { campaignData, getCampaignSlug } from './data';
 import './Campaign.css';
 
 const PAGE_SIZE = 6;
@@ -67,6 +67,11 @@ const Campaign = () => {
   };
 
   const formatEnrolled = (n) => n.toLocaleString('en-IN');
+
+  const openDetail = (c) => {
+    navigate(`/campaign/${getCampaignSlug(c)}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <main className="campaign-page">
@@ -168,14 +173,27 @@ const Campaign = () => {
               {pagedItems.map((c) => (
                 <div key={c.id} className="col-lg-4 col-md-6">
                   <article className="campaign-card-v2">
-                    <div className="campaign-card-image">
+                    <div className="campaign-card-cover">
                       <img src={c.image} alt={c.title} />
                       <span className="campaign-badge" style={badgeStyle(c.category)}>
                         {categoryName(c.category)}
                       </span>
+                      {c.logo && (
+                        <img
+                          className="campaign-card-logo"
+                          src={c.logo}
+                          alt={`${c.title} logo`}
+                        />
+                      )}
                     </div>
                     <div className="campaign-card-body">
-                      <h3 className="campaign-card-title">{c.title}</h3>
+                      <h3
+                        className="campaign-card-title"
+                        onClick={() => openDetail(c)}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        {c.title}
+                      </h3>
                       <p className="campaign-card-description">{c.description}</p>
                       <div className="campaign-card-meta">
                         <div className="meta-item">
@@ -198,7 +216,7 @@ const Campaign = () => {
                         <button
                           type="button"
                           className="view-details"
-                          onClick={() => navigate('/contact')}
+                          onClick={() => openDetail(c)}
                         >
                           View Details <i className="fa-solid fa-arrow-right"></i>
                         </button>

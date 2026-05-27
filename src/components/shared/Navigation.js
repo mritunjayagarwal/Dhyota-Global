@@ -1,9 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import campaignDetail from '../campaign/data.json';
 import './Navigation.css';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Campaign detail pages (/campaign/:slug) use the "Let Him Be HE" logo
+  const isCampaignDetail = /^\/campaign\/.+/.test(location.pathname);
+  const logoSrc = isCampaignDetail ? campaignDetail.logo : '/dhyota-logo.jpeg';
+  const logoAlt = isCampaignDetail
+    ? "Let Him Be HE — Men's Health Matters"
+    : 'Dhyota Global Healthcare Solutions Logo';
+  const logoStyle = isCampaignDetail
+    ? { height: '64px', width: 'auto' }
+    : { width: '200px', height: 'auto' };
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -38,11 +50,11 @@ const Navigation = () => {
       <div className="container">
         {/* Brand */}
         <Link className="navbar-brand" to="/" onClick={handleNavLinkClick}>
-          <img 
-            src="/dhyota-logo.jpeg" 
-            style={{ width: "200px", height: "auto" }} 
-            alt="Dhyota Global Healthcare Solutions Logo" 
-          /> 
+          <img
+            src={logoSrc}
+            style={logoStyle}
+            alt={logoAlt}
+          />
         </Link>
 
         {/* Toggle Button */}
@@ -84,7 +96,7 @@ const Navigation = () => {
                 Contact Us
               </Link>
             </li>
-            <li className="nav-item disabled">
+            <li className="nav-item">
               <Link className="nav-link" to="/campaign" onClick={handleNavLinkClick}>
                 Campaigns
               </Link>

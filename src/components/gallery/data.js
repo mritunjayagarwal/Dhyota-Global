@@ -2,7 +2,7 @@ const EVENT = {
   title: 'Dhyota Annual Meet 2026',
   date: 'March 15, 2026',
   location: 'Pattaya, Thailand',
-  category: 'events',
+  category: 'annual-meet-2026',
   icon: 'fa-solid fa-video'
 };
 
@@ -31,11 +31,7 @@ const photos = [
 export const galleryData = {
   categories: [
     { id: 'all', name: 'All', filter: '*', icon: 'fa-solid fa-table-cells-large' },
-    { id: 'events', name: 'Events', filter: 'events', icon: 'fa-regular fa-calendar' },
-    { id: 'initiatives', name: 'Initiatives', filter: 'initiatives', icon: 'fa-solid fa-heart' },
-    { id: 'partnerships', name: 'Partnerships', filter: 'partnerships', icon: 'fa-solid fa-people-group' },
-    { id: 'products', name: 'Products', filter: 'products', icon: 'fa-solid fa-box' },
-    { id: 'behind-the-scenes', name: 'Behind the Scenes', filter: 'behind-the-scenes', icon: 'fa-solid fa-camera' }
+    { id: 'annual-meet-2026', name: 'Annual Meet 2026', filter: 'annual-meet-2026', icon: 'fa-regular fa-calendar' }
   ],
   items: photos.map((file, i) => ({
     id: i + 1,
