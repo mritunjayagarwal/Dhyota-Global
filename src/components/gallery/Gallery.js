@@ -57,7 +57,7 @@ const Gallery = () => {
             <div className="hero-accent"></div>
           </div>
           <div className="gallery-hero-icon">
-            <i className="fa-regular fa-images"></i>
+            <img src="/assets/img/campaigns/lethimbehe.jpeg" alt="Let Him Be He" />
           </div>
         </div>
       </section>

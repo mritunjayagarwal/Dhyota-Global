@@ -106,28 +106,7 @@ const About = () => {
               <h4 className='my-2'>Bhavatej Enganti</h4>
               <p className='text-muted'>Senior Urologist | Founder | Operations & Clinical Innovation</p>
             </div>
-            <div className='col-lg-4 mt-3'>
-              <p className='text-muted m-0'>Co-Founder & Director</p>
-              <h4 className='my-2'>Sreecharan Thamatam</h4>
-              <p className='text-muted'>Clinical Affairs & Patient Safety</p>
-            </div>
-            <div className='col-lg-4 mt-3'>
-              <p className='text-muted m-0'>Co-Founder & Managing Director</p>
-              <h4 className='my-2'>Shailendra Pal</h4>
-              <p className='text-muted'>Pharmaceutical Expertise | Regulatory & Market Strategy</p>
-            </div>
-            <div className='col-lg-4 mt-3'>
-              <p className='text-muted m-0'>Co-Founder & President</p>
-              <h4 className='my-2'>Joji Reddy</h4>
-              <p className='text-muted'>Pharma Sales, Marketing & Growth</p>
-            </div>
-            <div className='col-lg-4 mt-3'>
-              <p className='text-muted m-0'>Co-Founder & Head - Supply Chain Management</p>
-              <h4 className='my-2'>P. Vinod Reddy</h4>
-              <p className='text-muted'>Supply Chain, Distribution & Systems Management</p>
-            </div>
           </div>
-
         </div>
       </section>
       {/* <section style={{ backgroundColor: "#F9FAFB" }}>
@@ -194,7 +173,7 @@ const About = () => {
           <div className='row justify-content-center'>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/charan.jpeg" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/sreecharan.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Dr. Sreecharan Thamatam</h4>
                 <h5 className='team-card-designation'>Co-Founder & Director</h5>
                 <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p>
@@ -202,31 +181,31 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="300">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/shailendra.jpeg" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/shailendra.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Shailendra Pal</h4>
-                <h5 className='team-card-designation'>Managing Director</h5>
+                <h5 className='team-card-designation'>Co-Founder & Managing Director</h5>
                 <p className='team-card-description'>Pharma leader with 18+ years of experience in top companies including Alkem, Intas, Orchid, and Dr. Reddy’s. Spearheaded urology business launches, brand strategies, and nationwide marketing. Brings deep expertise in building and scaling healthcare brands in India.</p>
               </div>
             </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="500">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/joji.jpeg" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/joji.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Joji Reddy</h4>
-                <h5 className='team-card-designation'>President</h5>
+                <h5 className='team-card-designation'>Co-Founder & President</h5>
                 <p className='team-card-description'>Seasoned healthcare leader with 26+ years in pharmaceuticals, driving sales, business growth, and market expansion with leading organizations. Currently President at Dhyota Global Healthcare Solutions, focused on innovation, collaboration, and patient-centric healthcare impact.</p>
               </div>
             </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/VINOD REDDY.JPG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/vinod.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>P. Vinod Reddy</h4>
-                <h5 className='team-card-designation'>Head – Supply Chain Management</h5>
+                <h5 className='team-card-designation'>Co-Founder & Head – Supply Chain Management</h5>
                 <p className='team-card-description'>with more than 14 years of extensive experience in supply chain management, procurement, and operations within leading healthcare institutions.</p>
               </div>
             </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/SANJIB.jpeg" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/sanjib.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Sanjib Dutta</h4>
                 <h5 className='team-card-designation'>General Manager (West Zone)</h5>
                 {/* <p className='team-card-description'></p> */}
@@ -242,7 +221,7 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/ASHISH SURESH PATEL.JPG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/ashish.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Ashish Patel</h4>
                 <h5 className='team-card-designation'>Sales head, Maharashtra & Chhattisgarh</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
@@ -250,7 +229,7 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/SATYAJIT SINHA MAHAPATRA.JPG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/satyajit.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Satyajit Sinha Mahapatra </h4>
                 <h5 className='team-card-designation'>Sales head, West Bengal and North East & Key Account Management East</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
@@ -258,7 +237,7 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/AMIT VERMA.JPG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/amit.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Amit Verma</h4>
                 <h5 className='team-card-designation'>Sales head for Delhi NCR, Punjab, Haryana, Jammu & Kashmir</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
@@ -266,7 +245,7 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/ABBISETTI VENKATESWARLU.JPG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/venkateswarlu.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Venkateswarlu Abbisetti</h4>
                 <h5 className='team-card-designation'>Sales head for Telangana, Andhra Pradesh & Karnataka</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
@@ -274,7 +253,7 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/SANDEEP KUMAR TIWARI.JPG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/sandeep.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Sandeep Tiwari</h4>
                 <h5 className='team-card-designation'>Sales head for Uttar Pradesh & Uttarakhand</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
@@ -282,7 +261,7 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/DIPAN SHUKLA.JPG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/dipan.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Dipan Shukla</h4>
                 <h5 className='team-card-designation'>West Zone ( Gujarat, Madhya Pradesh & Rajasthan) Sales Head</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
@@ -290,7 +269,7 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/ANANDHA KRISHNAN.JPG" alt="Our Team" className='img-fluid' />
+                <img src="/assets/img/about/team/updated/anandha.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Anandha Krishnan</h4>
                 <h5 className='team-card-designation'>Sales head for Tamilnadu & Kerala</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}

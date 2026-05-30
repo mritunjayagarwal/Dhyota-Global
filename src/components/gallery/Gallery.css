@@ -72,8 +72,13 @@
 .gallery-hero-icon {
   position: relative;
   z-index: 1;
-  color: rgba(255, 255, 255, 0.12);
-  font-size: 8rem;
+}
+
+.gallery-hero-icon img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 16px;
 }
 
 /* ===== FILTER SECTION ===== */
@@ -433,8 +438,9 @@
   .gallery-hero-content h1 {
     font-size: 3rem;
   }
-  .gallery-hero-icon {
-    font-size: 6rem;
+  .gallery-hero-icon img {
+    width: 170px;
+    height: 170px;
   }
   .share-story-card::after {
     display: none;
@@ -446,11 +452,17 @@
     margin: 15px;
   }
   .gallery-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
     padding: 40px 28px;
     border-radius: 16px;
   }
   .gallery-hero-content {
     max-width: 100%;
+  }
+  .hero-accent {
+    margin: 0 auto;
   }
   .gallery-hero-content h1 {
     font-size: 2.5rem;
@@ -461,12 +473,9 @@
   .gallery-hero-content p br {
     display: none;
   }
-  .gallery-hero-icon {
-    font-size: 4.5rem;
-    position: absolute;
-    right: 25px;
-    bottom: 25px;
-    opacity: 0.5;
+  .gallery-hero-icon img {
+    width: 150px;
+    height: 150px;
   }
   .gallery-filter-buttons {
     gap: 8px;
@@ -496,8 +505,9 @@
   .gallery-hero-content p {
     font-size: 0.9rem;
   }
-  .gallery-hero-icon {
-    font-size: 3.5rem;
+  .gallery-hero-icon img {
+    width: 90px;
+    height: 90px;
   }
   .gallery-filter-btn {
     padding: 7px 14px;
