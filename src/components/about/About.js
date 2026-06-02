@@ -171,6 +171,14 @@ const About = () => {
         <div className='container'>
           <h1 className='section-title' data-aos="fade-down">Our Team</h1>
           <div className='row justify-content-center'>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="300">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/updated/shailendra.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Shailendra Pal</h4>
+                <h5 className='team-card-designation'>Co-Founder & Managing Director</h5>
+                <p className='team-card-description'>A visionary leader in the pharmaceutical and healthcare industry, with over 20 years of experience at renowned organizations such as Alkem, Intas, Orchid Pharma, and Dr. Reddy’s Laboratories. He has a proven track record of launching specialty businesses, building successful healthcare brands, and driving strategic growth throughout India. As a Managing Director, he brings extensive expertise in leadership, business development, and market expansion, focusing on fostering innovation, strengthening partnerships, and creating sustainable value for patients, healthcare professionals, and industry stakeholders. His entrepreneurial spirit and passion for excellence continue to guide Dhyota's mission of advancing men’s health and wellness through innovative, patient-centric healthcare solutions that enhance quality of life and improve health outcomes.</p>
+              </div>
+            </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/updated/sreecharan.png" alt="Our Team" className='img-fluid' />
@@ -179,20 +187,12 @@ const About = () => {
                 <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p>
               </div>
             </div>
-            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="300">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/updated/shailendra.png" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Shailendra Pal</h4>
-                <h5 className='team-card-designation'>Co-Founder & Managing Director</h5>
-                <p className='team-card-description'>Pharma leader with 18+ years of experience in top companies including Alkem, Intas, Orchid, and Dr. Reddy’s. Spearheaded urology business launches, brand strategies, and nationwide marketing. Brings deep expertise in building and scaling healthcare brands in India.</p>
-              </div>
-            </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="500">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/updated/joji.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Joji Reddy</h4>
                 <h5 className='team-card-designation'>Co-Founder & President</h5>
-                <p className='team-card-description'>Seasoned healthcare leader with 26+ years in pharmaceuticals, driving sales, business growth, and market expansion with leading organizations. Currently President at Dhyota Global Healthcare Solutions, focused on innovation, collaboration, and patient-centric healthcare impact.</p>
+                <p className='team-card-description'>A seasoned pharmaceutical and healthcare leader with over 26 years of experience across leading organisations, including Alkem Laboratories, Hetero, and Dr. Reddy’s Laboratories. With a proven track record in driving business growth, commercial excellence, and market expansion, he brings deep expertise in sales leadership, strategic planning, and stakeholder engagement. As President, he plays a pivotal role in strengthening partnerships, accelerating organisational growth, and advancing innovative healthcare solutions. His collaborative leadership style and commitment to excellence continue to support Dhyota’s vision of delivering meaningful value to patients, healthcare professionals, and industry partners.</p>
               </div>
             </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
@@ -203,20 +203,20 @@ const About = () => {
                 <p className='team-card-description'>with more than 14 years of extensive experience in supply chain management, procurement, and operations within leading healthcare institutions.</p>
               </div>
             </div>
+             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/ANIL KUMAR.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Anil Kumar Podishetty</h4>
+                <h5 className='team-card-designation'>Associate General Manager</h5>
+                <p className='team-card-description'>Pharmaceutical business leader with 17 years of experience across Pfizer, Ranbaxy, Dr Reddy’s, Hetero, Shilpa Medicare, and Celon Laboratories, specialising in men’s health, urology, and oncology. Known for combining therapeutic expertise with commercial strategy to build scalable brands, drive growth, and enable strategic collaborations.</p>
+              </div>
+            </div>
             <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
               <div className='team-card text-center'>
                 <img src="/assets/img/about/team/updated/sanjib.png" alt="Our Team" className='img-fluid' />
                 <h4 className='team-card-title'>Sanjib Dutta</h4>
                 <h5 className='team-card-designation'>General Manager (West Zone)</h5>
                 {/* <p className='team-card-description'></p> */}
-              </div>
-            </div>
-            <div className='col-lg-4 col-md-6' data-aos="fade-up" data-aos-delay="600">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/ANIL KUMAR.jpeg" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Anil Kumar Podishetty</h4>
-                <h5 className='team-card-designation'>Associate General Manager</h5>
-                <p className='team-card-description'>Pharmaceutical business leader with 17 years of experience across Pfizer, Ranbaxy, Dr Reddy’s, Hetero, Shilpa Medicare, and Celon Laboratories, specialising in men’s health, urology, and oncology. Known for combining therapeutic expertise with commercial strategy to build scalable brands, drive growth, and enable strategic collaborations.</p>
               </div>
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
@@ -227,35 +227,11 @@ const About = () => {
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
               </div>
             </div>
-            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/updated/satyajit.png" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Satyajit Sinha Mahapatra </h4>
-                <h5 className='team-card-designation'>Sales head, West Bengal and North East & Key Account Management East</h5>
-                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
-              </div>
-            </div>
-            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/updated/amit.png" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Amit Verma</h4>
-                <h5 className='team-card-designation'>Sales head for Delhi NCR, Punjab, Haryana, Jammu & Kashmir</h5>
-                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
-              </div>
-            </div>
-            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/updated/venkateswarlu.png" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Venkateswarlu Abbisetti</h4>
-                <h5 className='team-card-designation'>Sales head for Telangana, Andhra Pradesh & Karnataka</h5>
-                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
-              </div>
-            </div>
-            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
-              <div className='team-card text-center'>
-                <img src="/assets/img/about/team/updated/sandeep.png" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Sandeep Tiwari</h4>
-                <h5 className='team-card-designation'>Sales head for Uttar Pradesh & Uttarakhand</h5>
+                <img src="/assets/img/about/team/updated/anandha.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Anandha Krishnan</h4>
+                <h5 className='team-card-designation'>Sales head for Tamilnadu & Kerala</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
               </div>
             </div>
@@ -269,9 +245,33 @@ const About = () => {
             </div>
             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
               <div className='team-card text-center'>
-                <img src="/assets/img/about/team/updated/anandha.png" alt="Our Team" className='img-fluid' />
-                <h4 className='team-card-title'>Anandha Krishnan</h4>
-                <h5 className='team-card-designation'>Sales head for Tamilnadu & Kerala</h5>
+                <img src="/assets/img/about/team/updated/sandeep.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Sandeep Tiwari</h4>
+                <h5 className='team-card-designation'>Sales head for Uttar Pradesh & Uttarakhand</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/updated/venkateswarlu.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Venkateswarlu Abbisetti</h4>
+                <h5 className='team-card-designation'>Sales head for Telangana, Andhra Pradesh & Karnataka</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+            <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/updated/amit.png" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Amit Verma</h4>
+                <h5 className='team-card-designation'>Sales head for Delhi NCR, Punjab, Haryana, Jammu & Kashmir</h5>
+                {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
+              </div>
+            </div>
+             <div className='col-lg-4' data-aos="fade-up" data-aos-delay="200">
+              <div className='team-card text-center'>
+                <img src="/assets/img/about/team/updated/kundhan.jpeg" alt="Our Team" className='img-fluid' />
+                <h4 className='team-card-title'>Kundan Kumar</h4>
+                <h5 className='team-card-designation'>Sales Head East Division.</h5>
                 {/* <p className='team-card-description'>Anaesthesiologist & Critical Care Specialist with 13+ years of clinical experience across leading hospitals. Expert in anaesthesia, intensive care, and patient safety with a strong commitment to ethical, patient-centered care. Adds medical depth to product innovation and safety standards.</p> */}
               </div>
             </div>
