@@ -1,21 +1,24 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
+import { State, City } from 'country-state-city';
 import { campaignData, getCampaignBySlug, getCampaignSlug } from './data';
 import detailContent from './data.json';
 import './CampaignDetail.css';
+
+const indianStates = State.getStatesOfCountry('IN');
 
 const CampaignDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const campaign = useMemo(() => getCampaignBySlug(slug), [slug]);
 
-  const [form, setForm] = useState({ name: '', email: '', phone: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', doctorName: '', address: '', state: '', city: '' });
   const [error, setError] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    setForm({ name: '', email: '', phone: '' });
+    setForm({ name: '', email: '', phone: '', doctorName: '', address: '', state: '', city: '' });
     setError('');
     setSubmitted(false);
   }, [slug]);
@@ -76,6 +79,22 @@ const CampaignDetail = () => {
       return;
     }
     setError('');
+
+    const stateName = indianStates.find((s) => s.isoCode === form.state)?.name || '';
+    const lines = [
+      `Hello! I'd like to enroll in *${campaign.title}*.`,
+      '',
+      `Name: ${name}`,
+      `Email: ${email}`,
+      form.phone.trim() && `Phone: ${form.phone.trim()}`,
+      form.doctorName.trim() && `Doctor's Name: ${form.doctorName.trim()}`,
+      form.address.trim() && `Address: ${form.address.trim()}`,
+      stateName && `State: ${stateName}`,
+      form.city && `City: ${form.city}`,
+    ].filter(Boolean);
+    const whatsappUrl = `https://wa.me/919649647108?text=${encodeURIComponent(lines.join('\n'))}`;
+    window.open(whatsappUrl, '_blank');
+
     setSubmitted(true);
   };
 
@@ -241,6 +260,9 @@ const CampaignDetail = () => {
         <div className="container">
           <div className="lh-enroll-card">
             <div className="lh-enroll-intro">
+              <div>
+                <img src='/assets/img/campaigns/redcliffelabslogo.png' className='img-fluid w-25 mb-3' />
+              </div>
               <span className="lh-pill">
                 <span className="lh-pill-dot"></span> Be Part of the Movement
               </span>
@@ -272,7 +294,7 @@ const CampaignDetail = () => {
                     className="lh-btn lh-btn-ghost"
                     onClick={() => {
                       setSubmitted(false);
-                      setForm({ name: '', email: '', phone: '' });
+                      setForm({ name: '', email: '', phone: '', doctorName: '', address: '', state: '', city: '' });
                     }}
                   >
                     Enroll another
@@ -312,6 +334,55 @@ const CampaignDetail = () => {
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       placeholder="+91 00000 00000"
                     />
+                  </div>
+                  <div className="lh-field">
+                    <label htmlFor="lh-doctor">Doctor's Name</label>
+                    <input
+                      id="lh-doctor"
+                      type="text"
+                      value={form.doctorName}
+                      onChange={(e) => setForm({ ...form, doctorName: e.target.value })}
+                      placeholder="Dr. Name"
+                    />
+                  </div>
+                  <div className="lh-field">
+                    <label htmlFor="lh-address">Address</label>
+                    <input
+                      id="lh-address"
+                      type="text"
+                      value={form.address}
+                      onChange={(e) => setForm({ ...form, address: e.target.value })}
+                      placeholder="Street, area, landmark"
+                    />
+                  </div>
+                  <div className="lh-field">
+                    <label htmlFor="lh-state">State</label>
+                    <select
+                      id="lh-state"
+                      value={form.state}
+                      onChange={(e) => setForm({ ...form, state: e.target.value, city: '' })}
+                    >
+                      <option value="">Select state</option>
+                      {indianStates.map((s) => (
+                        <option key={s.isoCode} value={s.isoCode}>{s.name}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="lh-field">
+                    <label htmlFor="lh-city">City</label>
+                    <select
+                      id="lh-city"
+                      value={form.city}
+                      onChange={(e) => setForm({ ...form, city: e.target.value })}
+                      disabled={!form.state}
+                    >
+                      <option value="">
+                        {form.state ? 'Select city' : 'Select a state first'}
+                      </option>
+                      {(form.state ? City.getCitiesOfState('IN', form.state) : []).map((c, i) => (
+                        <option key={`${c.name}-${i}`} value={c.name}>{c.name}</option>
+                      ))}
+                    </select>
                   </div>
                   {error && <p className="lh-error">{error}</p>}
                   <button type="submit" className="lh-btn lh-btn-primary lh-btn-block">
@@ -379,8 +450,8 @@ const CampaignDetail = () => {
             <button
               className="lh-btn lh-btn-primary"
               onClick={() => {
-                navigate('/contact');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                const text = encodeURIComponent(`Hello! I'd like to know more about *${campaign.title}*.`);
+                window.open(`https://wa.me/919649647108?text=${text}`, '_blank');
               }}
             >
               {dp.finalCta.button} <i className="fa-solid fa-arrow-right"></i>

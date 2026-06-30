@@ -46,7 +46,13 @@ const Gallery = () => {
     <main className="gallery-page">
       {/* Hero Section */}
       <section className="hero">
-        <div className="gallery-hero">
+        <div
+          className="gallery-hero"
+          style={{
+            backgroundImage:
+              "linear-gradient(135deg, rgba(31, 66, 62, 0.55) 0%, rgba(42, 86, 81, 0.4) 60%, rgba(31, 66, 62, 0.55) 100%), url('/assets/img/about/dhyotagroup2.jpg')",
+          }}
+        >
           <div className="gallery-hero-content">
             <h1>Gallery</h1>
             <p>

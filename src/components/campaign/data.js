@@ -37,7 +37,7 @@ export const campaignData = {
       sortDate: '2025-01-15',
       location: 'Pan India',
       enrolled: 52480,
-      image: '/assets/img/home/hero-bg.png',
+      image: '/assets/img/campaigns/lethimbehecampaign.jpeg',
       logo: '/assets/img/campaigns/lethimbehe.jpeg'
     }
   ],

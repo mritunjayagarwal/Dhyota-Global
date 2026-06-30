@@ -7,9 +7,9 @@
   "healthAreas": [
     { "icon": "fa-solid fa-mars", "tint": "green", "title": "Men's Health", "desc": "Comprehensive care for every stage of life." },
     { "icon": "fa-solid fa-spa", "tint": "blue", "title": "Intimate Wellness", "desc": "Regain confidence and performance." },
-    { "icon": "fa-solid fa-people-roof", "tint": "orange", "title": "Fertility", "desc": "Building families with hope." },
     { "icon": "fa-solid fa-dumbbell", "tint": "purple", "title": "Hormonal", "desc": "Restore energy, vitality and drive." },
-    { "icon": "fa-solid fa-hand-holding-heart", "tint": "teal", "title": "Supportive Care", "desc": "Compassionate support at every step." }
+    { "icon": "fa-solid fa-hand-holding-heart", "tint": "teal", "title": "Supportive Care", "desc": "Compassionate support at every step." },
+    { "icon": "fa-solid fa-people-roof", "tint": "orange", "title": "Fertility", "desc": "Building families with hope." }
   ],
   "concerns": {
     "title": "Common Health Concerns",
@@ -41,8 +41,7 @@
   },
   "stats": [
     { "icon": "fa-solid fa-user-group", "value": "50K+", "label": "Happy Patients" },
-    { "icon": "fa-solid fa-user-doctor", "value": "100+", "label": "Expert Doctors" },
-    { "icon": "fa-regular fa-calendar", "value": "10+ Years", "label": "Of Trusted Care" }
+    { "icon": "fa-solid fa-user-doctor", "value": "5000+", "label": "Expert Doctors" }
   ],
   "finalCta": {
     "image": "/assets/img/home/hero-bg.png",

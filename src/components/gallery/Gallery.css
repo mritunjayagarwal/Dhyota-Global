@@ -20,7 +20,8 @@
 
 .gallery-hero {
   position: relative;
-  background: linear-gradient(135deg, #1F423E 0%, #2A5651 60%, #1F423E 100%);
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
   padding: 70px 60px;
   display: flex;
